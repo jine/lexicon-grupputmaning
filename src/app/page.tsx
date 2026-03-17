@@ -1,65 +1,120 @@
-import Image from "next/image";
+interface Deck {
+  id: string;
+  title: string;
+  description: string;
+  cardCount: number;
+  difficulty: "Beginner" | "Intermediate" | "Advanced";
+  category: string;
+}
+
+const decks: Deck[] = [
+  {
+    id: "frontend",
+    title: "Frontend Mastery",
+    description: "React, Vue, CSS, DOM manipulation, and modern browser APIs",
+    cardCount: 145,
+    difficulty: "Intermediate",
+    category: "Technical",
+  },
+  {
+    id: "backend",
+    title: "Backend Architecture",
+    description: "APIs, databases, microservices, and server optimization",
+    cardCount: 128,
+    difficulty: "Advanced",
+    category: "Technical",
+  },
+  {
+    id: "system-design",
+    title: "System Design",
+    description: "Scalability, caching, load balancing, and distributed systems",
+    cardCount: 89,
+    difficulty: "Advanced",
+    category: "Architecture",
+  },
+  {
+    id: "javascript",
+    title: "JavaScript Core",
+    description: "ES6+, closures, async/await, prototypes, and event loop",
+    cardCount: 112,
+    difficulty: "Intermediate",
+    category: "Language",
+  },
+  {
+    id: "behavioral",
+    title: "Behavioral Questions",
+    description: "STAR method, conflict resolution, and leadership scenarios",
+    cardCount: 76,
+    difficulty: "Beginner",
+    category: "Soft Skills",
+  },
+  {
+    id: "algorithms",
+    title: "Data Structures",
+    description: "Arrays, trees, graphs, sorting, and Big O notation",
+    cardCount: 95,
+    difficulty: "Intermediate",
+    category: "CS Fundamentals",
+  },
+];
+
+function DeckCard({ deck }: { deck: Deck }) {
+  const difficultyColor = {
+    Beginner: "text-[#00d4aa]",
+    Intermediate: "text-[#ffa726]",
+    Advanced: "text-[#ff6b9d]",
+  }[deck.difficulty];
+
+  return (
+    <div className="bg-[#1a1a1a] rounded border border-[#2a2a2a] p-4 hover:border-[#3a3a3a] cursor-pointer">
+      <div className="flex items-start justify-between mb-3">
+        <h3 className="font-semibold text-[#f5f5f5]">{deck.title}</h3>
+        <span className={`text-xs ${difficultyColor}`}>{deck.difficulty}</span>
+      </div>
+      <p className="text-sm text-[#888] mb-4">{deck.description}</p>
+      <div className="flex items-center justify-between text-xs text-[#666]">
+        <span>{deck.category}</span>
+        <span>{deck.cardCount} cards</span>
+      </div>
+    </div>
+  );
+}
 
 export default function Home() {
-	return (
-		<div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-			<main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-				<Image
-					className="dark:invert"
-					src="/next.svg"
-					alt="Next.js logo"
-					width={100}
-					height={20}
-					priority
-				/>
-				<div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-					<h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-						To get started, edit the page.tsx file.
-					</h1>
-					<p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-						Looking for a starting point or more instructions? Head over to{" "}
-						<a
-							href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-							className="font-medium text-zinc-950 dark:text-zinc-50"
-						>
-							Templates
-						</a>{" "}
-						or the{" "}
-						<a
-							href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-							className="font-medium text-zinc-950 dark:text-zinc-50"
-						>
-							Learning
-						</a>{" "}
-						center.
-					</p>
-				</div>
-				<div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-					<a
-						className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-						href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						<Image
-							className="dark:invert"
-							src="/vercel.svg"
-							alt="Vercel logomark"
-							width={16}
-							height={16}
-						/>
-						Deploy Now
-					</a>
-					<a
-						className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-						href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						Documentation
-					</a>
-				</div>
-			</main>
-		</div>
-	);
+  return (
+    <div className="max-w-5xl">
+      <div className="mb-8">
+        <h2 className="text-xl font-semibold text-[#f5f5f5] mb-2">Flashcard Decks</h2>
+        <p className="text-sm text-[#888]">Select a deck to start studying</p>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {decks.map((deck) => (
+          <DeckCard key={deck.id} deck={deck} />
+        ))}
+      </div>
+
+      <div className="mt-8 pt-6 border-t border-[#2a2a2a]">
+        <h3 className="text-lg font-semibold text-[#f5f5f5] mb-4">Your Progress</h3>
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+          <div className="bg-[#1a1a1a] rounded border border-[#2a2a2a] p-4">
+            <div className="text-2xl font-bold text-[#f5f5f5]">12</div>
+            <div className="text-xs text-[#888]">Day Streak</div>
+          </div>
+          <div className="bg-[#1a1a1a] rounded border border-[#2a2a2a] p-4">
+            <div className="text-2xl font-bold text-[#f5f5f5]">847</div>
+            <div className="text-xs text-[#888]">Cards Reviewed</div>
+          </div>
+          <div className="bg-[#1a1a1a] rounded border border-[#2a2a2a] p-4">
+            <div className="text-2xl font-bold text-[#f5f5f5]">4.8</div>
+            <div className="text-xs text-[#888]">Avg Mastery</div>
+          </div>
+          <div className="bg-[#1a1a1a] rounded border border-[#2a2a2a] p-4">
+            <div className="text-2xl font-bold text-[#f5f5f5]">92%</div>
+            <div className="text-xs text-[#888]">Retention Rate</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
