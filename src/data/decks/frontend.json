@@ -1,0 +1,104 @@
+{
+  "id": "frontend-deck",
+  "name": "Frontend Development",
+  "description": "Master HTML, CSS, JavaScript, React, performance optimization, and accessibility concepts essential for frontend interviews.",
+  "category": "frontend",
+  "cards": [
+    {
+      "id": "fe-001",
+      "question": "What is the difference between block, inline, and inline-block elements in CSS?",
+      "answer": "Block elements take up the full width available and start on a new line (e.g., div, p). Inline elements only take up as much width as necessary and don't start on a new line (e.g., span, a). Inline-block elements are like inline but can have width, height, and vertical margins set (e.g., img, input).",
+      "category": "frontend",
+      "difficulty": "easy",
+      "tags": ["css", "layout", "box-model"]
+    },
+    {
+      "id": "fe-002",
+      "question": "Explain CSS specificity and how it's calculated.",
+      "answer": "CSS specificity determines which styles apply when multiple rules target the same element. It's calculated as a weight: Inline styles (1000) > IDs (100) > Classes/attributes (10) > Elements (1). The selector with the highest specificity wins. Use !important to override, but sparingly.",
+      "category": "frontend",
+      "difficulty": "easy",
+      "tags": ["css", "specificity", "cascade"]
+    },
+    {
+      "id": "fe-003",
+      "question": "What is the difference between var, let, and const in JavaScript?",
+      "answer": "var is function-scoped, can be redeclared, and is hoisted. let is block-scoped, cannot be redeclared in the same scope, and is not hoisted. const is block-scoped like let but cannot be reassigned (though objects/arrays can be mutated). Always prefer const, then let, avoid var.",
+      "category": "frontend",
+      "difficulty": "easy",
+      "tags": ["javascript", "variables", "es6"]
+    },
+    {
+      "id": "fe-004",
+      "question": "Explain event delegation in JavaScript.",
+      "answer": "Event delegation is a technique where you attach a single event listener to a parent element instead of multiple listeners to child elements. Events bubble up from the target to ancestors. Use event.target to identify which child triggered the event. This improves performance and handles dynamically added elements.",
+      "category": "frontend",
+      "difficulty": "medium",
+      "tags": ["javascript", "events", "dom", "performance"]
+    },
+    {
+      "id": "fe-005",
+      "question": "What is the Virtual DOM in React and how does it work?",
+      "answer": "The Virtual DOM is a lightweight JavaScript representation of the actual DOM. When state changes, React creates a new Virtual DOM tree, compares it with the previous one (diffing algorithm), and calculates the minimal set of changes needed. Only those changes are applied to the real DOM, making updates efficient.",
+      "category": "frontend",
+      "difficulty": "medium",
+      "tags": ["react", "virtual-dom", "performance"]
+    },
+    {
+      "id": "fe-006",
+      "question": "Explain the difference between useEffect and useLayoutEffect in React.",
+      "answer": "useEffect runs asynchronously after the browser paints the screen, making it ideal for data fetching and subscriptions. useLayoutEffect runs synchronously after all DOM mutations but before the browser paints. Use useLayoutEffect when you need to measure DOM elements or make visual changes that must happen before paint to avoid flickering.",
+      "category": "frontend",
+      "difficulty": "medium",
+      "tags": ["react", "hooks", "lifecycle", "performance"]
+    },
+    {
+      "id": "fe-007",
+      "question": "What are the key principles of web accessibility (a11y)?",
+      "answer": "Key principles: Perceivable (information must be presentable in ways users can perceive), Operable (interface components must be operable by all users), Understandable (information and UI operation must be understandable), Robust (content must work with current and future assistive technologies). Follow WCAG guidelines, use semantic HTML, ensure keyboard navigation, and provide alt text.",
+      "category": "frontend",
+      "difficulty": "medium",
+      "tags": ["accessibility", "a11y", "wcag", "ux"]
+    },
+    {
+      "id": "fe-008",
+      "question": "How does the browser rendering pipeline work?",
+      "answer": "The pipeline: 1) Parse HTML to create DOM, 2) Parse CSS to create CSSOM, 3) Combine DOM and CSSOM into Render Tree, 4) Layout (calculate geometry and position), 5) Paint (fill pixels), 6) Composite (draw layers in correct order). Optimize by minimizing DOM changes, using transform/opacity for animations (GPU-accelerated), and avoiding layout thrashing.",
+      "category": "frontend",
+      "difficulty": "hard",
+      "tags": ["browser", "rendering", "performance", "dom"]
+    },
+    {
+      "id": "fe-009",
+      "question": "Explain React's reconciliation process and keys.",
+      "answer": "Reconciliation is React's algorithm for diffing two trees (current vs new Virtual DOM). It makes O(n) assumptions: different types produce different trees, keys hint at stable identity. Keys help React identify which items changed/added/removed. Without keys, React may recreate elements unnecessarily, losing state. Always use stable, unique keys in lists.",
+      "category": "frontend",
+      "difficulty": "hard",
+      "tags": ["react", "reconciliation", "virtual-dom", "keys"]
+    },
+    {
+      "id": "fe-010",
+      "question": "What are Core Web Vitals and how do you optimize them?",
+      "answer": "Core Web Vitals are: LCP (Largest Contentful Paint, target <2.5s) - optimize images, use CDN, preload critical resources; FID (First Input Delay, target <100ms) - reduce JS execution time, code splitting; CLS (Cumulative Layout Shift, target <0.1) - set image dimensions, reserve space for ads/dynamic content, avoid inserting content above existing content.",
+      "category": "frontend",
+      "difficulty": "hard",
+      "tags": ["performance", "core-web-vitals", "seo", "ux"]
+    },
+    {
+      "id": "fe-011",
+      "question": "Explain CSS Grid vs Flexbox - when to use each?",
+      "answer": "Use Flexbox for one-dimensional layouts (single row OR column) with content-based sizing and alignment needs. Use CSS Grid for two-dimensional layouts (rows AND columns) where you need precise control over both axes. They work well together - Grid for overall page layout, Flexbox for components within grid cells. Grid excels at gap handling and template areas.",
+      "category": "frontend",
+      "difficulty": "medium",
+      "tags": ["css", "flexbox", "grid", "layout"]
+    },
+    {
+      "id": "fe-012",
+      "question": "What is the Event Loop in JavaScript?",
+      "answer": "The Event Loop allows JavaScript to perform non-blocking operations despite being single-threaded. It continuously checks: 1) Call Stack (executes synchronous code), 2) Microtask Queue (promises, queueMicrotask - processed after each task), 3) Callback Queue (setTimeout, DOM events - processed when call stack is empty). The loop moves callbacks to the stack when it's clear, enabling async behavior.",
+      "category": "frontend",
+      "difficulty": "hard",
+      "tags": ["javascript", "event-loop", "async", "concurrency"]
+    }
+  ]
+}

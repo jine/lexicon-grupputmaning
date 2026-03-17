@@ -1,0 +1,104 @@
+{
+  "id": "behavioral-deck",
+  "name": "Behavioral Interview",
+  "description": "Master the STAR method and prepare for questions about conflict resolution, leadership, teamwork, and professional scenarios.",
+  "category": "behavioral",
+  "cards": [
+    {
+      "id": "bh-001",
+      "question": "Tell me about a time you had to learn a new technology quickly.",
+      "answer": "Use STAR method: Situation (project deadline, new framework needed), Task (learn React in 2 weeks), Action (online courses, built side project, pair programmed with experienced dev, read documentation), Result (delivered feature on time, praised by manager, became team's React expert). Show: Adaptability, proactive learning, resourcefulness. Avoid: 'I already knew it' or 'It was easy'. Focus on the learning process and challenges overcome.",
+      "category": "behavioral",
+      "difficulty": "easy",
+      "tags": ["learning", "adaptability", "growth", "star-method"]
+    },
+    {
+      "id": "bh-002",
+      "question": "Describe a situation where you had to deal with a difficult teammate.",
+      "answer": "STAR example: Situation (teammate consistently missed deadlines affecting sprint), Task (maintain project timeline and relationship), Action (private conversation to understand root cause - discovered they were overwhelmed, helped prioritize tasks, suggested time management techniques, paired on complex features), Result (improved their delivery by 40%, maintained positive working relationship, project delivered on time). Key: Focus on solutions, not blame. Show empathy and leadership.",
+      "category": "behavioral",
+      "difficulty": "easy",
+      "tags": ["conflict-resolution", "teamwork", "communication", "leadership"]
+    },
+    {
+      "id": "bh-003",
+      "question": "Tell me about a time you made a mistake at work.",
+      "answer": "STAR example: Situation (deployed bug to production affecting 1000 users), Task (fix quickly and prevent recurrence), Action (immediately rolled back deployment, investigated root cause, wrote post-mortem, added missing test cases, implemented CI/CD checks), Result (downtime limited to 15 minutes, process improved, team adopted new testing standards). Key: Take ownership, focus on lessons learned, show growth. Never blame others. Demonstrate accountability and problem-solving.",
+      "category": "behavioral",
+      "difficulty": "easy",
+      "tags": ["accountability", "learning", "mistakes", "growth"]
+    },
+    {
+      "id": "bh-004",
+      "question": "Describe a time when you had to meet a tight deadline.",
+      "answer": "STAR example: Situation (client moved launch date up by 2 weeks), Task (deliver core features while maintaining quality), Action (prioritized MVP features with stakeholders, broke work into daily milestones, worked focused sprints, communicated daily progress, identified blockers early, asked for help when needed), Result (delivered on time, client satisfied, zero critical bugs in first week). Show: Time management, prioritization, communication under pressure. Avoid: 'I worked 80-hour weeks' as the main answer.",
+      "category": "behavioral",
+      "difficulty": "easy",
+      "tags": ["deadlines", "pressure", "time-management", "prioritization"]
+    },
+    {
+      "id": "bh-005",
+      "question": "Tell me about a time you showed leadership without being the official leader.",
+      "answer": "STAR example: Situation (new project, no tech lead assigned), Task (ensure technical direction and team coordination), Action (organized architecture discussions, created technical RFC, mentored junior devs, set up code review process, facilitated daily standups), Result (clean architecture adopted, junior devs productive in 1 week, team delivered ahead of schedule, promoted to Tech Lead 3 months later). Key: Initiative, influence without authority, servant leadership. Show how you made the team better.",
+      "category": "behavioral",
+      "difficulty": "medium",
+      "tags": ["leadership", "initiative", "influence", "mentorship"]
+    },
+    {
+      "id": "bh-006",
+      "question": "Describe a time you had to convince your team to change an approach.",
+      "answer": "STAR example: Situation (team using REST, GraphQL would improve mobile performance), Task (propose and adopt GraphQL), Action (built proof-of-concept with metrics showing 60% fewer requests, presented to team with trade-offs, addressed concerns about learning curve with training plan, started with non-critical feature), Result (team adopted GraphQL, mobile app 40% faster, became company standard). Key: Data-driven persuasion, addressing concerns proactively, incremental adoption. Show you respect team input.",
+      "category": "behavioral",
+      "difficulty": "medium",
+      "tags": ["communication", "influence", "technical-decisions", "leadership"]
+    },
+    {
+      "id": "bh-007",
+      "question": "Tell me about a time you received critical feedback.",
+      "answer": "STAR example: Situation (code review feedback that my code was hard to test), Task (improve code quality and testability), Action (scheduled 1:1 with reviewer to understand specific issues, studied SOLID principles, refactored recent features using dependency injection, added comprehensive unit tests), Result (code coverage increased from 60% to 90%, received positive feedback in next review, mentored others on testable design). Key: Non-defensive reception, actionable improvement, growth mindset. Show emotional intelligence.",
+      "category": "behavioral",
+      "difficulty": "medium",
+      "tags": ["feedback", "growth", "self-improvement", "emotional-intelligence"]
+    },
+    {
+      "id": "bh-008",
+      "question": "Describe a time you had to work with unclear requirements.",
+      "answer": "STAR example: Situation (stakeholder said 'make it faster' without specifics), Task (define success criteria and deliver improvement), Action (scheduled meeting to understand user pain points, defined metrics - page load under 2 seconds, proposed A/B test approach, built prototype for validation, iterated based on feedback), Result (defined clear requirements doc adopted by team, improved load time by 70%, reduced bounce rate by 25%). Key: Proactive clarification, iterative approach, stakeholder management.",
+      "category": "behavioral",
+      "difficulty": "medium",
+      "tags": ["requirements", "ambiguity", "communication", "problem-solving"]
+    },
+    {
+      "id": "bh-009",
+      "question": "Tell me about a time you had to collaborate with a difficult stakeholder.",
+      "answer": "STAR example: Situation (product manager constantly changed priorities mid-sprint), Task (stabilize workflow while maintaining relationship), Action (proposed bi-weekly priority meetings, visualized impact of changes on timeline, suggested 'parking lot' for new ideas, implemented change request process), Result (priority changes reduced by 80%, improved trust, team velocity increased 30%). Key: Diplomacy, process improvement, finding win-win. Show you can manage up.",
+      "category": "behavioral",
+      "difficulty": "medium",
+      "tags": ["stakeholder-management", "communication", "diplomacy", "collaboration"]
+    },
+    {
+      "id": "bh-010",
+      "question": "Describe a time you went above and beyond for a project.",
+      "answer": "STAR example: Situation (completing MVP feature), Task (ensure long-term maintainability), Action (added comprehensive documentation, created onboarding guide for new devs, built monitoring dashboard, wrote automated tests covering edge cases, presented lunch-and-learn to team), Result (onboarding time reduced from 2 weeks to 3 days, 50% fewer bugs reported, dashboard used by support team). Key: Initiative, ownership, thinking beyond immediate requirements. Show passion for quality.",
+      "category": "behavioral",
+      "difficulty": "medium",
+      "tags": ["initiative", "ownership", "quality", "going-above-and-beyond"]
+    },
+    {
+      "id": "bh-011",
+      "question": "Tell me about a time you disagreed with your manager's technical decision.",
+      "answer": "STAR example: Situation (manager wanted to use older library for new feature), Task (advocate for modern solution while respecting authority), Action (gathered data on security vulnerabilities in old library, built small prototype showing 3x better performance, scheduled private discussion presenting findings objectively, offered compromise to evaluate both for 1 week), Result (manager agreed to new library, appreciated data-driven approach, gave me more technical autonomy). Key: Respectful disagreement, data over opinions, private discussion.",
+      "category": "behavioral",
+      "difficulty": "hard",
+      "tags": ["conflict", "technical-decisions", "diplomacy", "communication"]
+    },
+    {
+      "id": "bh-012",
+      "question": "Describe a time you had to deliver bad news to a customer or stakeholder.",
+      "answer": "STAR example: Situation (discovered critical bug 2 days before launch), Task (inform client and propose solution), Action (immediately notified client with clear timeline for fix, presented options: delay launch or launch with workaround, took responsibility, provided daily updates, offered discounted rate for inconvenience), Result (client appreciated transparency, chose short delay, launched with zero issues, relationship strengthened). Key: Transparency, ownership, solution-oriented, proactive communication. Show integrity.",
+      "category": "behavioral",
+      "difficulty": "hard",
+      "tags": ["communication", "transparency", "crisis-management", "ownership"]
+    }
+  ]
+}

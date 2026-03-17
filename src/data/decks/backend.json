@@ -1,0 +1,104 @@
+{
+  "id": "backend-deck",
+  "name": "Backend Development",
+  "description": "Master APIs, databases, authentication, server architecture, and Node.js concepts essential for backend engineering interviews.",
+  "category": "backend",
+  "cards": [
+    {
+      "id": "be-001",
+      "question": "What is the difference between REST and GraphQL APIs?",
+      "answer": "REST uses multiple endpoints with fixed data structures (over-fetching/under-fetching common). GraphQL uses a single endpoint where clients specify exactly what data they need. REST is simpler to cache, better for file uploads, and widely adopted. GraphQL reduces round trips, has strong typing, and is great for complex data relationships. Choose based on client needs and team expertise.",
+      "category": "backend",
+      "difficulty": "easy",
+      "tags": ["api", "rest", "graphql", "architecture"]
+    },
+    {
+      "id": "be-002",
+      "question": "Explain the difference between SQL and NoSQL databases.",
+      "answer": "SQL databases are relational with structured schemas, ACID compliance, and support complex joins (MySQL, PostgreSQL). Best for structured data with relationships. NoSQL databases are non-relational with flexible schemas, horizontal scaling, and various types: document (MongoDB), key-value (Redis), column-family (Cassandra), graph (Neo4j). Best for unstructured data, high write throughput, or rapid iteration.",
+      "category": "backend",
+      "difficulty": "easy",
+      "tags": ["database", "sql", "nosql", "storage"]
+    },
+    {
+      "id": "be-003",
+      "question": "What is JWT (JSON Web Token) and how does authentication work with it?",
+      "answer": "JWT is a compact, self-contained way to transmit information between parties as a JSON object. Structure: header (algorithm), payload (claims), signature (verification). Flow: User logs in → Server creates JWT with user info → Client stores JWT → Client sends JWT in Authorization header → Server verifies signature → Grants access. Use short expiration + refresh tokens for security.",
+      "category": "backend",
+      "difficulty": "easy",
+      "tags": ["authentication", "jwt", "security", "auth"]
+    },
+    {
+      "id": "be-004",
+      "question": "Explain database indexing and when to use it.",
+      "answer": "Indexes are data structures (typically B-trees) that speed up data retrieval at the cost of slower writes and storage space. Without indexes, databases scan entire tables. Use indexes on: columns frequently in WHERE clauses, JOIN conditions, ORDER BY columns. Don't over-index: each index slows down INSERT/UPDATE/DELETE. Consider composite indexes for multi-column queries. Use EXPLAIN to analyze query performance.",
+      "category": "backend",
+      "difficulty": "medium",
+      "tags": ["database", "indexing", "performance", "sql"]
+    },
+    {
+      "id": "be-005",
+      "question": "What is the difference between authentication and authorization?",
+      "answer": "Authentication verifies who you are (proving identity - username/password, biometrics, MFA). Authorization determines what you can do (permissions - can this user access this resource?). Authentication happens first, then authorization. Example: Login = authentication. Checking if user can delete posts = authorization. Implement via middleware: auth middleware verifies JWT, then separate authz middleware checks roles/permissions.",
+      "category": "backend",
+      "difficulty": "easy",
+      "tags": ["security", "authentication", "authorization", "auth"]
+    },
+    {
+      "id": "be-006",
+      "question": "Explain the CAP theorem and its implications.",
+      "answer": "CAP theorem states that in a distributed data store, you can only guarantee two of three: Consistency (all nodes see same data at same time), Availability (every request gets a response), Partition tolerance (system continues despite network failures). In practice, choose CP (consistent + partition tolerant, sacrifice availability during partitions) or AP (available + partition tolerant, may return stale data). Most modern systems prioritize partition tolerance.",
+      "category": "backend",
+      "difficulty": "medium",
+      "tags": ["distributed-systems", "cap-theorem", "databases", "architecture"]
+    },
+    {
+      "id": "be-007",
+      "question": "What are database transactions and ACID properties?",
+      "answer": "A transaction is a sequence of operations treated as a single unit of work. ACID properties: Atomicity (all operations succeed or all fail - rollback on error), Consistency (database remains in valid state before/after), Isolation (concurrent transactions don't interfere - implemented via locking), Durability (committed transactions survive system crashes - via write-ahead logs). Essential for financial operations and data integrity.",
+      "category": "backend",
+      "difficulty": "medium",
+      "tags": ["database", "transactions", "acid", "sql"]
+    },
+    {
+      "id": "be-008",
+      "question": "How does OAuth 2.0 work for third-party authentication?",
+      "answer": "OAuth 2.0 is an authorization framework. Flow: 1) User clicks 'Login with Google', 2) App redirects to Google with client ID and scope, 3) User authenticates with Google and grants permissions, 4) Google redirects back with authorization code, 5) App exchanges code for access token (and refresh token), 6) App uses access token to call Google APIs. Never store passwords; tokens have limited scope and expiration.",
+      "category": "backend",
+      "difficulty": "medium",
+      "tags": ["oauth", "authentication", "security", "api"]
+    },
+    {
+      "id": "be-009",
+      "question": "Explain database normalization vs denormalization.",
+      "answer": "Normalization organizes data to reduce redundancy and improve integrity: 1NF (atomic values), 2NF (no partial dependencies), 3NF (no transitive dependencies). Denormalization intentionally adds redundancy for read performance - duplicate data to avoid joins. Use normalization for OLTP (transactional) systems where writes are frequent. Use denormalization for OLAP (analytical) systems or read-heavy applications where query speed matters more than storage.",
+      "category": "backend",
+      "difficulty": "medium",
+      "tags": ["database", "normalization", "denormalization", "design"]
+    },
+    {
+      "id": "be-010",
+      "question": "What is rate limiting and why is it important?",
+      "answer": "Rate limiting controls how many requests a client can make in a time window to prevent abuse and ensure fair usage. Algorithms: Fixed Window (simple but allows bursts at window boundaries), Sliding Window (more accurate), Token Bucket (allows bursts up to bucket size), Leaky Bucket (smooths traffic). Implement at API Gateway or application level. Return 429 Too Many Requests when limit exceeded with Retry-After header.",
+      "category": "backend",
+      "difficulty": "medium",
+      "tags": ["api", "rate-limiting", "security", "performance"]
+    },
+    {
+      "id": "be-011",
+      "question": "Explain the difference between horizontal and vertical scaling.",
+      "answer": "Vertical scaling (scale up): Add more power (CPU, RAM) to existing server. Simpler but has limits and single point of failure. Horizontal scaling (scale out): Add more servers to distribute load. More complex (needs load balancing, session management, data partitioning) but provides better availability and elasticity. Modern systems prefer horizontal scaling with cloud auto-scaling. Database sharding is horizontal scaling for databases.",
+      "category": "backend",
+      "difficulty": "medium",
+      "tags": ["scaling", "infrastructure", "performance", "architecture"]
+    },
+    {
+      "id": "be-012",
+      "question": "What are database locks and how do they prevent race conditions?",
+      "answer": "Locks prevent concurrent transactions from interfering. Types: Shared locks (read locks - multiple readers), Exclusive locks (write locks - one writer). Granularity: Row-level (fine-grained, better concurrency), Table-level (coarse, simpler). Problems: Deadlock (circular waiting - detect and rollback one transaction), Lock contention (too many locks hurt performance). Optimistic locking uses versioning instead of locks (check version before commit).",
+      "category": "backend",
+      "difficulty": "hard",
+      "tags": ["database", "concurrency", "locking", "transactions"]
+    }
+  ]
+}

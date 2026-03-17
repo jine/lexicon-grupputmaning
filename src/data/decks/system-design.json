@@ -1,0 +1,104 @@
+{
+  "id": "system-design-deck",
+  "name": "System Design",
+  "description": "Master scalability, caching, load balancing, microservices, and distributed system design concepts for technical interviews.",
+  "category": "system-design",
+  "cards": [
+    {
+      "id": "sd-001",
+      "question": "What is caching and what are common caching strategies?",
+      "answer": "Caching stores copies of frequently accessed data in faster storage (RAM) to reduce database load. Strategies: Cache-Aside (app checks cache first, populates on miss - most common), Read-Through (cache loads from DB automatically), Write-Through (writes go to cache and DB simultaneously), Write-Behind (async write to DB - better performance but risk of data loss). Common tools: Redis, Memcached. Set appropriate TTL (Time To Live) and handle cache invalidation.",
+      "category": "system-design",
+      "difficulty": "easy",
+      "tags": ["caching", "redis", "performance", "storage"]
+    },
+    {
+      "id": "sd-002",
+      "question": "Explain load balancing and common algorithms.",
+      "answer": "Load balancers distribute incoming traffic across multiple servers to improve availability and performance. Types: Hardware (F5), Software (Nginx, HAProxy), Cloud (AWS ALB). Algorithms: Round Robin (sequential), Least Connections (to least busy), IP Hash (sticky sessions), Weighted (favor stronger servers). Benefits: High availability (remove failed servers), scalability (add servers), SSL termination. Can be Layer 4 (transport) or Layer 7 (application).",
+      "category": "system-design",
+      "difficulty": "easy",
+      "tags": ["load-balancing", "scalability", "availability", "infrastructure"]
+    },
+    {
+      "id": "sd-003",
+      "question": "What is a CDN and when should you use one?",
+      "answer": "A Content Delivery Network is a geographically distributed network of servers that delivers content to users from the nearest edge server. Use cases: Serving static assets (images, CSS, JS), video streaming, DDoS protection, reducing origin server load. Benefits: Lower latency (closer to users), bandwidth savings, improved availability. Popular providers: Cloudflare, AWS CloudFront, Fastly. Configure proper cache headers and origin shield for dynamic content.",
+      "category": "system-design",
+      "difficulty": "easy",
+      "tags": ["cdn", "performance", "caching", "static-assets"]
+    },
+    {
+      "id": "sd-004",
+      "question": "Explain microservices architecture vs monolithic architecture.",
+      "answer": "Monolithic: Single deployable unit, shared database, simpler development and testing, but harder to scale independently and risky deployments. Microservices: Independent services with own databases, communicate via APIs/messaging, each service can use different tech stack, scale independently, deploy independently, enable team autonomy. Challenges: Distributed complexity, data consistency, inter-service communication overhead, harder debugging. Use microservices when you need independent scaling and have multiple teams.",
+      "category": "system-design",
+      "difficulty": "medium",
+      "tags": ["microservices", "architecture", "monolith", "distributed-systems"]
+    },
+    {
+      "id": "sd-005",
+      "question": "What is database sharding and how does it work?",
+      "answer": "Sharding partitions database horizontally across multiple servers (shards) to distribute load and storage. Each shard contains subset of data. Sharding strategies: Hash-based (consistent hashing to minimize resharding), Range-based (time periods or alphabetical ranges - hotspot risk), Directory-based (lookup service tracks location). Challenges: Cross-shard queries are slow, resharding is complex, data rebalancing. Use when single server can't handle data volume or write throughput.",
+      "category": "system-design",
+      "difficulty": "medium",
+      "tags": ["database", "sharding", "scaling", "partitioning"]
+    },
+    {
+      "id": "sd-006",
+      "question": "Explain eventual consistency and the BASE model.",
+      "answer": "BASE (Basically Available, Soft state, Eventually consistent) is alternative to ACID for distributed systems. Eventually consistent means if no new updates, all replicas will converge to same value over time. Acceptable for: social media likes, comments, shopping carts, analytics. NOT acceptable for: financial transactions, inventory management. Conflict resolution: Last-Write-Wins (LWW), Vector clocks, CRDTs. Trade availability and partition tolerance for relaxed consistency.",
+      "category": "system-design",
+      "difficulty": "medium",
+      "tags": ["consistency", "base", "distributed-systems", "cap-theorem"]
+    },
+    {
+      "id": "sd-007",
+      "question": "What is a message queue and when should you use one?",
+      "answer": "Message queues enable asynchronous communication between services. Producer sends message to queue, consumer processes it later. Benefits: Decoupling (services don't need to know about each other), async processing (don't block user), load leveling (handle traffic spikes), reliability (messages persist if consumer down). Patterns: Point-to-point (one consumer), Pub/Sub (multiple consumers). Tools: RabbitMQ, Apache Kafka, AWS SQS, Redis. Use for: email sending, image processing, order processing.",
+      "category": "system-design",
+      "difficulty": "medium",
+      "tags": ["message-queue", "async", "messaging", "architecture"]
+    },
+    {
+      "id": "sd-008",
+      "question": "How would you design a rate limiter for an API?",
+      "answer": "Rate limiter prevents API abuse. Approaches: Token Bucket (tokens added at fixed rate, request consumes token - allows bursts), Leaky Bucket (requests queue, processed at fixed rate - smooths traffic), Fixed Window (count requests in time window - simple but allows bursts at boundaries), Sliding Window (more accurate but complex). Implementation: In-memory (single server), Redis (distributed, use Lua scripts for atomicity), Middleware. Return 429 status with Retry-After header. Consider different limits per user tier.",
+      "category": "system-design",
+      "difficulty": "medium",
+      "tags": ["rate-limiting", "api", "design", "redis"]
+    },
+    {
+      "id": "sd-009",
+      "question": "Explain the Single Responsibility Principle in system design.",
+      "answer": "Each service/component should have one reason to change. In microservices: Auth service handles only authentication, Payment service handles only payments. Benefits: Easier to understand, test, and modify. Independent deployment and scaling. Clear ownership for teams. Trade-offs: More services mean more operational complexity (monitoring, tracing, deployment). But violations lead to tightly coupled systems that are hard to change. Examples: Don't mix business logic with data access; separate read and write models (CQRS).",
+      "category": "system-design",
+      "difficulty": "medium",
+      "tags": ["solid-principles", "microservices", "architecture", "design"]
+    },
+    {
+      "id": "sd-010",
+      "question": "How would you design a URL shortener like bit.ly?",
+      "answer": "Requirements: Generate unique short URLs, redirect quickly, analytics. Design: 1) Encoding: Base62 encoding of auto-increment ID or hash of original URL, 2) Database: Key-value store (short URL → long URL), 3) Caching: Redis for hot URLs, 4) Analytics: Async write to separate DB, 5) Rate limiting: Prevent abuse. Scale: Use multiple encoding servers, database sharding by short URL prefix, CDN for fast redirects. Handle collisions with retry logic. Provide custom aliases for premium users.",
+      "category": "system-design",
+      "difficulty": "medium",
+      "tags": ["design", "url-shortener", "system-design", "interview"]
+    },
+    {
+      "id": "sd-011",
+      "question": "What is a circuit breaker pattern and when to use it?",
+      "answer": "Circuit breaker prevents cascading failures in distributed systems. States: Closed (normal operation - requests pass through), Open (failure threshold reached - requests fail fast without calling service), Half-Open (after timeout, test if service recovered). Benefits: Fails fast (better UX), prevents resource exhaustion, gives failing service time to recover. Implementation: Track failure count, timeout duration, reset threshold. Use when calling external services (payment gateways, third-party APIs). Popular libraries: Resilience4j, Hystrix.",
+      "category": "system-design",
+      "difficulty": "hard",
+      "tags": ["circuit-breaker", "resilience", "microservices", "patterns"]
+    },
+    {
+      "id": "sd-012",
+      "question": "How would you design a web crawler at scale?",
+      "answer": "Components: 1) URL Frontier (queue of URLs to crawl - priority queue for freshness), 2) Downloader (HTTP client with rate limiting and respect robots.txt), 3) Parser (extract links and content), 4) Deduplication (Bloom filter or URL hash set), 5) Storage (save content). Scale: Distribute across multiple workers, use consistent hashing for URL assignment, politeness (delay between requests to same domain), handle JavaScript rendering with headless browsers. Store in distributed file system (S3) and search index (Elasticsearch).",
+      "category": "system-design",
+      "difficulty": "hard",
+      "tags": ["design", "web-crawler", "distributed-systems", "interview"]
+    }
+  ]
+}
