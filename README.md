@@ -21,7 +21,7 @@ Interview Flashcard Master transforms the tedious process of interview preparati
 -   **Language:** [TypeScript](https://www.typescriptlang.org/)
 -   **Styling:** [Tailwind CSS](https://tailwindcss.com/)
 -   **Components:** [shadcn/ui](https://ui.shadcn.com/)
--   **State Management:** [React Query](https://tanstack.com/query/latest)
+-   **State Management:** React useState (stock)
 -   **Animations:** [Framer Motion](https://www.framer.com/motion/)
 
 ## 🏁 Getting Started
@@ -59,7 +59,6 @@ src/
 ├── components/     # Reusable UI components
 ├── hooks/          # Custom React hooks
 ├── lib/            # Utility functions and shared logic
-├── store/          # State management
 ├── types/          # TypeScript definitions
 └── data/           # Flashcard content and static assets
 ```
