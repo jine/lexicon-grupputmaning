@@ -84,30 +84,30 @@ export function DeckStudyPage({ deck }: DeckStudyPageProps) {
 	return (
 		<div className="h-screen flex flex-col bg-[#0f0f0f]">
 			{/* Fixed Header */}
-			<div className="flex-none px-6 pt-6 pb-4 border-b border-zinc-800 bg-[#0f0f0f]">
+			<div className="flex-none px-4 sm:px-6 pt-4 sm:pt-6 pb-3 sm:pb-4 border-b border-zinc-800 bg-[#0f0f0f]">
 				{/* Back Navigation */}
 				<Link
 					href="/"
-					className="inline-flex items-center gap-2 text-sm text-zinc-400 hover:text-zinc-200 transition-colors mb-4"
+					className="inline-flex items-center gap-2 text-xs sm:text-sm text-zinc-400 hover:text-zinc-200 transition-colors mb-3 sm:mb-4"
 				>
-					<ArrowLeft className="w-4 h-4" />
+					<ArrowLeft className="w-3 h-3 sm:w-4 sm:h-4" />
 					Back to Decks
 				</Link>
 
 				{/* Deck Info */}
-				<div className="flex items-center justify-between">
-					<div className="flex items-center gap-4">
+				<div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 sm:gap-0">
+					<div className="flex items-center gap-2 sm:gap-4">
 						<div>
-							<h1 className="text-xl font-semibold text-zinc-50">
+							<h1 className="text-lg sm:text-xl font-semibold text-zinc-50">
 								{deck.name}
 							</h1>
-							<div className="flex items-center gap-4 mt-1 text-sm text-zinc-500">
+							<div className="flex flex-wrap items-center gap-2 sm:gap-4 mt-1 text-xs sm:text-sm text-zinc-500">
 								<div className="flex items-center gap-1">
-									<Layers className="w-4 h-4" />
+									<Layers className="w-3 h-3 sm:w-4 sm:h-4" />
 									<span>{deck.category}</span>
 								</div>
 								<div className="flex items-center gap-1">
-									<BookOpen className="w-4 h-4" />
+									<BookOpen className="w-3 h-3 sm:w-4 sm:h-4" />
 									<span>
 										{currentCardIndex + 1} / {deck.cards.length}
 									</span>
@@ -115,14 +115,14 @@ export function DeckStudyPage({ deck }: DeckStudyPageProps) {
 							</div>
 						</div>
 					</div>
-					<span className={`text-sm font-medium ${difficultyColor}`}>
+					<span className={`text-xs sm:text-sm font-medium ${difficultyColor}`}>
 						{deckDifficulty}
 					</span>
 				</div>
 
 				{/* Progress Bar */}
-				<div className="mt-4 flex items-center gap-3">
-					<div className="flex-1 h-2 bg-zinc-800 rounded-full overflow-hidden">
+				<div className="mt-3 sm:mt-4 flex items-center gap-2 sm:gap-3">
+					<div className="flex-1 h-1.5 sm:h-2 bg-zinc-800 rounded-full overflow-hidden">
 						<div
 							className="h-full bg-gradient-to-r from-emerald-500 to-teal-400 transition-all duration-300"
 							style={{
@@ -130,7 +130,7 @@ export function DeckStudyPage({ deck }: DeckStudyPageProps) {
 							}}
 						/>
 					</div>
-					<span className="text-sm text-zinc-500 min-w-[3rem] text-right">
+					<span className="text-xs sm:text-sm text-zinc-500 min-w-[2.5rem] sm:min-w-[3rem] text-right">
 						{Math.round(((currentCardIndex + 1) / deck.cards.length) * 100)}%
 					</span>
 				</div>
@@ -142,35 +142,35 @@ export function DeckStudyPage({ deck }: DeckStudyPageProps) {
 				className="flex-1 overflow-y-auto snap-y snap-mandatory scroll-smooth"
 				style={{ scrollPaddingTop: "0px" }}
 			>
-				<div className="max-w-3xl mx-auto px-6 pb-24">
+				<div className="max-w-3xl mx-auto px-4 sm:px-6 pb-20 sm:pb-24">
 					{deck.cards.map((card, index) => (
 						<div
 							key={card.id}
 							ref={(el) => {
 								cardRefs.current[index] = el;
 							}}
-							className="snap-start min-h-[calc(100vh-200px)] flex flex-col justify-center py-8"
+							className="snap-start min-h-[calc(100vh-180px)] sm:min-h-[calc(100vh-200px)] flex flex-col justify-center py-4 sm:py-8"
 						>
 							{/* Card Number */}
-							<div className="text-center mb-6">
-								<span className="inline-flex items-center justify-center w-10 h-10 bg-zinc-800 border border-zinc-700 rounded-full text-sm font-medium text-zinc-400">
+							<div className="text-center mb-4 sm:mb-6">
+								<span className="inline-flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 bg-zinc-800 border border-zinc-700 rounded-full text-xs sm:text-sm font-medium text-zinc-400">
 									{index + 1}
 								</span>
 							</div>
 
 							{/* Flashcard */}
-							<div className="flex justify-center">
+							<div className="flex justify-center px-2 sm:px-0">
 								<Flashcard
 									question={card.question}
 									answer={card.answer}
 									category={card.category}
 									difficulty={card.difficulty}
-									className="h-[60vh] max-w-2xl w-full"
+									className="h-[50vh] sm:h-[60vh] max-w-2xl w-full"
 								/>
 							</div>
 
 							{/* Card Navigation Hint */}
-							<div className="text-center mt-6 text-sm text-zinc-600">
+							<div className="text-center mt-4 sm:mt-6 text-xs sm:text-sm text-zinc-600">
 								{index < deck.cards.length - 1 ? (
 									<span>Scroll down or press Space/↓ for next card</span>
 								) : (
@@ -185,28 +185,28 @@ export function DeckStudyPage({ deck }: DeckStudyPageProps) {
 			</div>
 
 			{/* Fixed Footer Navigation */}
-			<div className="flex-none px-6 py-4 border-t border-zinc-800 bg-[#0f0f0f] flex items-center justify-between">
+			<div className="flex-none px-4 sm:px-6 py-3 sm:py-4 border-t border-zinc-800 bg-[#0f0f0f] flex items-center justify-between gap-2 sm:gap-0">
 				<button
 					type="button"
 					onClick={goToPreviousCard}
 					disabled={currentCardIndex === 0}
-					className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-zinc-300 bg-zinc-800 rounded-lg hover:bg-zinc-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+					className="flex items-center gap-1 sm:gap-2 px-3 sm:px-4 py-2.5 sm:py-2 text-sm font-medium text-zinc-300 bg-zinc-800 rounded-lg hover:bg-zinc-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors touch-manipulation"
 				>
 					<ArrowLeft className="w-4 h-4" />
-					Previous
+					<span className="hidden sm:inline">Previous</span>
 				</button>
 
-				<div className="text-sm text-zinc-500">
-					Card {currentCardIndex + 1} of {deck.cards.length}
+				<div className="text-xs sm:text-sm text-zinc-500 whitespace-nowrap">
+					Card {currentCardIndex + 1} / {deck.cards.length}
 				</div>
 
 				<button
 					type="button"
 					onClick={goToNextCard}
 					disabled={currentCardIndex === deck.cards.length - 1}
-					className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-zinc-900 bg-emerald-400 rounded-lg hover:bg-emerald-300 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+					className="flex items-center gap-1 sm:gap-2 px-3 sm:px-4 py-2.5 sm:py-2 text-sm font-medium text-zinc-900 bg-emerald-400 rounded-lg hover:bg-emerald-300 disabled:opacity-50 disabled:cursor-not-allowed transition-colors touch-manipulation"
 				>
-					Next
+					<span className="hidden sm:inline">Next</span>
 					<ArrowRight className="w-4 h-4" />
 				</button>
 			</div>
