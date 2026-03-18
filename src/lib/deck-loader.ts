@@ -6,6 +6,15 @@ import type {
 	FlashcardStatus,
 } from "@/types/flashcard";
 
+// Only import fs/path on server side
+let fs: typeof import("fs") | null = null;
+let path: typeof import("path") | null = null;
+
+if (typeof window === "undefined") {
+	fs = require("fs");
+	path = require("path");
+}
+
 // Raw JSON types (dates are strings, status is optional)
 interface RawFlashcard {
 	id: string;
@@ -24,12 +33,6 @@ interface RawFlashcardDeck {
 	cards: RawFlashcard[];
 }
 
-import backendJson from "@/data/decks/backend.json";
-import behavioralJson from "@/data/decks/behavioral.json";
-// Import raw deck data
-import frontendJson from "@/data/decks/frontend.json";
-import systemDesignJson from "@/data/decks/system-design.json";
-
 // Valid categories according to FlashcardCategory type
 const VALID_CATEGORIES: FlashcardCategory[] = [
 	"frontend",
@@ -38,6 +41,8 @@ const VALID_CATEGORIES: FlashcardCategory[] = [
 	"behavioral",
 	"algorithms",
 	"data-structures",
+	"css",
+	"accessibility",
 ];
 
 /**
@@ -60,6 +65,9 @@ function mapCategory(category: string, deckId: string): FlashcardCategory {
 		"soft-skills": "behavioral",
 		language: "frontend",
 		"cs-fundamentals": "algorithms",
+		css: "css",
+		wcag: "accessibility",
+		accessibility: "accessibility",
 	};
 
 	if (categoryMap[normalized]) {
@@ -69,6 +77,15 @@ function mapCategory(category: string, deckId: string): FlashcardCategory {
 	// Try to match by deck id
 	if (VALID_CATEGORIES.includes(deckId as FlashcardCategory)) {
 		return deckId as FlashcardCategory;
+	}
+
+	// Extract category from deck id (e.g., "deck-css" -> "css")
+	const idMatch = deckId.match(/deck-(.+)/);
+	if (idMatch) {
+		const extractedCategory = idMatch[1].toLowerCase();
+		if (VALID_CATEGORIES.includes(extractedCategory as FlashcardCategory)) {
+			return extractedCategory as FlashcardCategory;
+		}
 	}
 
 	// Default fallback
@@ -133,12 +150,31 @@ function loadDecks(): FlashcardDeck[] {
 		return decksCache;
 	}
 
-	const rawDecks: RawFlashcardDeck[] = [
-		frontendJson as RawFlashcardDeck,
-		backendJson as RawFlashcardDeck,
-		systemDesignJson as RawFlashcardDeck,
-		behavioralJson as RawFlashcardDeck,
-	];
+	// On client side, return empty array
+	if (!fs || !path) {
+		return [];
+	}
+
+	// Get the directory path (works in both dev and prod)
+	const dataDir = path.join(process.cwd(), "src", "data");
+
+	// Read all JSON files from the data directory (excluding extracted folder)
+	const jsonFiles = fs.readdirSync(dataDir).filter((file) => {
+		return file.endsWith(".json") && !file.includes("extracted");
+	});
+
+	const rawDecks: RawFlashcardDeck[] = [];
+
+	for (const file of jsonFiles) {
+		const filePath = path.join(dataDir, file);
+		try {
+			const fileContent = fs.readFileSync(filePath, "utf-8");
+			const jsonData = JSON.parse(fileContent) as RawFlashcardDeck;
+			rawDecks.push(jsonData);
+		} catch (error) {
+			console.error(`Error loading deck from ${file}:`, error);
+		}
+	}
 
 	decksCache = rawDecks.map(transformRawDeck);
 	return decksCache;
