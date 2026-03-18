@@ -1,0 +1,236 @@
+{
+  "id": "deck-typescript",
+  "name": "TypeScript",
+  "description": "Flashcards om TypeScript och programmering baserat på schema-vecka",
+  "category": "backend",
+  "cards": [
+    {
+      "id": "typescript-027",
+      "question": "Vad är TypeScript?",
+      "answer": "TypeScript är ett programmeringsspråk som bygger på JavaScript och lägger till statisk typning för bättre kodkvalitet.",
+      "category": "backend",
+      "difficulty": "easy",
+      "tags": [
+        "typescript",
+        "javascript",
+        "programming"
+      ],
+      "status": "new",
+      "createdAt": "2026-03-18T13:42:51.290Z",
+      "updatedAt": "2026-03-18T13:42:51.290Z"
+    },
+    {
+      "id": "typescript-028",
+      "question": "Vad är ett interface i TypeScript?",
+      "answer": "Ett interface definierar strukturen av ett objekt, vilket låter dig beskriva vilka properties och metoder ett objekt ska ha.",
+      "category": "backend",
+      "difficulty": "medium",
+      "tags": [
+        "typescript",
+        "interfaces",
+        "types"
+      ],
+      "status": "new",
+      "createdAt": "2026-03-18T13:42:51.290Z",
+      "updatedAt": "2026-03-18T13:42:51.290Z"
+    },
+    {
+      "id": "typescript-029",
+      "question": "Vad är en generic i TypeScript?",
+      "answer": "En generic låter dig skapa återanvändbara komponenter och funktioner som kan fungera med olika typer.",
+      "category": "backend",
+      "difficulty": "hard",
+      "tags": [
+        "typescript",
+        "generics",
+        "types"
+      ],
+      "status": "new",
+      "createdAt": "2026-03-18T13:42:51.290Z",
+      "updatedAt": "2026-03-18T13:42:51.290Z"
+    },
+    {
+      "id": "typescript-030",
+      "question": "Vad är destructuring?",
+      "answer": "Destructuring är ett sätt att extrahera värden från objekt eller arrayer till separata variabler.",
+      "category": "backend",
+      "difficulty": "easy",
+      "tags": [
+        "javascript",
+        "destructuring",
+        "syntax"
+      ],
+      "status": "new",
+      "createdAt": "2026-03-18T13:42:51.290Z",
+      "updatedAt": "2026-03-18T13:42:51.290Z"
+    },
+    {
+      "id": "typescript-031",
+      "question": "Vad är en modul i TypeScript?",
+      "answer": "En modul är ett sätt att organisera kod i separata filer som kan importeras och exporteras mellan varandra.",
+      "category": "backend",
+      "difficulty": "medium",
+      "tags": [
+        "typescript",
+        "modules",
+        "imports"
+      ],
+      "status": "new",
+      "createdAt": "2026-03-18T13:42:51.290Z",
+      "updatedAt": "2026-03-18T13:42:51.290Z"
+    },
+    {
+      "id": "typescript-032",
+      "question": "Vad är DOM manipulation?",
+      "answer": "DOM manipulation är processen att ändra HTML-dokumentets struktur, stil och innehåll med JavaScript.",
+      "category": "frontend",
+      "difficulty": "medium",
+      "tags": [
+        "javascript",
+        "dom",
+        "manipulation"
+      ],
+      "status": "new",
+      "createdAt": "2026-03-18T13:42:51.290Z",
+      "updatedAt": "2026-03-18T13:42:51.290Z"
+    },
+    {
+      "id": "typescript-033",
+      "question": "Vad är event delegation?",
+      "answer": "Event delegation är en teknik där man sätter en event listener på en förälder för att hantera händelser på barn-element effektivt.",
+      "category": "frontend",
+      "difficulty": "medium",
+      "tags": [
+        "javascript",
+        "events",
+        "delegation"
+      ],
+      "status": "new",
+      "createdAt": "2026-03-18T13:42:51.290Z",
+      "updatedAt": "2026-03-18T13:42:51.290Z"
+    },
+    {
+      "id": "typescript-034",
+      "question": "Vad är local storage?",
+      "answer": "Local storage är ett web API som låter dig spara data i webbläsaren som kvarstår efter att sidan stängs.",
+      "category": "frontend",
+      "difficulty": "easy",
+      "tags": [
+        "javascript",
+        "storage",
+        "browser"
+      ],
+      "status": "new",
+      "createdAt": "2026-03-18T13:42:51.290Z",
+      "updatedAt": "2026-03-18T13:42:51.290Z"
+    },
+    {
+      "id": "typescript-035",
+      "question": "Vad är en arrow function?",
+      "answer": "En arrow function är en kortare syntax för att definiera funktioner i JavaScript, ofta med implicit return.",
+      "category": "backend",
+      "difficulty": "easy",
+      "tags": [
+        "javascript",
+        "functions",
+        "syntax"
+      ],
+      "status": "new",
+      "createdAt": "2026-03-18T13:42:51.290Z",
+      "updatedAt": "2026-03-18T13:42:51.290Z"
+    },
+    {
+      "id": "typescript-036",
+      "question": "Vad är en callback function?",
+      "answer": "En callback function är en funktion som skickas som argument till en annan funktion och körs när ett specifikt event inträffar.",
+      "category": "backend",
+      "difficulty": "medium",
+      "tags": [
+        "javascript",
+        "callbacks",
+        "functions"
+      ],
+      "status": "new",
+      "createdAt": "2026-03-18T13:42:51.290Z",
+      "updatedAt": "2026-03-18T13:42:51.290Z"
+    },
+    {
+      "id": "typescript-037",
+      "question": "Vad är en datatyp i TypeScript?",
+      "answer": "En datatyp definierar vilket slags värde en variabel kan hålla, t.ex. string, number, boolean, object.",
+      "category": "backend",
+      "difficulty": "easy",
+      "tags": [
+        "typescript",
+        "datatyper",
+        "variabler"
+      ],
+      "status": "new",
+      "createdAt": "2026-03-18T13:42:51.290Z",
+      "updatedAt": "2026-03-18T13:42:51.290Z"
+    },
+    {
+      "id": "typescript-038",
+      "question": "Vad är en array i TypeScript?",
+      "answer": "En array är en samling av värden av samma typ, som kan nås med ett index.",
+      "category": "backend",
+      "difficulty": "easy",
+      "tags": [
+        "typescript",
+        "arrays",
+        "collections"
+      ],
+      "status": "new",
+      "createdAt": "2026-03-18T13:42:51.290Z",
+      "updatedAt": "2026-03-18T13:42:51.290Z"
+    },
+    {
+      "id": "typescript-039",
+      "question": "Vad är en loop i TypeScript?",
+      "answer": "En loop är en kontrollstruktur som upprepar kod tills ett villkor är uppfyllt, t.ex. for, while, for...of.",
+      "category": "backend",
+      "difficulty": "easy",
+      "tags": [
+        "typescript",
+        "loops",
+        "control-structures"
+      ],
+      "status": "new",
+      "createdAt": "2026-03-18T13:42:51.290Z",
+      "updatedAt": "2026-03-18T13:42:51.290Z"
+    },
+    {
+      "id": "typescript-040",
+      "question": "Vad är en villkorssats?",
+      "answer": "En villkorssats är en kontrollstruktur som utför kod baserat på om ett villkor är sant eller falskt, t.ex. if/else.",
+      "category": "backend",
+      "difficulty": "easy",
+      "tags": [
+        "typescript",
+        "conditionals",
+        "control-structures"
+      ],
+      "status": "new",
+      "createdAt": "2026-03-18T13:42:51.290Z",
+      "updatedAt": "2026-03-18T13:42:51.290Z"
+    },
+    {
+      "id": "typescript-041",
+      "question": "Vad är en funktion i TypeScript?",
+      "answer": "En funktion är en återanvändbar kodblock som kan ta parametrar och returnera ett värde.",
+      "category": "backend",
+      "difficulty": "easy",
+      "tags": [
+        "typescript",
+        "functions",
+        "programming"
+      ],
+      "status": "new",
+      "createdAt": "2026-03-18T13:42:51.290Z",
+      "updatedAt": "2026-03-18T13:42:51.290Z"
+    }
+  ],
+  "cardCount": 15,
+  "createdAt": "2026-03-18T13:42:51.290Z",
+  "updatedAt": "2026-03-18T13:42:51.290Z"
+}
