@@ -108,6 +108,128 @@
 			"answer": "ORM (Object-Relational Mapping) maps database tables to code objects. Pros: faster development, abstraction, security (SQL injection prevention). Cons: performance overhead, less control over queries, potential for N+1 query problems. Examples: Sequelize, TypeORM, Prisma, Entity Framework.",
 			"difficulty": "medium",
 			"tags": ["orm", "database", "abstraction"]
+		},
+		{
+			"id": "be-016",
+			"question": "What is a message queue?",
+			"answer": "A message queue is a form of asynchronous service-to-service communication used in serverless and microservices architectures. Messages are stored on the queue until they are processed and deleted. Examples: RabbitMQ, Apache Kafka, Amazon SQS.",
+			"difficulty": "medium",
+			"tags": ["architecture", "microservices", "async"]
+		},
+		{
+			"id": "be-017",
+			"question": "What is horizontal vs vertical scaling?",
+			"answer": "Vertical scaling (scaling up) means adding more resources (CPU, RAM) to a single server. Horizontal scaling (scaling out) means adding more servers to your pool of resources. Horizontal scaling is generally more resilient and provides better availability.",
+			"difficulty": "easy",
+			"tags": ["scalability", "architecture", "cloud"]
+		},
+		{
+			"id": "be-018",
+			"question": "What is the N+1 query problem?",
+			"answer": "The N+1 query problem occurs when an application makes N additional database queries to fetch related data for each of the N results returned by an initial query. It can significantly degrade performance and is often solved by using 'eager loading' (JOINs).",
+			"difficulty": "hard",
+			"tags": ["performance", "database", "orm"]
+		},
+		{
+			"id": "be-019",
+			"question": "What is the purpose of a reverse proxy?",
+			"answer": "A reverse proxy (like Nginx or HAProxy) sits in front of web servers and forwards client requests to those servers. It's used for load balancing, security, SSL termination, and caching. It hides the identity and characteristics of the backend servers.",
+			"difficulty": "medium",
+			"tags": ["architecture", "security", "infrastructure"]
+		},
+		{
+			"id": "be-020",
+			"question": "Explain WebSockets and when to use them.",
+			"answer": "WebSockets provide a full-duplex, persistent communication channel over a single TCP connection. Unlike HTTP, it allows the server to push data to the client in real-time. Use for chat apps, live sports updates, or collaborative editing tools.",
+			"difficulty": "medium",
+			"tags": ["real-time", "networking", "api"]
+		},
+		{
+			"id": "be-021",
+			"question": "What is a CDN (Content Delivery Network)?",
+			"answer": "A CDN is a geographically distributed group of servers that work together to provide fast delivery of Internet content. It caches static assets (images, JS, CSS) at edge locations close to users to reduce latency and origin server load.",
+			"difficulty": "easy",
+			"tags": ["performance", "infrastructure", "latency"]
+		},
+		{
+			"id": "be-022",
+			"question": "What is Eventual Consistency?",
+			"answer": "Eventual consistency is a consistency model used in distributed computing that informally guarantees that, if no new updates are made to a given data item, eventually all accesses to that item will return the last updated value. Common in NoSQL databases.",
+			"difficulty": "hard",
+			"tags": ["distributed-systems", "database", "consistency"]
+		},
+		{
+			"id": "be-023",
+			"question": "What is a Deadlock in a database?",
+			"answer": "A deadlock is a situation where two or more transactions are waiting for each other to release locks, creating a cycle where none can proceed. Databases usually detect this and abort one of the transactions to break the cycle.",
+			"difficulty": "hard",
+			"tags": ["database", "transactions", "concurrency"]
+		},
+		{
+			"id": "be-024",
+			"question": "What is Serverless computing?",
+			"answer": "Serverless (like AWS Lambda) is a cloud computing model where the provider manages the server infrastructure and automatically scales resources based on demand. Developers only write code (functions) and pay for the actual execution time.",
+			"difficulty": "medium",
+			"tags": ["cloud", "architecture", "serverless"]
+		},
+		{
+			"id": "be-025",
+			"question": "What is the purpose of a Docker container?",
+			"answer": "Docker containers package an application and all its dependencies (libraries, config files) into a single standardized unit. This ensures the app runs consistently across different environments, from a developer's laptop to production.",
+			"difficulty": "medium",
+			"tags": ["devops", "containers", "infrastructure"]
+		},
+		{
+			"id": "be-026",
+			"question": "What is Idempotency in API design?",
+			"answer": "An idempotent operation is one that has no additional effect if it's called more than once with the same input parameters. In REST, GET, PUT, and DELETE are designed to be idempotent, while POST is typically not.",
+			"difficulty": "hard",
+			"tags": ["api", "design", "rest"]
+		},
+		{
+			"id": "be-027",
+			"question": "What is a Bloom Filter?",
+			"answer": "A Bloom filter is a space-efficient probabilistic data structure used to test whether an element is a member of a set. It can yield false positives but never false negatives. Often used in databases to avoid unnecessary disk lookups.",
+			"difficulty": "hard",
+			"tags": ["data-structures", "performance", "database"]
+		},
+		{
+			"id": "be-028",
+			"question": "What is Database Sharding?",
+			"answer": "Sharding is a type of horizontal scaling that involves splitting a large database into smaller, faster, more easily managed parts called shards. Each shard is held on a separate database server instance to spread the load.",
+			"difficulty": "hard",
+			"tags": ["database", "scalability", "architecture"]
+		},
+		{
+			"id": "be-029",
+			"question": "What is the difference between a Task Queue and a Message Queue?",
+			"answer": "A Message Queue just stores messages for consumption. A Task Queue (like Celery) is built on top of a message queue and manages the execution of background jobs, handling retries, scheduling, and result tracking.",
+			"difficulty": "medium",
+			"tags": ["architecture", "async", "backend"]
+		},
+		{
+			"id": "be-030",
+			"question": "Explain gRPC vs REST.",
+			"answer": "gRPC uses Protocol Buffers (binary) and HTTP/2 for higher performance, bi-directional streaming, and contract-first development. REST uses JSON (text) and HTTP/1.1, is more widely compatible, easier to debug, and ubiquitous in web development.",
+			"difficulty": "hard",
+			"tags": ["api", "grpc", "rest"]
+		},
+		{
+			"id": "be-031",
+			"question": "What is a Foreign Key?",
+			"answer": "A foreign key is a column or group of columns in a relational database table that provides a link between data in two tables. It acts as a cross-reference between tables because it references the primary key of another table.",
+			"difficulty": "easy",
+			"tags": ["database", "relational", "sql"]
+		},
+		{
+			"id": "be-032",
+			"question": "What is blue-green deployment?",
+			"answer": "Blue-green deployment is a technique that reduces downtime and risk by running two identical production environments. Only one (Green) is live at a time. New code is deployed to Blue, tested, and then traffic is switched from Green to Blue.",
+			"difficulty": "medium",
+			"tags": ["devops", "deployment", "infrastructure"]
 		}
-	]
+	],
+	"cardCount": 32,
+	"createdAt": "2026-03-18T13:42:51.290Z",
+	"updatedAt": "2026-03-18T13:42:51.290Z"
 }

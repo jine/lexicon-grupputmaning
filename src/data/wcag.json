@@ -40,7 +40,7 @@
 		{
 			"id": "wcag-004",
 			"question": "Vad betyder WCAG Nivå A, AA och AAA?",
-			"answer": "Det är tre konformitetsnivåer. A är grundläggande krav, AA är den vanligaste standarden (rekommenderad), AAA är högsta nivån (strengast).",
+			"answer": "Det är tre konformitetsnivåer. A är grundläggande krav, AA är den vanligaste standarden (rekommenderad), AAA är högsta nivån (strängast).",
 			"category": "frontend",
 			"difficulty": "easy",
 			"tags": ["wcag", "levels", "conformance"],
@@ -73,7 +73,7 @@
 		{
 			"id": "wcag-007",
 			"question": "Vad är WCAG 1.1.1 Non-text Content?",
-			"answer": "Allt icke-textinnehåll (bilder, ikoner, grafik) måste ha ett textalternativ som ger samma funktion eller information som originalinnehållet.",
+			"answer": "Allt icke-textinnehåll (bilder, ikoner, grafik) must ha ett textalternativ som ger samma funktion eller information som originalinnehållet.",
 			"category": "frontend",
 			"difficulty": "easy",
 			"tags": ["wcag", "non-text", "images"],
@@ -106,7 +106,7 @@
 		{
 			"id": "wcag-010",
 			"question": "Vad är WCAG 1.3.1 Info and Relationships?",
-			"answer": "Information, struktur och relationer i innehåll måste kunna bestämas av programvara. Använd rätt HTML-element och semantic markup.",
+			"answer": "Information, struktur och relationer i innehåll måste kunna bestämmas programmatiskt. Använd rätt HTML-element och semantisk kodning.",
 			"category": "accessibility",
 			"difficulty": "medium",
 			"tags": ["wcag", "semantic", "structure"],
@@ -117,7 +117,7 @@
 		{
 			"id": "wcag-011",
 			"question": "Vad är WCAG 4.1.2 Name, Role, Value?",
-			"answer": "Alla UI-komponenter måste ha ett namn och roll som kan bestämmas av programvara. Använd rätt HTML-element och ARIA-attribut om nödvändigt.",
+			"answer": "Alla UI-komponenter måste ha ett namn och roll som kan bestämmas programmatiskt. Använd rätt HTML-element och ARIA-attribut om nödvändigt.",
 			"category": "accessibility",
 			"difficulty": "medium",
 			"tags": ["wcag", "aria", "components"],
@@ -150,7 +150,7 @@
 		{
 			"id": "wcag-014",
 			"question": "Vad är WCAG 1.4.10 Reflow?",
-			"answer": "Innehåll måste visas utan att kräva horizontell scrolling när viewport är 320x256 pixlar. Detta gäller för responsiv design.",
+			"answer": "Innehåll måste visas utan att kräva horisontell scrollning när fönstret skalas ner till en liten bredd (320px). Detta är viktigt för responsivitet.",
 			"category": "accessibility",
 			"difficulty": "medium",
 			"tags": ["wcag", "reflow", "responsive"],
@@ -161,7 +161,7 @@
 		{
 			"id": "wcag-015",
 			"question": "Vad är WCAG 1.4.12 Text Spacing?",
-			"answer": "Innehåll måste vara läsbart när användare ändrar textavstånd, radhöjd, teckenavstånd eller ordavstånd utan att förlora innehåll eller funktionalitet.",
+			"answer": "Innehåll måste vara läsbart även när användare ändrar radhöjd, teckenavstånd eller ordavstånd manuellt via webbläsaren.",
 			"category": "accessibility",
 			"difficulty": "medium",
 			"tags": ["wcag", "text-spacing", "typography"],
@@ -172,7 +172,7 @@
 		{
 			"id": "wcag-016",
 			"question": "Vad är WCAG 2.5.3 Label in Name?",
-			"answer": "Om ett UI-element har en synlig etikett, måste den texten finnas i elementets accessible name. Detta hjälper röststyrda kommandon.",
+			"answer": "Om ett UI-element har en synlig text-etikett, måste den texten också finnas med i elementets programmatiska namn (accessible name).",
 			"category": "accessibility",
 			"difficulty": "medium",
 			"tags": ["wcag", "label", "forms"],
@@ -183,7 +183,7 @@
 		{
 			"id": "wcag-017",
 			"question": "Vad är WCAG 3.3.2 Labels or Instructions?",
-			"answer": "För varje inmatningsfält som kräver användarinmatning, finns det en tydlig etikett eller instruktion. Använd <label> med for-attribut.",
+			"answer": "För varje fält som kräver inmatning måste det finnas en tydlig etikett eller instruktion. Använd HTML-etiketten <label> med for-attributet.",
 			"category": "frontend",
 			"difficulty": "easy",
 			"tags": ["wcag", "labels", "forms"],
@@ -194,7 +194,7 @@
 		{
 			"id": "wcag-018",
 			"question": "Vad är WCAG 2.4.6 Headings and Labels?",
-			"answer": "Sidrubriker och etiketter måste beskriva innehållet eller ämnet tydligt och konsekvent för att hjälpa användare att navigera och förstå.",
+			"answer": "Sidrubriker och etiketter måste beskriva innehållet eller ämnet tydligt och konsekvent för att hjälpa användare att navigera rätt.",
 			"category": "frontend",
 			"difficulty": "easy",
 			"tags": ["wcag", "headings", "labels"],
@@ -205,7 +205,7 @@
 		{
 			"id": "wcag-019",
 			"question": "Vad är WCAG 3.2.3 Consistent Navigation?",
-			"answer": "Navigationsmetoder som upprepas på flera sidor måste vara konsekventa i sin placering och utseende för att underlätta användning.",
+			"answer": "Navigationslänkar som upprepas på flera sidor måste vara konsekventa i sin placering och ordning för att inte förvirra användaren.",
 			"category": "frontend",
 			"difficulty": "easy",
 			"tags": ["wcag", "navigation", "consistency"],
@@ -216,7 +216,7 @@
 		{
 			"id": "wcag-020",
 			"question": "Vad är WCAG 2.5.5 Target Size?",
-			"answer": "Målet (t.ex. knapp eller länk) måste vara minst 44x44 pixlar i storlek för att vara lätt att klicka på, speciellt på mobila enheter.",
+			"answer": "Målet för pekare (t.ex. knappar) ska vara tillräckligt stort (minst 44x44 CSS-pixlar) för att enkelt kunna aktiveras, även på små skärmar.",
 			"category": "frontend",
 			"difficulty": "easy",
 			"tags": ["wcag", "target-size", "interaction"],
@@ -227,7 +227,7 @@
 		{
 			"id": "wcag-021",
 			"question": "Vad är WCAG 1.4.11 Non-text Contrast?",
-			"answer": "Grafiska komponenter (som ikoner, graf eller grafer) måste ha minst 3:1 kontrast mot närliggande färger för att vara synliga.",
+			"answer": "Viktiga grafiska objekt (ikoner, grafer, fokusmarkeringar) måste ha en kontrast på minst 3:1 mot sina närliggande färger.",
 			"category": "accessibility",
 			"difficulty": "medium",
 			"tags": ["wcag", "contrast", "graphics"],
@@ -238,7 +238,7 @@
 		{
 			"id": "wcag-022",
 			"question": "Vad är WCAG 2.4.2 Page Titled?",
-			"answer": "Varje webbsida måste ha en titel som beskriver dess ämne eller syfte. Titeln visas i webbläsarfönstrets flik.",
+			"answer": "Varje webbsida måste ha en <title> som beskriver dess specifika ämne eller syfte tydligt, så att den kan särskiljas i flikar.",
 			"category": "frontend",
 			"difficulty": "easy",
 			"tags": ["wcag", "title", "html"],
@@ -249,7 +249,7 @@
 		{
 			"id": "wcag-023",
 			"question": "Vad är WCAG 3.1.1 Language of Page?",
-			"answer": "Den default språket för varje sida måste kunna bestämmas av programvara. Använd lang-attributet på html-elementet (t.ex. lang=\"sv\").",
+			"answer": "Huvudspråket på varje sida måste anges i koden via lang-attributet på <html> elementet (t.ex. <html lang=\"sv\">).",
 			"category": "frontend",
 			"difficulty": "easy",
 			"tags": ["wcag", "language", "html"],
@@ -260,7 +260,7 @@
 		{
 			"id": "wcag-024",
 			"question": "Vad är WCAG 2.1.2 No Keyboard Trap?",
-			"answer": "Om fokus kan placerats på ett element via tangentbord, måste det vara möjligt att förflytta fokus bort från det elementet med tangentbordet.",
+			"answer": "Om man kan flytta fokus till ett element med tangentbordet måste man också kunna flytta fokus därifrån på ett logiskt sätt med tangentbordet.",
 			"category": "accessibility",
 			"difficulty": "medium",
 			"tags": ["wcag", "keyboard", "focus"],
@@ -271,7 +271,7 @@
 		{
 			"id": "wcag-025",
 			"question": "Vad är WCAG 3.3.3 Error Suggestion?",
-			"answer": "Om ett inmatningsfel upptäcks (t.ex. ogiltig e-post), måste förslag ges för att hjälpa användaren att korrigera felet.",
+			"answer": "När ett inmatningsfel upptäcks ska systemet ge förslag på hur användaren kan korrigera felet, om dessa förslag är kända.",
 			"category": "accessibility",
 			"difficulty": "medium",
 			"tags": ["wcag", "error-handling", "forms"],
@@ -282,7 +282,7 @@
 		{
 			"id": "wcag-026",
 			"question": "Vad är WCAG 4.1.3 Status Message?",
-			"answer": "Statusmeddelanden (t.ex. 'Form submitted') som inte har fokus måste kunna presenteras för användare via assistiva teknologier.",
+			"answer": "Nya statusmeddelanden som inte har fokus måste kunna läsas upp av skärmläsare via ARIA-live regioner (t.ex. aria-live=\"polite\").",
 			"category": "accessibility",
 			"difficulty": "hard",
 			"tags": ["wcag", "status", "aria-live"],
@@ -292,8 +292,8 @@
 		},
 		{
 			"id": "wcag-027",
-			"question": "Vad är WCAG 2.4.4 Link Purpose?",
-			"answer": "Syftet med varje länk ska kunna bestämmas från länktexten ensam eller tillsammans med kontext, utan att behöva läsa hela sidan.",
+			"question": "Vad är WCAG 2.4.4 Link Purpose (In Context)?",
+			"answer": "Målet för varje länk ska kunna förstås antingen genom enbart länktexten eller genom texten tillsammans med länkens kontext.",
 			"category": "accessibility",
 			"difficulty": "easy",
 			"tags": ["wcag", "links", "navigation"],
@@ -304,7 +304,7 @@
 		{
 			"id": "wcag-028",
 			"question": "Vad är WCAG 3.1.2 Language of Parts?",
-			"answer": "Språket i varje textstycke eller fras ska kunna bestämmas, t.ex. genom lang-attribut på element som innehåller annat språk än standard.",
+			"answer": "Om en specifik del av en sida (t.ex. ett citat) är på ett annat språk än sidans huvudspråk ska detta anges programmatiskt.",
 			"category": "accessibility",
 			"difficulty": "medium",
 			"tags": ["wcag", "language", "internationalization"],
@@ -315,7 +315,7 @@
 		{
 			"id": "wcag-029",
 			"question": "Vad är WCAG 1.4.1 Use of Color?",
-			"answer": "Färg får inte vara det enda sättet att förmedla information. Använd också text, ikoner eller mönster som komplement.",
+			"answer": "Färg får inte vara det enda sättet att förmedla information, indikera en handling eller särskilja ett visuellt element.",
 			"category": "accessibility",
 			"difficulty": "easy",
 			"tags": ["wcag", "color", "design"],
@@ -325,8 +325,8 @@
 		},
 		{
 			"id": "wcag-030",
-			"question": "Vad är WCAG 2.2.1 Timeout?",
-			"answer": "Användare ska varnas om tidsbegränsningar och ges möjlighet att förlänga, om funktionalitet beror på tidsbegränsningar.",
+			"question": "Vad är WCAG 2.2.1 Timing Adjustable?",
+			"answer": "Användare som har tidsbegränsningar för sin interaktion ska ges möjlighet att stänga av, justera eller förlänga tidsgränsen.",
 			"category": "accessibility",
 			"difficulty": "medium",
 			"tags": ["wcag", "timeout", "session"],
@@ -337,7 +337,7 @@
 		{
 			"id": "wcag-031",
 			"question": "Vad är WCAG 2.4.5 Multiple Ways?",
-			"answer": "Det ska finnas mer än ett sätt att hitta en sida, t.ex. sökfunktion, navigationsmeny, innehållsförteckning eller site map.",
+			"answer": "Det ska finnas mer än ett sätt att hitta en sida inom en webbplats, t.ex. sökfunktion, navigationsmeny eller en sidkarta.",
 			"category": "accessibility",
 			"difficulty": "easy",
 			"tags": ["wcag", "navigation", "discovery"],
@@ -347,8 +347,8 @@
 		},
 		{
 			"id": "wcag-032",
-			"question": "Vad är WCAG 2.4.11 Focus Not Obscured?",
-			"answer": "När ett element är i fokus får det inte vara helt dolt av andra element på sidan.",
+			"question": "Vad är WCAG 2.4.11 Focus Not Obscured (Minimum)?",
+			"answer": "När ett element får fokus via tangentbordet får det inte vara helt dolt av andra element, som t.ex. en klistrad (sticky) footer.",
 			"category": "accessibility",
 			"difficulty": "medium",
 			"tags": ["wcag", "focus", "visibility"],
@@ -359,7 +359,7 @@
 		{
 			"id": "wcag-033",
 			"question": "Vad är WCAG 3.2.1 On Focus?",
-			"answer": "När ett UI-element får fokus ska det inte automatiskt ändra kontexten utan att användaren förstår vad som händer.",
+			"answer": "När en UI-komponent får fokus får detta inte automatiskt resultera i en kontextförändring (t.ex. att ett formulär skickas).",
 			"category": "accessibility",
 			"difficulty": "easy",
 			"tags": ["wcag", "focus", "behavior"],
@@ -370,7 +370,7 @@
 		{
 			"id": "wcag-034",
 			"question": "Vad är WCAG 3.2.2 On Input?",
-			"answer": "Att ändra inställningar eller inmatningsfält ska inte automatiskt ändra kontexten utan att användaren förstår det.",
+			"answer": "Att ändra en inställning i en UI-komponent (t.ex. välja i en dropdown) får inte automatiskt orsaka en oväntad kontextförändring.",
 			"category": "accessibility",
 			"difficulty": "easy",
 			"tags": ["wcag", "input", "behavior"],
@@ -381,7 +381,7 @@
 		{
 			"id": "wcag-035",
 			"question": "Vad är WCAG 3.3.1 Error Identification?",
-			"answer": "Inmatningsfel ska identifieras och beskrivas textuellt till användaren.",
+			"answer": "Inmatningsfel ska tydligt identifieras och beskrivas för användaren i textformat, inte bara genom röd färg.",
 			"category": "accessibility",
 			"difficulty": "easy",
 			"tags": ["wcag", "error", "forms"],
@@ -391,17 +391,171 @@
 		},
 		{
 			"id": "wcag-036",
-			"question": "Vad är WCAG 3.3.4 Error Prevention?",
-			"answer": "För transaktioner med juridiska eller finansiella konsekvenser ska data vara reversible, kontrollerbara eller bekräftas innan submission.",
+			"question": "Vad är WCAG 3.3.4 Error Prevention (Legal, Financial, Data)?",
+			"answer": "För sidor som orsakar juridiska eller finansiella förpliktelser måste det finnas möjlighet att granska, korrigera eller ångra data innan den skickas.",
 			"category": "accessibility",
 			"difficulty": "medium",
 			"tags": ["wcag", "error-prevention", "forms"],
 			"status": "new",
 			"createdAt": "2026-03-18T13:42:51.290Z",
 			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "wcag-037",
+			"question": "Vad är WCAG 2.1.4 Character Key Shortcuts?",
+			"answer": "Om en sajt har kortkommandon med enbart enstaka tecken måste användaren kunna stänga av eller ändra dessa för att undvika oavsiktlig aktivering.",
+			"category": "accessibility",
+			"difficulty": "medium",
+			"tags": ["wcag", "keyboard", "shortcuts"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "wcag-038",
+			"question": "Vad är skillnaden mellan 'title' och 'aria-label'?",
+			"answer": "'title' skapar en tooltip vid hovring och läses av vissa skärmläsare. 'aria-label' tillhandahåller en osynlig etikett som enbart är till för assistiv teknologi.",
+			"category": "accessibility",
+			"difficulty": "medium",
+			"tags": ["a11y", "aria", "html"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "wcag-039",
+			"question": "Vad är 'Focus Order' i tillgänglighetssammanhang?",
+			"answer": "Focus order är den ordning som element får fokus vid navigering med Tab-tangenten. Den bör vara logisk och följa den visuella layouten (oftast uppifrån och ner, vänster till höger).",
+			"category": "accessibility",
+			"difficulty": "easy",
+			"tags": ["a11y", "keyboard", "navigation"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "wcag-040",
+			"question": "Vad är en 'Screen Reader' (Skärmläsare)?",
+			"answer": "En skärmläsare är en programvara (t.ex. NVDA eller VoiceOver) som läser upp text och beskriver gränssnittselement för personer med synnedsättning.",
+			"category": "accessibility",
+			"difficulty": "easy",
+			"tags": ["a11y", "tools", "assistive-tech"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "wcag-041",
+			"question": "Vad innebär 'Captions' (Undertexter) enligt WCAG?",
+			"answer": "Undertexter måste tillhandahållas för allt förinspelat ljudinnehåll i synkroniserad media, för att hjälpa personer som är döva eller hörselskadade.",
+			"category": "accessibility",
+			"difficulty": "medium",
+			"tags": ["wcag", "media", "captions"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "wcag-042",
+			"question": "Vad är 'Audio Description' (Syntolkning)?",
+			"answer": "Syntolkning är ett extra ljudspår som beskriver viktig visuell information i en video (t.ex. handling eller miljö) för personer med synnedsättning.",
+			"category": "accessibility",
+			"difficulty": "hard",
+			"tags": ["wcag", "media", "video"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "wcag-043",
+			"question": "Vad är skillnaden mellan WCAG 2.1 och 2.2?",
+			"answer": "WCAG 2.2 är en uppdatering som lägger till nio nya kriterier, bland annat för att förbättra tillgängligheten för personer med kognitiva funktionsnedsättningar och för mobilanvändare.",
+			"category": "accessibility",
+			"difficulty": "hard",
+			"tags": ["wcag", "standards", "evolution"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "wcag-044",
+			"question": "Vad är 'Aria-hidden'?",
+			"answer": "Attributet aria-hidden=\"true\" används för att dölja ett element och alla dess barn för assistiv teknologi (skärmläsare), även om de är visuellt synliga.",
+			"category": "accessibility",
+			"difficulty": "medium",
+			"tags": ["a11y", "aria", "semantic"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "wcag-045",
+			"question": "Vad är en 'Landmark' i ARIA?",
+			"answer": "Landmarks (t.ex. role=\"main\", role=\"navigation\") hjälper skärmläsaranvändare att snabbt navigera mellan stora sektioner av en webbsida.",
+			"category": "accessibility",
+			"difficulty": "medium",
+			"tags": ["a11y", "aria", "navigation"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "wcag-046",
+			"question": "Vad är 'Focus Trapping'?",
+			"answer": "Focus trapping innebär att man begränsar tangentbordsfokus till en viss del av sidan, t.ex. en öppen modal, så att användaren inte av misstag kan tabba ut till bakomliggande innehåll.",
+			"category": "accessibility",
+			"difficulty": "hard",
+			"tags": ["a11y", "keyboard", "ux"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "wcag-047",
+			"question": "Vad innebär 'Meaningful Sequence'?",
+			"answer": "Innehåll ska presenteras i en ordning som bevarar dess mening, vilket är viktigt när CSS-layout ändrar den visuella ordningen jämfört med källkodsordningen.",
+			"category": "accessibility",
+			"difficulty": "medium",
+			"tags": ["wcag", "structure", "navigation"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "wcag-048",
+			"question": "Vad är 'Focus Ring'?",
+			"answer": "En focus ring är den visuella indikator (ofta en blå ram) som visas runt det element som för tillfället har tangentbordsfokus. Den får aldrig tas bort utan att ersättas med något annat tydligt.",
+			"category": "frontend",
+			"difficulty": "easy",
+			"tags": ["a11y", "css", "focus"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "wcag-049",
+			"question": "Vad är skillnaden mellan 'alt=\"\"' och att utelämna alt-attributet?",
+			"answer": "alt=\"\" (tomt alt) berättar för skärmläsaren att bilden är dekorativ och ska ignoreras. Om attributet saknas helt kan skärmläsaren istället läsa upp filnamnet, vilket stör användaren.",
+			"category": "frontend",
+			"difficulty": "medium",
+			"tags": ["a11y", "html", "images"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "wcag-050",
+			"question": "Vad är 'Cognitive Accessibility'?",
+			"answer": "Det handlar om att göra webben användbar för personer med kognitiva funktionsnedsättningar (t.ex. ADHD, dyslexi eller minnessvårigheter) genom enkel design, tydligt språk och konsekvens.",
+			"category": "accessibility",
+			"difficulty": "medium",
+			"tags": ["wcag", "ux", "inclusion"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
 		}
 	],
-	"cardCount": 37,
+	"cardCount": 50,
 	"createdAt": "2026-03-18T13:42:51.290Z",
 	"updatedAt": "2026-03-18T13:42:51.290Z"
 }

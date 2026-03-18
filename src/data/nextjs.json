@@ -7,7 +7,7 @@
 		{
 			"id": "nextjs-001",
 			"question": "Vad är CRUD?",
-			"answer": "CRUD står för Create, Read, Update, Delete - de fyra grundläggande operationerna för att manipulera data.",
+			"answer": "CRUD står för Create, Read, Update, Delete - de fyra grundläggande operationerna för att manipulera data i en databas eller ett API.",
 			"category": "backend",
 			"difficulty": "easy",
 			"tags": ["crud", "database", "api"],
@@ -17,8 +17,8 @@
 		},
 		{
 			"id": "nextjs-002",
-			"question": "Vad är en server action i Next.js?",
-			"answer": "En server action är en funktion som körs på servern och kan anropas från klienten, ofta från formulär eller knappar.",
+			"question": "Vad är en Server Action i Next.js?",
+			"answer": "En Server Action är en asynkron funktion som körs på servern och kan anropas direkt från en klientkomponent, ofta via formulärinlämningar.",
 			"category": "frontend",
 			"difficulty": "medium",
 			"tags": ["nextjs", "server-actions", "forms"],
@@ -29,7 +29,7 @@
 		{
 			"id": "nextjs-003",
 			"question": "Vad är useActionState?",
-			"answer": "useActionState är en React hook för att hantera form-state i server actions, inklusive pending status och error handling.",
+			"answer": "useActionState (tidigera useFormState) är en React-hook som låter dig hantera tillståndet (t.ex. errors eller data) efter att en Server Action har körts.",
 			"category": "frontend",
 			"difficulty": "hard",
 			"tags": ["react", "hooks", "forms"],
@@ -40,7 +40,7 @@
 		{
 			"id": "nextjs-004",
 			"question": "Vad är useFormStatus?",
-			"answer": "useFormStatus är en hook som låter en komponent veta om en formulärinlämningsprocess pågår.",
+			"answer": "useFormStatus är en React-hook som ger tillgång till information om en pågående formulärinlämning, till exempel om den laddar (pending-status).",
 			"category": "frontend",
 			"difficulty": "medium",
 			"tags": ["react", "hooks", "forms"],
@@ -51,7 +51,7 @@
 		{
 			"id": "nextjs-005",
 			"question": "Vad är FormData?",
-			"answer": "FormData är ett API för att konstruera nyckel/värde-par från formulär som kan skickas till servern.",
+			"answer": "FormData är ett inbyggt JavaScript-API för att enkelt samla ihop nyckel-värdepar från ett HTML-formulär för att skicka till en server.",
 			"category": "backend",
 			"difficulty": "easy",
 			"tags": ["javascript", "forms", "api"],
@@ -62,7 +62,7 @@
 		{
 			"id": "nextjs-006",
 			"question": "Vad är revalidatePath?",
-			"answer": "revalidatePath är en funktion för att invalidera cache och tvinga om rendering av en specifik path efter dataändringar.",
+			"answer": "revalidatePath är en inbyggd funktion i Next.js som används för att rensa cachen för en specifik URL-sökväg och tvinga fram en uppdatering av innehållet.",
 			"category": "frontend",
 			"difficulty": "medium",
 			"tags": ["nextjs", "cache", "revalidation"],
@@ -71,9 +71,9 @@
 			"updatedAt": "2026-03-18T13:42:51.290Z"
 		},
 		{
-			"id": "nextjs-012",
+			"id": "nextjs-007",
 			"question": "Vad är Server Components?",
-			"answer": "Server Components körs på servern och är lämpliga för datahämtning och SEO, med minimal JavaScript-bördor på klienten.",
+			"answer": "Server Components (RSC) är React-komponenter som renderas på servern istället för i webbläsaren, vilket minskar mängden JavaScript som skickas till klienten.",
 			"category": "frontend",
 			"difficulty": "medium",
 			"tags": ["nextjs", "server-components", "architecture"],
@@ -82,9 +82,9 @@
 			"updatedAt": "2026-03-18T13:42:51.290Z"
 		},
 		{
-			"id": "nextjs-013",
+			"id": "nextjs-008",
 			"question": "Vad är Client Components?",
-			"answer": "Client Components körs i webbläsaren och är nödvändiga för interaktivitet, state management och event handlers.",
+			"answer": "Client Components är React-komponenter som markeras med 'use client'. De renderas (eller hydreras) i webbläsaren och kan använda hooks och event handlers.",
 			"category": "frontend",
 			"difficulty": "medium",
 			"tags": ["nextjs", "client-components", "react"],
@@ -93,9 +93,9 @@
 			"updatedAt": "2026-03-18T13:42:51.290Z"
 		},
 		{
-			"id": "nextjs-014",
-			"question": "Vad är en API Route?",
-			"answer": "En API Route är ett endpoint i Next.js som låter dig skapa egna API:er genom att skapa filer i /app/api-mappen.",
+			"id": "nextjs-009",
+			"question": "Vad är en Route Handler?",
+			"answer": "Route Handlers låter dig skapa egna HTTP-endpoints (GET, POST, etc.) direkt i din app-katalog med hjälp av filer som heter route.ts.",
 			"category": "backend",
 			"difficulty": "medium",
 			"tags": ["nextjs", "api", "routes"],
@@ -104,9 +104,9 @@
 			"updatedAt": "2026-03-18T13:42:51.290Z"
 		},
 		{
-			"id": "nextjs-015",
-			"question": "Vad är useState hook?",
-			"answer": "useState är en React hook för att hantera state i komponenter, vilket låter dig spara och uppdatera data.",
+			"id": "nextjs-010",
+			"question": "Vad är useState-hooken?",
+			"answer": "useState är en React-hook som låter dig spara och uppdatera ett lokalt tillstånd i en funktionell komponent.",
 			"category": "frontend",
 			"difficulty": "easy",
 			"tags": ["react", "hooks", "state"],
@@ -115,9 +115,9 @@
 			"updatedAt": "2026-03-18T13:42:51.290Z"
 		},
 		{
-			"id": "nextjs-016",
-			"question": "Vad är \"Use Client\" direktiv?",
-			"answer": "\"Use Client\" är ett direktiv som markerar en komponent som en Client Component i Next.js App Router.",
+			"id": "nextjs-011",
+			"question": "Vad gör 'use client'-direktivet?",
+			"answer": "'use client' anger gränsen mellan Server- och Client Components. All kod i en fil med detta direktiv skickas till och körs i webbläsaren.",
 			"category": "frontend",
 			"difficulty": "easy",
 			"tags": ["nextjs", "directives", "client-components"],
@@ -126,9 +126,9 @@
 			"updatedAt": "2026-03-18T13:42:51.290Z"
 		},
 		{
-			"id": "nextjs-022",
+			"id": "nextjs-012",
 			"question": "Vad är Next.js?",
-			"answer": "Next.js är ett React-ramverk för att bygga webbapplikationer med server-side rendering, statisk generering och client-side rendering.",
+			"answer": "Next.js är ett React-ramverk utvecklat av Vercel som automatiserar optimeringar och tillhandahåller funktioner som routing, SSR och SSG direkt.",
 			"category": "frontend",
 			"difficulty": "easy",
 			"tags": ["nextjs", "react", "framework"],
@@ -137,9 +137,9 @@
 			"updatedAt": "2026-03-18T13:42:51.290Z"
 		},
 		{
-			"id": "nextjs-023",
-			"question": "Vad är App Router?",
-			"answer": "App Router är ett routing-system i Next.js baserat på mappstruktur i /app-katalogen, med stöd för layouts, pages och routes.",
+			"id": "nextjs-013",
+			"question": "Vad är App Router i Next.js?",
+			"answer": "App Router är det nya routing-systemet i Next.js (introducerat i v13) som använder mappstruktur för rutter och har stöd för avancerad layout och streaming.",
 			"category": "frontend",
 			"difficulty": "medium",
 			"tags": ["nextjs", "routing", "app-router"],
@@ -148,9 +148,9 @@
 			"updatedAt": "2026-03-18T13:42:51.290Z"
 		},
 		{
-			"id": "nextjs-024",
-			"question": "Vad är en layout i Next.js?",
-			"answer": "En layout är en komponent som omger sidor och delar UI mellan olika sidor, ofta med gemensam navigation och footer.",
+			"id": "nextjs-014",
+			"question": "Vad är en Layout-fil i Next.js?",
+			"answer": "layout.tsx är en fil som definierar gemensamt UI för flera sidor i en rutt-hierarki, som behåller sitt tillstånd vid navigering.",
 			"category": "frontend",
 			"difficulty": "easy",
 			"tags": ["nextjs", "layout", "components"],
@@ -159,20 +159,9 @@
 			"updatedAt": "2026-03-18T13:42:51.290Z"
 		},
 		{
-			"id": "nextjs-025",
-			"question": "Vad är Tailwind CSS?",
-			"answer": "Tailwind CSS är utility-first CSS ramverk som låter dig bygga anpassade design snabbt med hjälp av fördefinierade klasser.",
-			"category": "frontend",
-			"difficulty": "easy",
-			"tags": ["css", "tailwind", "styling"],
-			"status": "new",
-			"createdAt": "2026-03-18T13:42:51.290Z",
-			"updatedAt": "2026-03-18T13:42:51.290Z"
-		},
-		{
-			"id": "nextjs-026",
-			"question": "Vad är en React komponent?",
-			"answer": "En React komponent är en återanvändbar enhet av UI som kan innehålla state och logik, antingen som en funktion eller klass.",
+			"id": "nextjs-015",
+			"question": "Vad är en React-komponent?",
+			"answer": "En React-komponent är en självständig och återanvändbar koddel som returnerar JSX för att beskriva en del av gränssnittet.",
 			"category": "frontend",
 			"difficulty": "easy",
 			"tags": ["react", "components", "ui"],
@@ -181,9 +170,9 @@
 			"updatedAt": "2026-03-18T13:42:51.290Z"
 		},
 		{
-			"id": "nextjs-027",
-			"question": "Vad är static site generation (SSG)?",
-			"answer": "SSG genererar HTML-sidor vid byggtid snarare än vid förfrågan. Innehållet hämtas vid byggtid och sidorna kan cachas på CDN.",
+			"id": "nextjs-016",
+			"question": "Vad är Static Site Generation (SSG)?",
+			"answer": "SSG innebär att webbsidans HTML genereras vid byggtid och serveras som färdiga statiska filer, vilket ger extremt snabb laddning.",
 			"category": "frontend",
 			"difficulty": "medium",
 			"tags": ["nextjs", "ssg", "rendering"],
@@ -192,9 +181,9 @@
 			"updatedAt": "2026-03-18T13:42:51.290Z"
 		},
 		{
-			"id": "nextjs-028",
-			"question": "Vad är incremental static regeneration (ISR)?",
-			"answer": "ISR tillåter att statiskt genererade sidor uppdateras utan att behöva bygga om hela sajten, genom att ange en revalidation-tid.",
+			"id": "nextjs-017",
+			"question": "Vad är Incremental Static Regeneration (ISR)?",
+			"answer": "ISR låter dig uppdatera statiska sidor efter att de har byggts, i bakgrunden vid behov, utan att behöva bygga om hela webbplatsen.",
 			"category": "frontend",
 			"difficulty": "hard",
 			"tags": ["nextjs", "isr", "performance"],
@@ -203,31 +192,20 @@
 			"updatedAt": "2026-03-18T13:42:51.290Z"
 		},
 		{
-			"id": "nextjs-029",
-			"question": "Vad är getServerSideProps?",
-			"answer": "getServerSideProps är en funktion i Next.js som hämtar data vid varje förfrågan på serversidan för att rendera sidan dynamiskt.",
+			"id": "nextjs-018",
+			"question": "Vad är skillnaden mellan SSR och SSG?",
+			"answer": "SSR genererar HTML vid varje förfrågan (on-demand), medan SSG genererar HTML en gång vid byggtid (build-time).",
 			"category": "frontend",
 			"difficulty": "medium",
-			"tags": ["nextjs", "ssr", "data-fetching"],
+			"tags": ["nextjs", "ssr", "ssg"],
 			"status": "new",
 			"createdAt": "2026-03-18T13:42:51.290Z",
 			"updatedAt": "2026-03-18T13:42:51.290Z"
 		},
 		{
-			"id": "nextjs-030",
-			"question": "Vad är getStaticProps?",
-			"answer": "getStaticProps är en funktion i Next.js som hämtar data vid byggtid för att generera statiska sidor.",
-			"category": "frontend",
-			"difficulty": "medium",
-			"tags": ["nextjs", "ssg", "data-fetching"],
-			"status": "new",
-			"createdAt": "2026-03-18T13:42:51.290Z",
-			"updatedAt": "2026-03-18T13:42:51.290Z"
-		},
-		{
-			"id": "nextjs-031",
-			"question": "Vad är dynamic routes i Next.js?",
-			"answer": "Dynamic routes används för att skapa rutter med dynamiska parametrar, t.ex. /products/[id] för individuella produktsidor.",
+			"id": "nextjs-019",
+			"question": "Vad är Dynamic Routes?",
+			"answer": "Dynamic Routes låter dig skapa dynamiska sökvägar baserat på data, t.ex. [id].tsx, där id kan vara vad som helst.",
 			"category": "frontend",
 			"difficulty": "medium",
 			"tags": ["nextjs", "routing", "dynamic"],
@@ -236,9 +214,9 @@
 			"updatedAt": "2026-03-18T13:42:51.290Z"
 		},
 		{
-			"id": "nextjs-032",
-			"question": "Vad är middleware i Next.js?",
-			"answer": "Middleware är kod som kör innan en förfrågan slutförs, och kan användas för att modifiera förfrågningar, redirecta eller hantera authentication.",
+			"id": "nextjs-020",
+			"question": "Vad är Middleware i Next.js?",
+			"answer": "Middleware körs innan en förfrågan slutförs, vilket låter dig omdirigera användare, kontrollera autentisering eller modifiera headers.",
 			"category": "frontend",
 			"difficulty": "hard",
 			"tags": ["nextjs", "middleware", "request-handling"],
@@ -247,18 +225,172 @@
 			"updatedAt": "2026-03-18T13:42:51.290Z"
 		},
 		{
-			"id": "nextjs-033",
-			"question": "Vad är intercepting routes i Next.js?",
-			"answer": "Intercepting routes tillåter att ladda en route inom en annan route som en modal utan att lämna den nuvarande sidan.",
+			"id": "nextjs-021",
+			"question": "Vad är Intercepting Routes?",
+			"answer": "Intercepting Routes låter dig ladda en ny rutt inuti din nuvarande layout (t.ex. en modal) men visa en helt egen sida vid direktlänkning.",
 			"category": "frontend",
 			"difficulty": "hard",
 			"tags": ["nextjs", "routing", "intercepting"],
 			"status": "new",
 			"createdAt": "2026-03-18T13:42:51.290Z",
 			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "nextjs-022",
+			"question": "Vad är Parallel Routes?",
+			"answer": "Parallel Routes låter dig visa flera olika sidor samtidigt i samma layout, vilket är perfekt för dashboards eller komplexa vyer.",
+			"category": "frontend",
+			"difficulty": "hard",
+			"tags": ["nextjs", "routing", "parallel"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "nextjs-023",
+			"question": "Vad gör Image-komponenten i Next.js?",
+			"answer": "Komponenten <Image /> utför automatisk bildoptimering, som lazy loading, storleksanpassning och formatkonvertering (t.ex. till WebP).",
+			"category": "frontend",
+			"difficulty": "medium",
+			"tags": ["nextjs", "performance", "images"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "nextjs-024",
+			"question": "Vad är skillnaden mellan Link och vanlig a-tagg?",
+			"answer": "Komponenten <Link /> utför klient-side navigering utan att ladda om hela sidan, och utför prefetching av nästa sida för bättre prestanda.",
+			"category": "frontend",
+			"difficulty": "easy",
+			"tags": ["nextjs", "routing", "link"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "nextjs-025",
+			"question": "Vad är Suspense i React/Next.js?",
+			"answer": "Suspense är en komponent som visar en reservvy (t.ex. en laddningssnurra) medan dess barn väntar på att data eller kod ska laddas klart.",
+			"category": "frontend",
+			"difficulty": "medium",
+			"tags": ["react", "streaming", "suspense"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "nextjs-026",
+			"question": "Vad är Streaming i Next.js?",
+			"answer": "Streaming låter dig dela upp HTML-sidan i mindre bitar och skicka dem stegvis till klienten, så att användaren ser delar av sidan snabbare.",
+			"category": "frontend",
+			"difficulty": "hard",
+			"tags": ["nextjs", "performance", "streaming"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "nextjs-027",
+			"question": "Vad är skillnaden mellan Page Router och App Router?",
+			"answer": "Page Router använder /pages mappen och saknar inbyggt stöd för RSC. App Router använder /app mappen och bygger helt på Server Components och nya React-funktioner.",
+			"category": "frontend",
+			"difficulty": "medium",
+			"tags": ["nextjs", "architecture", "routing"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "nextjs-028",
+			"question": "Vad är Hydrering (Hydration)?",
+			"answer": "Hydrering är processen där React lägger till interaktivitet (event listeners) på statisk HTML som har renderats på servern.",
+			"category": "frontend",
+			"difficulty": "hard",
+			"tags": ["react", "rendering", "hydration"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "nextjs-029",
+			"question": "Vad är Props i React?",
+			"answer": "Props (properties) är indata som skickas från en föräldrakomponent till en barnkomponent för att styra dess innehåll eller utseende.",
+			"category": "frontend",
+			"difficulty": "easy",
+			"tags": ["react", "components", "props"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "nextjs-030",
+			"question": "Vad är en 'Key' prop i React?",
+			"answer": "Key är en unik identifierare som används när man mappar listor för att hjälpa React att effektivt uppdatera och flytta element i DOM-trädet.",
+			"category": "frontend",
+			"difficulty": "easy",
+			"tags": ["react", "performance", "lists"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "nextjs-031",
+			"question": "Vad är useEffect-hooken?",
+			"answer": "useEffect används för att utföra sidoeffekter i funktionella komponenter, t.ex. hämta data, prenumerationer eller manuella ändringar i DOM:en.",
+			"category": "frontend",
+			"difficulty": "medium",
+			"tags": ["react", "hooks", "lifecycle"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "nextjs-032",
+			"question": "Vad är useMemo och useCallback?",
+			"answer": "De är prestanda-hooks. useMemo sparar resultatet av en beräkning, medan useCallback sparar en funktionsinstans för att undvika onödiga omrenderingar.",
+			"category": "frontend",
+			"difficulty": "hard",
+			"tags": ["react", "performance", "hooks"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "nextjs-033",
+			"question": "Vad är React Context?",
+			"answer": "Context tillhandahåller ett sätt att dela data mellan komponenter utan att manuellt behöva skicka props genom varje nivå av trädet (prop drilling).",
+			"category": "frontend",
+			"difficulty": "medium",
+			"tags": ["react", "state-management", "context"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "nextjs-034",
+			"question": "Vad är JSX?",
+			"answer": "JSX är en syntaktisk förlängning till JavaScript som liknar HTML och används för att beskriva hur React-komponenter ska se ut.",
+			"category": "frontend",
+			"difficulty": "easy",
+			"tags": ["react", "syntax", "html"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "nextjs-035",
+			"question": "Vad är skillnaden mellan en klasskomponent och en funktionskomponent?",
+			"answer": "Klasskomponenter är äldre och använder ES6-klasser. Funktionskomponenter är den moderna standarden som använder hooks för state och logik.",
+			"category": "frontend",
+			"difficulty": "easy",
+			"tags": ["react", "components", "evolution"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
 		}
 	],
-	"cardCount": 24,
+	"cardCount": 35,
 	"createdAt": "2026-03-18T13:42:51.290Z",
 	"updatedAt": "2026-03-18T13:42:51.290Z"
 }

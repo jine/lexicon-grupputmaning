@@ -108,6 +108,125 @@
 			"answer": "Showcase proactive thinking: What warning signs you noticed. How you investigated and confirmed the issue. Steps you took to prevent escalation. Collaboration with others if needed. The impact of solving it early. Show analytical skills and ownership.",
 			"difficulty": "medium",
 			"tags": ["problem-solving", "proactivity", "analytical"]
+		},
+		{
+			"id": "bh-016",
+			"question": "Tell me about a project you are particularly proud of and why.",
+			"answer": "Structure: Situation - What was the project? Task - Your role. Action - Specific contributions you made (innovative solutions, leadership). Result - Quantitative or qualitative impact. Pride - Explain why it was meaningful to you (overcoming odds, personal growth, positive impact). Show passion and technical depth.",
+			"difficulty": "easy",
+			"tags": ["pride", "passion", "project"]
+		},
+		{
+			"id": "bh-017",
+			"question": "Describe a time you worked on a team where there was no clear leader. What was your role?",
+			"answer": "Focus on: Recognizing the gap. Taking initiative without overstepping. Facilitating communication. Keeping the team focused on goals. Helping resolve impasses. How the team functioned and what the outcome was. Show collaborative leadership and initiative.",
+			"difficulty": "medium",
+			"tags": ["leadership", "teamwork", "initiative"]
+		},
+		{
+			"id": "bh-018",
+			"question": "Tell me about a time you had to manage your manager.",
+			"answer": "Focus on: Identifying a gap (missing info, unclear goals, scope change). Proactively providing solutions or alternatives. Communicating clearly about impact and trade-offs. Managing expectations. The outcome and relationship preservation. Show upward communication and ownership.",
+			"difficulty": "hard",
+			"tags": ["upward-management", "communication", "professionalism"]
+		},
+		{
+			"id": "bh-019",
+			"question": "How do you handle working on multiple high-priority tasks simultaneously?",
+			"answer": "Explain: Your system for tracking (Jira, Trello, simple list). Your prioritization framework (urgent vs important, business impact). Communication with stakeholders about deadlines and trade-offs. How you protect focus time. Show organization and stress management.",
+			"difficulty": "medium",
+			"tags": ["prioritization", "time-management", "organization"]
+		},
+		{
+			"id": "bh-020",
+			"question": "Tell me about a time you had to work with a technology you didn't like.",
+			"answer": "Focus on: Professionalism and objectivity. How you still learned it to get the job done. Identifying pros/cons. Proposing better alternatives for future projects where appropriate. Getting the best out of the situation. Show pragmatism and project-first mindset.",
+			"difficulty": "medium",
+			"tags": ["professionalism", "pragmatism", "adaptability"]
+		},
+		{
+			"id": "bh-021",
+			"question": "Describe a time you disagreed with a technical decision made by the team.",
+			"answer": "Focus on: How you voiced concerns (with data/evidence). Active listening to other perspectives. Reaching a consensus or 'disagreeing and committing'. How you supported the chosen path once decided. Show professionalism and team player attitude.",
+			"difficulty": "medium",
+			"tags": ["disagreement", "teamwork", "communication"]
+		},
+		{
+			"id": "bh-022",
+			"question": "Tell me about a time you had to give someone difficult feedback.",
+			"answer": "Focus on: Timeliness and privacy. Specific examples of behavior/output, not personality. The impact of the issue. Asking for their perspective. Collaborating on a plan for improvement. Show empathy and focus on growth/outcomes.",
+			"difficulty": "hard",
+			"tags": ["feedback", "communication", "leadership"]
+		},
+		{
+			"id": "bh-023",
+			"question": "What is your biggest weakness, and what have you done to improve it?",
+			"answer": "Choose a real, work-related weakness (not 'I work too hard'). Explain: What it is (e.g., delegating, public speaking). How you identified it. Specific steps you are taking to improve (courses, practice, mentorship). Progress made. Show self-awareness and growth.",
+			"difficulty": "easy",
+			"tags": ["self-awareness", "growth", "weakness"]
+		},
+		{
+			"id": "bh-024",
+			"question": "Tell me about a time you had to work under significant pressure.",
+			"answer": "Focus on: Staying calm and focused. Breaking down the problem. Prioritizing critical paths. Communicating status and needs to the team. Taking care of yourself to avoid burnout. The result of the high-pressure situation. Show resilience and focus.",
+			"difficulty": "medium",
+			"tags": ["pressure", "resilience", "focus"]
+		},
+		{
+			"id": "bh-025",
+			"question": "How do you keep your skills up to date in this fast-paced industry?",
+			"answer": "Mention: Specific resources (blogs, newsletters, podcasts). Hands-on learning (side projects, open source). Peer learning (meetups, conferences, pair programming). How you evaluate what is worth learning. Show curiosity and self-driven learning.",
+			"difficulty": "easy",
+			"tags": ["learning", "curiosity", "career-development"]
+		},
+		{
+			"id": "bh-026",
+			"question": "Describe a situation where you had to work with a teammate who wasn't pulling their weight.",
+			"answer": "Focus on: Not blaming. Empathy first - checking if they are okay or need help. Offering support or clarification on tasks. Communicating impact on the team privately. Escalating to management only as a last resort and with data. Show teamwork and professional resolution.",
+			"difficulty": "hard",
+			"tags": ["teamwork", "conflict-resolution", "professionalism"]
+		},
+		{
+			"id": "bh-027",
+			"question": "Tell me about a time you made a suggestion that improved a process or workflow.",
+			"answer": "Structure: The old process and its pain points. Your suggestion and why you thought it would work. How you implemented/convinced others. The measurable impact (time saved, fewer bugs). Show initiative and analytical thinking.",
+			"difficulty": "medium",
+			"tags": ["initiative", "improvement", "process"]
+		},
+		{
+			"id": "bh-028",
+			"question": "How do you handle ambiguity in a project?",
+			"answer": "Explain: Asking clarifying questions. Identifying the smallest piece of certain work. Creating prototypes to test assumptions. Frequent communication with stakeholders for feedback. Show comfort with uncertainty and proactive clarification.",
+			"difficulty": "medium",
+			"tags": ["ambiguity", "problem-solving", "communication"]
+		},
+		{
+			"id": "bh-029",
+			"question": "Tell me about a time you had to work across different departments or teams.",
+			"answer": "Focus on: Understanding different goals and languages. Building bridges and finding common ground. Clear and frequent communication. Managing different expectations. The outcome of the collaboration. Show cross-functional collaboration and communication.",
+			"difficulty": "medium",
+			"tags": ["collaboration", "cross-functional", "communication"]
+		},
+		{
+			"id": "bh-030",
+			"question": "Describe a time you had to deal with a major setback.",
+			"answer": "Focus on: Initial reaction and recovery. Analyzing what happened without blame. Pivoting the plan. Communicating with stakeholders. Lessons learned. Show resilience, adaptability, and problem-solving.",
+			"difficulty": "hard",
+			"tags": ["resilience", "adaptability", "setback"]
+		},
+		{
+			"id": "bh-031",
+			"question": "How do you balance technical excellence with business deadlines?",
+			"answer": "Explain: Identifying 'good enough' vs 'perfect'. Communicating technical debt and its long-term cost to stakeholders. Prioritizing features based on impact. Using MVPs. Show pragmatism and understanding of business value.",
+			"difficulty": "medium",
+			"tags": ["pragmatism", "technical-excellence", "business-value"]
+		},
+		{
+			"id": "bh-032",
+			"question": "Tell me about a time you stood up for something you believed in at work.",
+			"answer": "Focus on: The situation (e.g., ethics, quality, safety, inclusivity). How you voiced your concern respectfully and with evidence. The risk you took. The outcome. Show integrity and courage.",
+			"difficulty": "hard",
+			"tags": ["integrity", "courage", "professionalism"]
 		}
 	]
 }
