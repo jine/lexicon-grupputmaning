@@ -9,224 +9,353 @@
 			"question": "Tell me about a time you had a conflict with a team member. How did you resolve it?",
 			"answer": "STAR Framework: Situation - Brief context of the project and conflict. Task - Your responsibility in resolving it. Action - Specific steps you took (active listening, finding common ground, compromise). Result - Positive outcome and what you learned. Focus on professional resolution, not blame. Emphasize communication and empathy.",
 			"difficulty": "medium",
-			"tags": ["conflict-resolution", "communication", "teamwork"]
+			"tags": [
+				"conflict-resolution",
+				"communication",
+				"teamwork"
+			]
 		},
 		{
 			"id": "bh-002",
 			"question": "Describe a time you missed a deadline. What happened and what did you learn?",
 			"answer": "Be honest but strategic. Explain: Situation - Why the deadline was missed (unrealistic estimates, scope creep, technical debt). Action - How you communicated early, got help, or adjusted scope. Result - What you delivered and lessons learned (better estimation, earlier communication, padding timelines). Show growth and accountability.",
 			"difficulty": "medium",
-			"tags": ["accountability", "time-management", "learning"]
+			"tags": [
+				"accountability",
+				"time-management",
+				"learning"
+			]
 		},
 		{
 			"id": "bh-003",
 			"question": "Tell me about a time you had to learn something quickly to complete a project.",
 			"answer": "Structure: The challenge (new technology/framework with tight deadline). Your approach (documentation, tutorials, mentor consultation, prototyping). The learning process (focused on MVP understanding first). The outcome (successfully delivered, became go-to expert). Emphasize adaptability and resourcefulness.",
 			"difficulty": "easy",
-			"tags": ["learning", "adaptability", "problem-solving"]
+			"tags": [
+				"learning",
+				"adaptability",
+				"problem-solving"
+			]
 		},
 		{
 			"id": "bh-004",
 			"question": "Describe a situation where you had to make a decision without complete information.",
 			"answer": "Use STAR: Situation - High-pressure scenario with ambiguity. Task - Decision that needed to be made. Action - How you gathered available data, identified risks, consulted stakeholders, made educated assumptions. Result - Outcome and how you validated decision later. Show calculated risk-taking and comfort with uncertainty.",
 			"difficulty": "medium",
-			"tags": ["decision-making", "ambiguity", "leadership"]
+			"tags": [
+				"decision-making",
+				"ambiguity",
+				"leadership"
+			]
 		},
 		{
 			"id": "bh-005",
 			"question": "Tell me about a time you had to convince someone to adopt your idea or approach.",
 			"answer": "Key elements: Understanding the other person's perspective and concerns. Presenting data/evidence supporting your approach. Finding win-win solutions. Building consensus gradually. The outcome (whether adopted or not) and relationship preservation. Emphasize persuasion through logic and empathy, not force.",
 			"difficulty": "medium",
-			"tags": ["influence", "communication", "negotiation"]
+			"tags": [
+				"influence",
+				"communication",
+				"negotiation"
+			]
 		},
 		{
 			"id": "bh-006",
 			"question": "Describe a time you received critical feedback. How did you handle it?",
 			"answer": "Show emotional intelligence: Initial reaction (staying calm, not defensive). Active listening and asking clarifying questions. Reflecting on validity of feedback. Creating action plan for improvement. Following up with feedback giver. Result - specific improvements made. Demonstrate openness to growth and professionalism.",
 			"difficulty": "easy",
-			"tags": ["feedback", "growth-mindset", "self-awareness"]
+			"tags": [
+				"feedback",
+				"growth-mindset",
+				"self-awareness"
+			]
 		},
 		{
 			"id": "bh-007",
 			"question": "Tell me about a time you mentored someone or helped them grow.",
 			"answer": "Structure: The person and their goals/challenges. Your mentoring approach (regular check-ins, resources, shadowing, constructive feedback). Specific examples of guidance provided. Their growth over time. Your learnings from the experience. Show leadership, investment in others' success, and patience.",
 			"difficulty": "medium",
-			"tags": ["mentoring", "leadership", "team-development"]
+			"tags": [
+				"mentoring",
+				"leadership",
+				"team-development"
+			]
 		},
 		{
 			"id": "bh-008",
 			"question": "Describe a situation where you had to work with a difficult stakeholder or client.",
 			"answer": "Focus on: Understanding their motivations and constraints. Setting clear expectations early. Regular communication and transparency. Managing scope and saying no diplomatically. Finding compromise. The outcome (project success and relationship preservation). Emphasize professionalism and relationship management.",
 			"difficulty": "hard",
-			"tags": ["stakeholder-management", "communication", "professionalism"]
+			"tags": [
+				"stakeholder-management",
+				"communication",
+				"professionalism"
+			]
 		},
 		{
 			"id": "bh-009",
 			"question": "Tell me about a time you failed. What did you learn from it?",
 			"answer": "Choose a real but not catastrophic failure. Structure: The situation and your approach. What went wrong (take ownership). Immediate response (mitigation, communication). Deep analysis of root causes. Changes implemented to prevent recurrence. How you applied these lessons later. Show humility, accountability, and growth.",
 			"difficulty": "medium",
-			"tags": ["failure", "resilience", "growth-mindset"]
+			"tags": [
+				"failure",
+				"resilience",
+				"growth-mindset"
+			]
 		},
 		{
 			"id": "bh-010",
 			"question": "Describe a time you had to prioritize multiple competing tasks or projects.",
 			"answer": "Explain your framework: Assessing urgency vs importance. Understanding business impact and deadlines. Communicating with stakeholders about trade-offs. Delegating where possible. Using tools/systems for organization. How you managed stress. The outcome (successful delivery of high-priority items). Show strategic thinking and time management.",
 			"difficulty": "easy",
-			"tags": ["prioritization", "time-management", "organization"]
+			"tags": [
+				"prioritization",
+				"time-management",
+				"organization"
+			]
 		},
 		{
 			"id": "bh-011",
 			"question": "Tell me about a time you had to deliver bad news to a stakeholder.",
 			"answer": "Focus on: Preparing facts and potential solutions. Choosing the right time and setting. Being honest but empathetic. Explaining the 'why' behind the decision. Offering alternatives or next steps. Following up to maintain trust. Show emotional intelligence and professionalism.",
 			"difficulty": "medium",
-			"tags": ["communication", "stakeholder-management", "transparency"]
+			"tags": [
+				"communication",
+				"stakeholder-management",
+				"transparency"
+			]
 		},
 		{
 			"id": "bh-012",
 			"question": "Describe a situation where you had to work with limited resources.",
 			"answer": "Showcase resourcefulness: What constraints existed (time, budget, people). How you prioritized and focused on high-impact items. Creative solutions to maximize output. What you sacrificed vs what you protected. The outcome and what you learned about efficiency.",
 			"difficulty": "medium",
-			"tags": ["resource-management", "problem-solving", "creativity"]
+			"tags": [
+				"resource-management",
+				"problem-solving",
+				"creativity"
+			]
 		},
 		{
 			"id": "bh-013",
 			"question": "Tell me about a time you went above and beyond for a project or team.",
 			"answer": "Focus on intrinsic motivation, not just external recognition. Examples: staying late to help a struggling teammate, learning new skills to fill a gap, taking initiative on undocumented processes. The impact on the team/project and what drove you to do it.",
 			"difficulty": "easy",
-			"tags": ["initiative", "dedication", "teamwork"]
+			"tags": [
+				"initiative",
+				"dedication",
+				"teamwork"
+			]
 		},
 		{
 			"id": "bh-014",
 			"question": "Describe a time you had to adapt to a major change in technology or process.",
 			"answer": "Structure: The change and why it was challenging. Your approach to learning and adapting (training, self-study, peer learning). How you helped others adapt. The outcome and how you embraced the change. Show growth mindset and adaptability.",
 			"difficulty": "medium",
-			"tags": ["adaptability", "learning", "change-management"]
+			"tags": [
+				"adaptability",
+				"learning",
+				"change-management"
+			]
 		},
 		{
 			"id": "bh-015",
 			"question": "Tell me about a time you identified and solved a problem before it became a major issue.",
 			"answer": "Showcase proactive thinking: What warning signs you noticed. How you investigated and confirmed the issue. Steps you took to prevent escalation. Collaboration with others if needed. The impact of solving it early. Show analytical skills and ownership.",
 			"difficulty": "medium",
-			"tags": ["problem-solving", "proactivity", "analytical"]
+			"tags": [
+				"problem-solving",
+				"proactivity",
+				"analytical"
+			]
 		},
 		{
 			"id": "bh-016",
 			"question": "Tell me about a project you are particularly proud of and why.",
 			"answer": "Structure: Situation - What was the project? Task - Your role. Action - Specific contributions you made (innovative solutions, leadership). Result - Quantitative or qualitative impact. Pride - Explain why it was meaningful to you (overcoming odds, personal growth, positive impact). Show passion and technical depth.",
 			"difficulty": "easy",
-			"tags": ["pride", "passion", "project"]
+			"tags": [
+				"pride",
+				"passion",
+				"project"
+			]
 		},
 		{
 			"id": "bh-017",
 			"question": "Describe a time you worked on a team where there was no clear leader. What was your role?",
 			"answer": "Focus on: Recognizing the gap. Taking initiative without overstepping. Facilitating communication. Keeping the team focused on goals. Helping resolve impasses. How the team functioned and what the outcome was. Show collaborative leadership and initiative.",
 			"difficulty": "medium",
-			"tags": ["leadership", "teamwork", "initiative"]
+			"tags": [
+				"leadership",
+				"teamwork",
+				"initiative"
+			]
 		},
 		{
 			"id": "bh-018",
 			"question": "Tell me about a time you had to manage your manager.",
 			"answer": "Focus on: Identifying a gap (missing info, unclear goals, scope change). Proactively providing solutions or alternatives. Communicating clearly about impact and trade-offs. Managing expectations. The outcome and relationship preservation. Show upward communication and ownership.",
 			"difficulty": "hard",
-			"tags": ["upward-management", "communication", "professionalism"]
+			"tags": [
+				"upward-management",
+				"communication",
+				"professionalism"
+			]
 		},
 		{
 			"id": "bh-019",
 			"question": "How do you handle working on multiple high-priority tasks simultaneously?",
 			"answer": "Explain: Your system for tracking (Jira, Trello, simple list). Your prioritization framework (urgent vs important, business impact). Communication with stakeholders about deadlines and trade-offs. How you protect focus time. Show organization and stress management.",
 			"difficulty": "medium",
-			"tags": ["prioritization", "time-management", "organization"]
+			"tags": [
+				"prioritization",
+				"time-management",
+				"organization"
+			]
 		},
 		{
 			"id": "bh-020",
 			"question": "Tell me about a time you had to work with a technology you didn't like.",
 			"answer": "Focus on: Professionalism and objectivity. How you still learned it to get the job done. Identifying pros/cons. Proposing better alternatives for future projects where appropriate. Getting the best out of the situation. Show pragmatism and project-first mindset.",
 			"difficulty": "medium",
-			"tags": ["professionalism", "pragmatism", "adaptability"]
+			"tags": [
+				"professionalism",
+				"pragmatism",
+				"adaptability"
+			]
 		},
 		{
 			"id": "bh-021",
 			"question": "Describe a time you disagreed with a technical decision made by the team.",
 			"answer": "Focus on: How you voiced concerns (with data/evidence). Active listening to other perspectives. Reaching a consensus or 'disagreeing and committing'. How you supported the chosen path once decided. Show professionalism and team player attitude.",
 			"difficulty": "medium",
-			"tags": ["disagreement", "teamwork", "communication"]
+			"tags": [
+				"disagreement",
+				"teamwork",
+				"communication"
+			]
 		},
 		{
 			"id": "bh-022",
 			"question": "Tell me about a time you had to give someone difficult feedback.",
 			"answer": "Focus on: Timeliness and privacy. Specific examples of behavior/output, not personality. The impact of the issue. Asking for their perspective. Collaborating on a plan for improvement. Show empathy and focus on growth/outcomes.",
 			"difficulty": "hard",
-			"tags": ["feedback", "communication", "leadership"]
+			"tags": [
+				"feedback",
+				"communication",
+				"leadership"
+			]
 		},
 		{
 			"id": "bh-023",
 			"question": "What is your biggest weakness, and what have you done to improve it?",
 			"answer": "Choose a real, work-related weakness (not 'I work too hard'). Explain: What it is (e.g., delegating, public speaking). How you identified it. Specific steps you are taking to improve (courses, practice, mentorship). Progress made. Show self-awareness and growth.",
 			"difficulty": "easy",
-			"tags": ["self-awareness", "growth", "weakness"]
+			"tags": [
+				"self-awareness",
+				"growth",
+				"weakness"
+			]
 		},
 		{
 			"id": "bh-024",
 			"question": "Tell me about a time you had to work under significant pressure.",
 			"answer": "Focus on: Staying calm and focused. Breaking down the problem. Prioritizing critical paths. Communicating status and needs to the team. Taking care of yourself to avoid burnout. The result of the high-pressure situation. Show resilience and focus.",
 			"difficulty": "medium",
-			"tags": ["pressure", "resilience", "focus"]
+			"tags": [
+				"pressure",
+				"resilience",
+				"focus"
+			]
 		},
 		{
 			"id": "bh-025",
 			"question": "How do you keep your skills up to date in this fast-paced industry?",
 			"answer": "Mention: Specific resources (blogs, newsletters, podcasts). Hands-on learning (side projects, open source). Peer learning (meetups, conferences, pair programming). How you evaluate what is worth learning. Show curiosity and self-driven learning.",
 			"difficulty": "easy",
-			"tags": ["learning", "curiosity", "career-development"]
+			"tags": [
+				"learning",
+				"curiosity",
+				"career-development"
+			]
 		},
 		{
 			"id": "bh-026",
 			"question": "Describe a situation where you had to work with a teammate who wasn't pulling their weight.",
 			"answer": "Focus on: Not blaming. Empathy first - checking if they are okay or need help. Offering support or clarification on tasks. Communicating impact on the team privately. Escalating to management only as a last resort and with data. Show teamwork and professional resolution.",
 			"difficulty": "hard",
-			"tags": ["teamwork", "conflict-resolution", "professionalism"]
+			"tags": [
+				"teamwork",
+				"conflict-resolution",
+				"professionalism"
+			]
 		},
 		{
 			"id": "bh-027",
 			"question": "Tell me about a time you made a suggestion that improved a process or workflow.",
 			"answer": "Structure: The old process and its pain points. Your suggestion and why you thought it would work. How you implemented/convinced others. The measurable impact (time saved, fewer bugs). Show initiative and analytical thinking.",
 			"difficulty": "medium",
-			"tags": ["initiative", "improvement", "process"]
+			"tags": [
+				"initiative",
+				"improvement",
+				"process"
+			]
 		},
 		{
 			"id": "bh-028",
 			"question": "How do you handle ambiguity in a project?",
 			"answer": "Explain: Asking clarifying questions. Identifying the smallest piece of certain work. Creating prototypes to test assumptions. Frequent communication with stakeholders for feedback. Show comfort with uncertainty and proactive clarification.",
 			"difficulty": "medium",
-			"tags": ["ambiguity", "problem-solving", "communication"]
+			"tags": [
+				"ambiguity",
+				"problem-solving",
+				"communication"
+			]
 		},
 		{
 			"id": "bh-029",
 			"question": "Tell me about a time you had to work across different departments or teams.",
 			"answer": "Focus on: Understanding different goals and languages. Building bridges and finding common ground. Clear and frequent communication. Managing different expectations. The outcome of the collaboration. Show cross-functional collaboration and communication.",
 			"difficulty": "medium",
-			"tags": ["collaboration", "cross-functional", "communication"]
+			"tags": [
+				"collaboration",
+				"cross-functional",
+				"communication"
+			]
 		},
 		{
 			"id": "bh-030",
 			"question": "Describe a time you had to deal with a major setback.",
 			"answer": "Focus on: Initial reaction and recovery. Analyzing what happened without blame. Pivoting the plan. Communicating with stakeholders. Lessons learned. Show resilience, adaptability, and problem-solving.",
 			"difficulty": "hard",
-			"tags": ["resilience", "adaptability", "setback"]
+			"tags": [
+				"resilience",
+				"adaptability",
+				"setback"
+			]
 		},
 		{
 			"id": "bh-031",
 			"question": "How do you balance technical excellence with business deadlines?",
 			"answer": "Explain: Identifying 'good enough' vs 'perfect'. Communicating technical debt and its long-term cost to stakeholders. Prioritizing features based on impact. Using MVPs. Show pragmatism and understanding of business value.",
 			"difficulty": "medium",
-			"tags": ["pragmatism", "technical-excellence", "business-value"]
+			"tags": [
+				"pragmatism",
+				"technical-excellence",
+				"business-value"
+			]
 		},
 		{
 			"id": "bh-032",
 			"question": "Tell me about a time you stood up for something you believed in at work.",
 			"answer": "Focus on: The situation (e.g., ethics, quality, safety, inclusivity). How you voiced your concern respectfully and with evidence. The risk you took. The outcome. Show integrity and courage.",
 			"difficulty": "hard",
-			"tags": ["integrity", "courage", "professionalism"]
+			"tags": [
+				"integrity",
+				"courage",
+				"professionalism"
+			]
 		}
-	]
+	],
+	"cardCount": 32
 }

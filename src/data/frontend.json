@@ -9,280 +9,443 @@
 			"question": "What is the Virtual DOM in React and how does it work?",
 			"answer": "The Virtual DOM is a JavaScript representation of the actual DOM. React creates a virtual copy of the DOM, and when state changes occur, it creates a new virtual DOM tree, compares it with the previous one (diffing), and only updates the changed elements in the real DOM. This process is called reconciliation and makes updates more efficient.",
 			"difficulty": "medium",
-			"tags": ["react", "dom", "performance"]
+			"tags": [
+				"react",
+				"dom",
+				"performance"
+			]
 		},
 		{
 			"id": "fe-002",
 			"question": "Explain CSS specificity and how it's calculated.",
 			"answer": "CSS specificity determines which styles are applied when multiple rules target the same element. It's calculated as a four-part number (0,0,0,0): inline styles (1000), IDs (100), classes/attributes/pseudo-classes (10), and elements/pseudo-elements (1). The selector with the highest specificity wins.",
 			"difficulty": "medium",
-			"tags": ["css", "specificity", "styling"]
+			"tags": [
+				"css",
+				"specificity",
+				"styling"
+			]
 		},
 		{
 			"id": "fe-003",
 			"question": "What are JavaScript closures and provide a practical example?",
 			"answer": "A closure is a function that has access to variables in its outer (enclosing) scope even after the outer function has returned. Example: function createCounter() { let count = 0; return function() { return ++count; }; } const counter = createCounter(); counter(); // 1 counter(); // 2",
 			"difficulty": "medium",
-			"tags": ["javascript", "scope", "functions"]
+			"tags": [
+				"javascript",
+				"scope",
+				"functions"
+			]
 		},
 		{
 			"id": "fe-004",
 			"question": "Explain the CSS Box Model.",
 			"answer": "The CSS Box Model describes the rectangular boxes generated for elements. It consists of: content (the actual content), padding (space around content), border (around padding), and margin (space outside the border). Total element width = width + left padding + right padding + left border + right border.",
 			"difficulty": "easy",
-			"tags": ["css", "box-model", "layout"]
+			"tags": [
+				"css",
+				"box-model",
+				"layout"
+			]
 		},
 		{
 			"id": "fe-005",
 			"question": "What is the difference between var, let, and const in JavaScript?",
 			"answer": "var: function-scoped, can be redeclared and updated, hoisted. let: block-scoped, can be updated but not redeclared, not hoisted (in TDZ). const: block-scoped, cannot be updated or redeclared, must be initialized at declaration. Use const by default, let when reassignment needed, avoid var.",
 			"difficulty": "easy",
-			"tags": ["javascript", "es6", "variables"]
+			"tags": [
+				"javascript",
+				"es6",
+				"variables"
+			]
 		},
 		{
 			"id": "fe-006",
 			"question": "What is event delegation in JavaScript?",
 			"answer": "Event delegation is a technique where you attach a single event listener to a parent element instead of multiple listeners to child elements. The event bubbles up from the target to the parent, where it's handled. This improves performance and handles dynamically added elements. Use event.target to identify which child triggered the event.",
 			"difficulty": "medium",
-			"tags": ["javascript", "events", "dom"]
+			"tags": [
+				"javascript",
+				"events",
+				"dom"
+			]
 		},
 		{
 			"id": "fe-007",
 			"question": "Explain React's useEffect hook and its dependencies array.",
 			"answer": "useEffect runs side effects in functional components. It takes a function and an optional dependencies array. With empty array []: runs once on mount. With dependencies [a, b]: runs when dependencies change. No array: runs on every render. Return a cleanup function to clean up effects (e.g., remove event listeners) before re-running or unmounting.",
 			"difficulty": "medium",
-			"tags": ["react", "hooks", "lifecycle"]
+			"tags": [
+				"react",
+				"hooks",
+				"lifecycle"
+			]
 		},
 		{
 			"id": "fe-008",
 			"question": "What are CSS Flexbox and Grid, and when should you use each?",
 			"answer": "Flexbox is one-dimensional (row or column) for laying out items in a single direction. Best for navigation bars, card layouts, centering. Grid is two-dimensional (rows and columns) for complex layouts. Best for overall page structure, dashboards, magazine layouts. They can be combined: Grid for macro layout, Flexbox for components.",
 			"difficulty": "medium",
-			"tags": ["css", "flexbox", "grid", "layout"]
+			"tags": [
+				"css",
+				"flexbox",
+				"grid",
+				"layout"
+			]
 		},
 		{
 			"id": "fe-009",
 			"question": "What is the JavaScript Event Loop?",
 			"answer": "The Event Loop is the mechanism that allows JavaScript to perform non-blocking operations despite being single-threaded. It continuously checks the call stack and task queue. When the call stack is empty, it pushes callbacks from the queue to the stack. Microtasks (Promises) have priority over macrotasks (setTimeout, DOM events).",
 			"difficulty": "hard",
-			"tags": ["javascript", "async", "event-loop"]
+			"tags": [
+				"javascript",
+				"async",
+				"event-loop"
+			]
 		},
 		{
 			"id": "fe-010",
 			"question": "What are React keys and why are they important?",
 			"answer": "Keys are special props used when rendering lists to help React identify which items changed, were added, or removed. They should be unique and stable (use IDs, not array indices when possible). Without proper keys, React may re-render unnecessarily or cause state bugs. Keys help with reconciliation efficiency.",
 			"difficulty": "easy",
-			"tags": ["react", "lists", "performance"]
+			"tags": [
+				"react",
+				"lists",
+				"performance"
+			]
 		},
 		{
 			"id": "fe-011",
 			"question": "What is the difference between state and props in React?",
 			"answer": "Props are read-only data passed from parent to child components. State is internal, mutable data managed within a component. Props enable component reusability and data flow. State enables dynamic, interactive components. Update state with setState (class) or useState hook (functional).",
 			"difficulty": "easy",
-			"tags": ["react", "state", "props"]
+			"tags": [
+				"react",
+				"state",
+				"props"
+			]
 		},
 		{
 			"id": "fe-012",
 			"question": "What is useMemo and when should you use it?",
 			"answer": "useMemo memoizes a computed value, only recalculating when dependencies change. Use for expensive calculations to avoid unnecessary re-computation. Helps prevent unnecessary re-renders when passing memoized values to child components. Don't overuse - memoization has overhead.",
 			"difficulty": "medium",
-			"tags": ["react", "hooks", "performance"]
+			"tags": [
+				"react",
+				"hooks",
+				"performance"
+			]
 		},
 		{
 			"id": "fe-013",
 			"question": "What is useCallback and how does it differ from useMemo?",
 			"answer": "useCallback memoizes a function, returning the same reference unless dependencies change. useMemo memoizes any value. Use useCallback to prevent unnecessary re-renders when passing callbacks to optimized child components. Use useMemo for expensive computations.",
 			"difficulty": "medium",
-			"tags": ["react", "hooks", "performance"]
+			"tags": [
+				"react",
+				"hooks",
+				"performance"
+			]
 		},
 		{
 			"id": "fe-014",
 			"question": "What is the purpose of React.memo?",
 			"answer": "React.memo is a higher-order component that prevents re-renders if props haven't changed. It performs a shallow comparison of props. Use for components that render often with same props to optimize performance. Can accept a custom comparison function as second argument.",
 			"difficulty": "medium",
-			"tags": ["react", "memo", "performance"]
+			"tags": [
+				"react",
+				"memo",
+				"performance"
+			]
 		},
 		{
 			"id": "fe-015",
 			"question": "What is the DOM and how does React interact with it?",
 			"answer": "DOM (Document Object Model) is a tree representation of HTML. React creates a Virtual DOM, a JavaScript copy of the real DOM. When state changes, React creates a new Virtual DOM, compares with previous (diffing), and updates only changed nodes in real DOM. This is more efficient than direct DOM manipulation.",
 			"difficulty": "medium",
-			"tags": ["react", "dom", "virtual-dom"]
+			"tags": [
+				"react",
+				"dom",
+				"virtual-dom"
+			]
 		},
 		{
 			"id": "fe-016",
 			"question": "What are React lifecycle methods?",
 			"answer": "Class components have: componentDidMount (runs after render), componentDidUpdate (runs after updates), componentWillUnmount (runs before unmount). useEffect hook combines these for functional components with dependency arrays to control when effects run. Important for subscriptions, fetching data, and cleanup.",
 			"difficulty": "medium",
-			"tags": ["react", "lifecycle", "hooks"]
+			"tags": [
+				"react",
+				"lifecycle",
+				"hooks"
+			]
 		},
 		{
 			"id": "fe-017",
 			"question": "What is hoisting in JavaScript?",
 			"answer": "Hoisting is JavaScript's default behavior of moving declarations to the top of the current scope. Variable declarations (var) and function declarations are hoisted. let and const are also hoisted but stay in a 'Temporal Dead Zone' until the declaration line is executed.",
 			"difficulty": "medium",
-			"tags": ["javascript", "hoisting", "scope"]
+			"tags": [
+				"javascript",
+				"hoisting",
+				"scope"
+			]
 		},
 		{
 			"id": "fe-018",
 			"question": "What is 'this' keyword in JavaScript?",
 			"answer": "The 'this' keyword refers to the object it belongs to. Its value depends on how the function is called: in a method (the object), alone (Global object/window), in a function (Global object in non-strict, undefined in strict), in an event (element that received the event). Arrow functions don't have their own 'this'.",
 			"difficulty": "hard",
-			"tags": ["javascript", "this-keyword", "context"]
+			"tags": [
+				"javascript",
+				"this-keyword",
+				"context"
+			]
 		},
 		{
 			"id": "fe-019",
 			"question": "Explain Prototypal Inheritance in JavaScript.",
 			"answer": "Every JavaScript object has a prototype property, which makes it possible to inherit properties and methods from other objects. When you try to access a property on an object, JS looks at the object itself, then its prototype, and so on up the prototype chain until it finds it or reaches null.",
 			"difficulty": "hard",
-			"tags": ["javascript", "prototypes", "inheritance"]
+			"tags": [
+				"javascript",
+				"prototypes",
+				"inheritance"
+			]
 		},
 		{
 			"id": "fe-020",
 			"question": "What is the difference between client-side and server-side rendering?",
 			"answer": "CSR renders the application in the browser using JavaScript (e.g., standard React apps). SSR renders the initial HTML on the server for each request (e.g., Next.js). CSR has faster subsequent navigation but slower initial load and worse SEO. SSR has better SEO and faster initial load but higher server cost.",
 			"difficulty": "medium",
-			"tags": ["rendering", "ssr", "csr", "seo"]
+			"tags": [
+				"rendering",
+				"ssr",
+				"csr",
+				"seo"
+			]
 		},
 		{
 			"id": "fe-021",
 			"question": "What are Web Workers?",
 			"answer": "Web Workers allow you to run JavaScript in background threads, separate from the main browser thread. This is useful for offloading heavy computations (like image processing or large data sorting) to prevent the UI from freezing or becoming unresponsive.",
 			"difficulty": "hard",
-			"tags": ["javascript", "performance", "multi-threading"]
+			"tags": [
+				"javascript",
+				"performance",
+				"multi-threading"
+			]
 		},
 		{
 			"id": "fe-022",
 			"question": "What is the difference between localStorage, sessionStorage, and cookies?",
 			"answer": "localStorage: stores data with no expiration date, persists after browser close. sessionStorage: stores data for one session, cleared when tab closes. Cookies: smaller storage (4KB), can have expiration dates, sent to server with every request. localStorage and sessionStorage are local-only.",
 			"difficulty": "easy",
-			"tags": ["browser", "storage", "cookies"]
+			"tags": [
+				"browser",
+				"storage",
+				"cookies"
+			]
 		},
 		{
 			"id": "fe-023",
 			"question": "What is Semantic HTML and why is it important?",
 			"answer": "Semantic HTML uses tags that describe their meaning (e.g., <header>, <nav>, <article>, <footer>) rather than just appearance (<div>, <span>). It's crucial for accessibility (screen readers), SEO, and code maintainability.",
 			"difficulty": "easy",
-			"tags": ["html", "accessibility", "seo"]
+			"tags": [
+				"html",
+				"accessibility",
+				"seo"
+			]
 		},
 		{
 			"id": "fe-024",
 			"question": "Explain 'box-sizing: border-box' and why it's useful.",
 			"answer": "By default (content-box), width/height apply only to content. With border-box, width/height include padding and border. This makes layout much easier because setting an element's width to 100% with 20px padding won't cause it to overflow its container.",
 			"difficulty": "medium",
-			"tags": ["css", "box-model", "layout"]
+			"tags": [
+				"css",
+				"box-model",
+				"layout"
+			]
 		},
 		{
 			"id": "fe-025",
 			"question": "What are React Portals and when should you use them?",
 			"answer": "Portals allow you to render children into a DOM node that exists outside the DOM hierarchy of the parent component. Common use cases include modals, tooltips, and dropdowns, where you need the component to 'break out' of overflow: hidden or z-index constraints.",
 			"difficulty": "medium",
-			"tags": ["react", "dom", "portals"]
+			"tags": [
+				"react",
+				"dom",
+				"portals"
+			]
 		},
 		{
 			"id": "fe-026",
 			"question": "What is the difference between a shallow and deep copy of an object?",
 			"answer": "A shallow copy (e.g., Object.assign, spread operator) only copies the first level of the object; nested objects are still references. A deep copy (e.g., JSON.parse(JSON.stringify(obj)) or structuredClone) creates a completely independent copy of all levels.",
 			"difficulty": "medium",
-			"tags": ["javascript", "objects", "cloning"]
+			"tags": [
+				"javascript",
+				"objects",
+				"cloning"
+			]
 		},
 		{
 			"id": "fe-027",
 			"question": "What is the 'Spread' operator vs 'Rest' operator?",
 			"answer": "Both use '...'. Spread 'expands' an array or object into its elements (e.g., [...arr], {...obj}). Rest 'collects' multiple elements into an array (e.g., in function arguments function(...args) or destructuring const [first, ...rest] = arr).",
 			"difficulty": "easy",
-			"tags": ["javascript", "es6", "operators"]
+			"tags": [
+				"javascript",
+				"es6",
+				"operators"
+			]
 		},
 		{
 			"id": "fe-028",
 			"question": "What are higher-order components (HOC) in React?",
 			"answer": "A higher-order component is a function that takes a component and returns a new component with added functionality or data. It's a pattern for reusing component logic (e.g., withAuth(MyComponent)). Now often replaced by custom hooks.",
 			"difficulty": "hard",
-			"tags": ["react", "patterns", "reusability"]
+			"tags": [
+				"react",
+				"patterns",
+				"reusability"
+			]
 		},
 		{
 			"id": "fe-029",
 			"question": "Explain the difference between '==' and '===' in JavaScript.",
 			"answer": "The '==' operator performs type coercion (converts types if they are different) before comparison. The '===' operator (strict equality) checks for both value and type equality without coercion. Always use '===' to avoid unexpected bugs.",
 			"difficulty": "easy",
-			"tags": ["javascript", "operators", "basics"]
+			"tags": [
+				"javascript",
+				"operators",
+				"basics"
+			]
 		},
 		{
 			"id": "fe-030",
 			"question": "What is a Promise and what are its states?",
 			"answer": "A Promise is an object representing the eventual completion or failure of an asynchronous operation. States: Pending (initial state), Fulfilled (operation completed successfully), Rejected (operation failed). Once settled, it stays in that state.",
 			"difficulty": "medium",
-			"tags": ["javascript", "async", "promises"]
+			"tags": [
+				"javascript",
+				"async",
+				"promises"
+			]
 		},
 		{
 			"id": "fe-031",
 			"question": "What is the purpose of the 'alt' attribute on images?",
 			"answer": "The 'alt' attribute provides alternative text for an image if it cannot be displayed (e.g., slow connection) and is essential for accessibility (screen readers). It should describe the image's content or function. Decorative images should have alt=\"\".",
 			"difficulty": "easy",
-			"tags": ["html", "accessibility", "images"]
+			"tags": [
+				"html",
+				"accessibility",
+				"images"
+			]
 		},
 		{
 			"id": "fe-032",
 			"question": "What is 'Tree Shaking' in the context of frontend builds?",
 			"answer": "Tree shaking is a term for dead-code elimination. It relies on the static structure of ES6 module syntax (import/export) to identify and remove unused code from the final bundle, reducing file size and improving performance.",
 			"difficulty": "hard",
-			"tags": ["performance", "build-tools", "optimization"]
+			"tags": [
+				"performance",
+				"build-tools",
+				"optimization"
+			]
 		},
 		{
 			"id": "fe-033",
 			"question": "What is React Context and when should you use it?",
 			"answer": "Context provides a way to pass data through the component tree without having to pass props down manually at every level (avoiding prop drilling). Use it for 'global' data like theme, user authentication, or preferred language.",
 			"difficulty": "medium",
-			"tags": ["react", "state-management", "context"]
+			"tags": [
+				"react",
+				"state-management",
+				"context"
+			]
 		},
 		{
 			"id": "fe-034",
 			"question": "Explain the difference between an element and a component in React.",
 			"answer": "An element is a plain object describing what you want to see on the screen in terms of the DOM nodes or other components. A component is a function or a class which optionally accepts input (props) and returns a React element.",
 			"difficulty": "easy",
-			"tags": ["react", "basics", "architecture"]
+			"tags": [
+				"react",
+				"basics",
+				"architecture"
+			]
 		},
 		{
 			"id": "fe-035",
 			"question": "What is the purpose of the 'key' prop when rendering lists?",
 			"answer": "Keys help React identify which items have changed, been added, or been removed. They give elements a stable identity, which allows React to reuse DOM nodes rather than re-creating them, significantly improving performance.",
 			"difficulty": "easy",
-			"tags": ["react", "performance", "lists"]
+			"tags": [
+				"react",
+				"performance",
+				"lists"
+			]
 		},
 		{
 			"id": "fe-036",
 			"question": "What is a 'controlled component' in React forms?",
 			"answer": "A controlled component is an input element whose value is driven by React state. Changes to the input are handled by a function that updates the state, and the state is then passed back down as the input's value.",
 			"difficulty": "medium",
-			"tags": ["react", "forms", "state"]
+			"tags": [
+				"react",
+				"forms",
+				"state"
+			]
 		},
 		{
 			"id": "fe-037",
 			"question": "What is the difference between a 'pure function' and one with 'side effects'?",
 			"answer": "A pure function always returns the same output for the same input and has no side effects (doesn't modify external state). Side effects include things like API calls, DOM manipulation, or logging to the console.",
 			"difficulty": "easy",
-			"tags": ["javascript", "functional-programming", "basics"]
+			"tags": [
+				"javascript",
+				"functional-programming",
+				"basics"
+			]
 		},
 		{
 			"id": "fe-038",
 			"question": "What is 'Debouncing' and why is it used?",
 			"answer": "Debouncing is a technique used to limit the rate at which a function gets invoked. It waits for a certain amount of silence after the last call before executing. Common for search inputs to avoid an API call on every keystroke.",
 			"difficulty": "medium",
-			"tags": ["javascript", "performance", "optimization"]
+			"tags": [
+				"javascript",
+				"performance",
+				"optimization"
+			]
 		},
 		{
 			"id": "fe-039",
 			"question": "What is 'Throttling' and how does it differ from Debouncing?",
 			"answer": "Throttling ensures a function is called at most once in a specified time interval, regardless of how many times it's triggered. While debouncing waits for a pause, throttling guarantees regular execution during continuous events (like scroll).",
 			"difficulty": "medium",
-			"tags": ["javascript", "performance", "optimization"]
+			"tags": [
+				"javascript",
+				"performance",
+				"optimization"
+			]
 		},
 		{
 			"id": "fe-040",
 			"question": "What is the 'Same-Origin Policy'?",
 			"answer": "It's a critical security mechanism that restricts how a document or script loaded from one origin can interact with a resource from another origin. It helps prevent malicious sites from reading sensitive data from other sites.",
 			"difficulty": "hard",
-			"tags": ["security", "browser", "web-api"]
+			"tags": [
+				"security",
+				"browser",
+				"web-api"
+			]
 		}
-	]
+	],
+	"cardCount": 40
 }
