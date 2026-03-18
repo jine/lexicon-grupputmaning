@@ -1,0 +1,56 @@
+{
+  "id": "deck-git",
+  "name": "Git & GitHub",
+  "description": "Flashcards om versionshantering och samarbete baserat på schema-vecka",
+  "category": "system-design",
+  "cards": [
+    {
+      "id": "agile-007",
+      "question": "Vad är Git-Flow?",
+      "answer": "Git-Flow är ett grenstrategimönster som definierar specifika grenar för feature, release, hotfix och master/main.",
+      "category": "system-design",
+      "difficulty": "medium",
+      "tags": [
+        "git",
+        "workflow",
+        "branching"
+      ],
+      "status": "new",
+      "createdAt": "2026-03-18T13:42:51.290Z",
+      "updatedAt": "2026-03-18T13:42:51.290Z"
+    },
+    {
+      "id": "agile-009",
+      "question": "Vad är GitHub Projects?",
+      "answer": "GitHub Projects är ett verktyg för att organisera och spåra arbete med boards, issues och milestones.",
+      "category": "system-design",
+      "difficulty": "easy",
+      "tags": [
+        "github",
+        "projects",
+        "planning"
+      ],
+      "status": "new",
+      "createdAt": "2026-03-18T13:42:51.290Z",
+      "updatedAt": "2026-03-18T13:42:51.290Z"
+    },
+    {
+      "id": "agile-011",
+      "question": "Vad är en issue i GitHub?",
+      "answer": "En issue är ett ärende eller uppgift i GitHub som kan användas för att spåra arbete, buggar eller förbättringar.",
+      "category": "system-design",
+      "difficulty": "easy",
+      "tags": [
+        "github",
+        "issues",
+        "tracking"
+      ],
+      "status": "new",
+      "createdAt": "2026-03-18T13:42:51.290Z",
+      "updatedAt": "2026-03-18T13:42:51.290Z"
+    }
+  ],
+  "cardCount": 3,
+  "createdAt": "2026-03-18T13:42:51.290Z",
+  "updatedAt": "2026-03-18T13:42:51.290Z"
+}

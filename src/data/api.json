@@ -1,0 +1,86 @@
+{
+  "id": "deck-api",
+  "name": "API-utveckling",
+  "description": "Flashcards om API:er, REST och backend-utveckling baserat på schema-vecka",
+  "category": "backend",
+  "cards": [
+    {
+      "id": "api-017",
+      "question": "Vad är REST API?",
+      "answer": "REST (Representational State Transfer) är ett arkitekturmönster för API:er som använder HTTP-metoder för att manipulera resurser.",
+      "category": "backend",
+      "difficulty": "medium",
+      "tags": [
+        "api",
+        "rest",
+        "backend"
+      ],
+      "status": "new",
+      "createdAt": "2026-03-18T13:42:51.290Z",
+      "updatedAt": "2026-03-18T13:42:51.290Z"
+    },
+    {
+      "id": "api-018",
+      "question": "Vad är GraphQL?",
+      "answer": "GraphQL är ett API-framställningsspråk som låter klienter specifikt begära den data de behöver, vilket minimerar over-fetching.",
+      "category": "backend",
+      "difficulty": "hard",
+      "tags": [
+        "api",
+        "graphql",
+        "backend"
+      ],
+      "status": "new",
+      "createdAt": "2026-03-18T13:42:51.290Z",
+      "updatedAt": "2026-03-18T13:42:51.290Z"
+    },
+    {
+      "id": "api-019",
+      "question": "Vad är fetch i JavaScript?",
+      "answer": "fetch är ett API för att göra HTTP-förfrågningar från JavaScript. Det returnerar en Promise som löses med ett Response-objekt.",
+      "category": "backend",
+      "difficulty": "easy",
+      "tags": [
+        "javascript",
+        "fetch",
+        "api"
+      ],
+      "status": "new",
+      "createdAt": "2026-03-18T13:42:51.290Z",
+      "updatedAt": "2026-03-18T13:42:51.290Z"
+    },
+    {
+      "id": "api-020",
+      "question": "Vad är en async funktion?",
+      "answer": "En async funktion är en funktion som alltid returnerar en Promise och låter dig använda await för att vänta på asynkrona operationer.",
+      "category": "backend",
+      "difficulty": "medium",
+      "tags": [
+        "javascript",
+        "async",
+        "promises"
+      ],
+      "status": "new",
+      "createdAt": "2026-03-18T13:42:51.290Z",
+      "updatedAt": "2026-03-18T13:42:51.290Z"
+    },
+    {
+      "id": "api-021",
+      "question": "Vad är felhantering med try/catch?",
+      "answer": "try/catch är ett sätt att hantera fel i JavaScript-kod, där kod i try-blocket körs och catch-blocket körs om ett fel uppstår.",
+      "category": "backend",
+      "difficulty": "easy",
+      "tags": [
+        "javascript",
+        "error-handling",
+        "try-catch"
+      ],
+      "status": "new",
+      "createdAt": "2026-03-18T13:42:51.290Z",
+      "updatedAt": "2026-03-18T13:42:51.290Z"
+    }
+  ],
+  "cardCount": 5,
+  "createdAt": "2026-03-18T13:42:51.290Z",
+  "updatedAt": "2026-03-18T13:42:51.290Z"
+}

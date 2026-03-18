@@ -1,9 +1,6 @@
-/**
- * STEP 2: AI-Powered Flashcard Generation using opencode local model
- */
-
-import { execSync } from "node:child_process";
+import { spawnSync } from "node:child_process";
 import fs from "node:fs";
+import os from "node:os";
 import path from "node:path";
 
 interface ExtractedContent {
@@ -25,31 +22,80 @@ interface FlashcardData {
 }
 
 const OUTPUT_DIR = path.join(__dirname, "..", "src", "data", "extracted");
-const MODEL = "opencode/mimo-v2-flash-free"; // Confirmed from opencode models list
+const MODEL = "opencode/mimo-v2-flash-free";
 
 /**
- * Extracts JSON array from the opencode output.
- * Tries parsing the whole output first, then looks for the first '[' and matching ']'.
+ * Runs opencode with a single-line prompt.
+ * Removed --format json to rely on prompt instructions.
  */
-function extractJsonFromOutput(output: string): any[] {
-	// 1. Try parsing the whole output as JSON (if it's clean)
-	try {
-		const parsed = JSON.parse(output);
-		if (Array.isArray(parsed)) return parsed;
-	} catch (e) {
-		// Not clean JSON, proceed to extraction
-	}
+function runOpenCodeSingleLine(prompt: string): string {
+	const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), "opencode-"));
+	console.log(`  Running opencode in isolated temp dir: ${tempDir}`);
 
-	// 2. Regex to find JSON array
-	const startIndex = output.indexOf("[");
-	if (startIndex === -1) throw new Error("No JSON array start found in output");
+	try {
+		// Compress prompt to single line
+		const compressedPrompt = prompt.replace(/\s+/g, " ").trim();
+
+		// Arguments: opencode run --model <model> --dir <dir> "<prompt>"
+		// Removed --format json
+		const args = ["run", "--model", MODEL, "--dir", tempDir, compressedPrompt];
+
+		console.log(
+			`  Executing: opencode run --model ${MODEL} --dir ... "<prompt>"`,
+		);
+
+		const result = spawnSync("opencode", args, {
+			encoding: "utf-8",
+			maxBuffer: 20 * 1024 * 1024,
+			timeout: 45000,
+			killSignal: "SIGKILL",
+			windowsVerbatimArguments: true,
+		});
+
+		// Clean up
+		try {
+			fs.rmdirSync(tempDir);
+		} catch (e) {}
+
+		if (result.error) throw result.error;
+		if (result.status !== 0) {
+			console.error(`  [DEBUG] Opencode exited with code ${result.status}`);
+			console.error(`  [DEBUG] Stderr: ${result.stderr}`);
+		}
+
+		return result.stdout || "";
+	} catch (error: unknown) {
+		console.error(
+			`  Error running opencode: ${error instanceof Error ? error.message : String(error)}`,
+		);
+		throw error;
+	}
+}
+
+/**
+ * Extracts JSON array from text output.
+ */
+function extractJsonFromOutput(output: string): unknown[] {
+	// 1. Remove ANSI escape codes
+	const ansiRegex = /\\x1b\[[0-9;]*[mGKJH]/g;
+	const cleanOutput = output.replace(ansiRegex, "");
+
+	console.log(`  [DEBUG] Cleaned output length: ${cleanOutput.length}`);
+	console.log(`  [DEBUG] Output preview: ${cleanOutput.substring(0, 300)}...`);
+
+	// 2. Find JSON array pattern
+	const startIndex = cleanOutput.indexOf("[");
+	if (startIndex === -1) {
+		console.log(`  [DEBUG] No '[' found in output`);
+		throw new Error("No JSON array start found");
+	}
 
 	let braceCount = 0;
 	let endIndex = -1;
 
-	for (let i = startIndex; i < output.length; i++) {
-		if (output[i] === "[") braceCount++;
-		else if (output[i] === "]") {
+	for (let i = startIndex; i < cleanOutput.length; i++) {
+		if (cleanOutput[i] === "[") braceCount++;
+		else if (cleanOutput[i] === "]") {
 			braceCount--;
 			if (braceCount === 0) {
 				endIndex = i;
@@ -58,37 +104,42 @@ function extractJsonFromOutput(output: string): any[] {
 		}
 	}
 
-	if (endIndex === -1) throw new Error("No matching closing bracket found");
+	if (endIndex === -1) {
+		console.log(`  [DEBUG] No matching ']' found`);
+		throw new Error("No matching closing bracket");
+	}
 
-	const jsonString = output.substring(startIndex, endIndex + 1);
+	const jsonString = cleanOutput.substring(startIndex, endIndex + 1);
+	console.log(`  [DEBUG] Extracted JSON length: ${jsonString.length}`);
 
 	try {
 		return JSON.parse(jsonString);
-	} catch (e) {
-		console.error("Failed to parse extracted JSON string.");
+	} catch (e: any) {
+		console.log(`  [DEBUG] Failed to parse JSON: ${e.message}`);
+		console.log(`  [DEBUG] JSON snippet: ${jsonString.substring(0, 200)}...`);
 		throw e;
 	}
 }
 
-/**
- * Analyzes content using opencode and generates flashcards.
- */
-function analyzeWithAI(content: string, repoName: string): FlashcardData[] {
-	console.log(`  Analyzing content from ${repoName} with AI...`);
+async function analyzeWithAI(
+	content: string,
+	repoName: string,
+): Promise<FlashcardData[]> {
+	console.log(`  Analyzing ${repoName} with AI...`);
 
-	// Truncate content to avoid token limits (approx 4000 chars)
 	const truncatedContent = content.substring(0, 4000);
 
-	// Strict prompt to force JSON output and Swedish language
+	// Updated prompt with strict instructions
 	const prompt = `
 Du är en expert på att skapa tekniska flashcards.
 Generera 3 till 5 flashcards baserat på följande text från ett GitHub-repo.
 
 INSTRUKTIONER:
-1. Analysera koden/texten och identifiera viktiga koncept (React, CSS, Agile, etc.).
+1. Analysera koden/texten och identifiera viktiga koncept (React, CSS, Agile, etc.)
 2. Skapa flashcards på SVENSKA.
 3. Output MÅSTE vara en giltig JSON-array utan någon annan text eller förklaringar.
 4. Varje flashcard måste ha fälten: "question", "answer", "difficulty" ("easy", "medium", "hard"), och "tags" (array av strängar).
+5. RETURNERA ENDAST JSON-ARRAYEN. INGA ANDRA TEXT ELLER MARKDOWN.
 
 EXEMPEL PÅ OUTPUT:
 [
@@ -106,50 +157,37 @@ ${truncatedContent}
 JSON OUTPUT:
 `;
 
-	let rawOutput = "";
 	try {
-		// Use stdin piping to avoid shell argument splitting issues
-		const command = `opencode run --model ${MODEL}`;
-		console.log(`  Running: ${command}`);
-
-		rawOutput = execSync(command, {
-			input: prompt,
-			encoding: "utf-8",
-			maxBuffer: 10 * 1024 * 1024,
-		});
-
-		// Log output for debugging if parsing fails later
-		console.log(`  Received output length: ${rawOutput.length}`);
-
+		const rawOutput = runOpenCodeSingleLine(prompt);
 		const flashcardsData = extractJsonFromOutput(rawOutput);
 
 		if (!Array.isArray(flashcardsData)) {
 			throw new Error("Extracted data is not an array");
 		}
 
-		// Map and normalize the data
-		return flashcardsData.map((fc: Record<string, any>) => ({
-			repoName,
-			topic: "General",
-			// Handle Swedish keys if model uses them, fallback to English
-			question: (fc.question || fc.fråga || "Unknown Question").toString(),
-			answer: (fc.answer || fc.svar || "Unknown Answer").toString(),
-			// Normalize difficulty
-			difficulty: (() => {
-				const diff = (fc.difficulty || "").toString().toLowerCase();
-				if (diff === "easy" || diff === "enkel") return "easy";
-				if (diff === "hard" || diff === "svår") return "hard";
-				return "medium";
-			})(),
-			// Ensure tags is an array
-			tags: Array.isArray(fc.tags) ? fc.tags : ["general"],
-		}));
-	} catch (error: any) {
-		console.error(`  AI Analysis failed: ${error.message}`);
+		return flashcardsData.map((fc) => {
+			const fcRecord = fc as Record<string, unknown>;
+			return {
+				repoName,
+				topic: "General",
+				question: String(
+					fcRecord.question || fcRecord.fråga || "Unknown Question",
+				),
+				answer: String(fcRecord.answer || fcRecord.svar || "Unknown Answer"),
+				difficulty: (() => {
+					const diff = String(fcRecord.difficulty || "").toLowerCase();
+					if (diff === "easy" || diff === "enkel") return "easy";
+					if (diff === "hard" || diff === "svår") return "hard";
+					return "medium";
+				})(),
+				tags: Array.isArray(fcRecord.tags) ? fcRecord.tags : ["general"],
+			};
+		});
+	} catch (error: unknown) {
 		console.error(
-			`  Raw output preview: ${rawOutput ? rawOutput.substring(0, 200) : "No output"}`,
+			`  AI Analysis failed: ${error instanceof Error ? error.message : String(error)}`,
 		);
-		return []; // Return empty array on failure
+		return [];
 	}
 }
 
@@ -174,22 +212,19 @@ async function main() {
 
 	const allFlashcards: FlashcardData[] = [];
 
-	// Process each repository (limit to 5 for now as requested)
 	for (const repo of content.slice(0, 5)) {
-		// Combine all file content for this repo
 		const combinedContent = repo.files
 			.map((f) => `File: ${f.path}\n${f.content}`)
 			.join("\n\n---\n\n");
 
 		if (combinedContent.length > 50) {
-			const flashcards = analyzeWithAI(combinedContent, repo.repoName);
+			const flashcards = await analyzeWithAI(combinedContent, repo.repoName);
 			allFlashcards.push(...flashcards);
 		}
 	}
 
 	console.log(`\nTotal flashcards generated: ${allFlashcards.length}`);
 
-	// Save flashcards
 	const outputPath = path.join(OUTPUT_DIR, "generated-flashcards.json");
 	fs.writeFileSync(outputPath, JSON.stringify(allFlashcards, null, 2));
 

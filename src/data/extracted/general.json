@@ -1,0 +1,145 @@
+{
+	"topic": "General",
+	"cards": [
+		{
+			"repoName": "test-och-kartlaggning",
+			"topic": "General",
+			"question": "Vad är Instruktioner för Test- och kartläggning och hur används det i test-och-kartlaggning?",
+			"answer": "Instruktioner för Test- och kartläggning är ett begrepp eller verktyg som förekommer i repo test-och-kartlaggning. Det används för att demonstrera eller öva på ett specifikt programmeringskoncept. Se filen README.md för detaljerad implementation.",
+			"difficulty": "medium",
+			"tags": [
+				"Instruktioner för Test- och kartläggning",
+				"Visual Studio Code",
+				"Git/GitHub",
+				"HTML & CSS",
+				"Debugger/inspector"
+			]
+		},
+		{
+			"repoName": "schema-vecka-2",
+			"topic": "General",
+			"question": "Vad är 📅 SCHEMA VECKA 2 och hur används det i schema-vecka-2?",
+			"answer": "📅 SCHEMA VECKA 2 är ett begrepp eller verktyg som förekommer i repo schema-vecka-2. Det används för att demonstrera eller öva på ett specifikt programmeringskoncept. Se filen README.md för detaljerad implementation.",
+			"difficulty": "medium",
+			"tags": [
+				"📅 SCHEMA VECKA 2",
+				"TypeScript, vecka 1 av 3 (grunder)",
+				"🎯 Mål för veckan",
+				"📚 Material",
+				"E‑Learning"
+			]
+		},
+		{
+			"repoName": "schema-vecka-3",
+			"topic": "General",
+			"question": "Vad är 📅 Schema vecka 3 och hur används det i schema-vecka-3?",
+			"answer": "📅 Schema vecka 3 är ett begrepp eller verktyg som förekommer i repo schema-vecka-3. Det används för att demonstrera eller öva på ett specifikt programmeringskoncept. Se filen README.md för detaljerad implementation.",
+			"difficulty": "medium",
+			"tags": [
+				"📅 Schema vecka 3",
+				"TypeScript, vecka 2 av 3 (fördjupning med object, funktioner & DOM)",
+				"🎯 Mål för veckan",
+				"📚 Material",
+				"E‑Learning"
+			]
+		},
+		{
+			"repoName": "schema-vecka-4",
+			"topic": "General",
+			"question": "Vad är 📅 Schema vecka 4 och hur används det i schema-vecka-4?",
+			"answer": "📅 Schema vecka 4 är ett begrepp eller verktyg som förekommer i repo schema-vecka-4. Det används för att demonstrera eller öva på ett specifikt programmeringskoncept. Se filen README.md för detaljerad implementation.",
+			"difficulty": "medium",
+			"tags": [
+				"📅 Schema vecka 4",
+				"📅 Måndag",
+				"Mål för dagen",
+				"Läsning",
+				"Övningar"
+			]
+		},
+		{
+			"repoName": "schema-vecka-48",
+			"topic": "General",
+			"question": "Vad är 📅 Schema vecka 48 och hur används det i schema-vecka-48?",
+			"answer": "📅 Schema vecka 48 är ett begrepp eller verktyg som förekommer i repo schema-vecka-48. Det används för att demonstrera eller öva på ett specifikt programmeringskoncept. Se filen README.md för detaljerad implementation.",
+			"difficulty": "medium",
+			"tags": [
+				"📅 Schema vecka 48",
+				"HTML & CSS - Tillgänglighet, vecka 1 av 4",
+				"🎯 Mål för veckan",
+				"📚 Material",
+				"E‑Learning"
+			]
+		},
+		{
+			"repoName": "schema-vecka-49",
+			"topic": "General",
+			"question": "Vad är 📅 Schema vecka 49 och hur används det i schema-vecka-49?",
+			"answer": "📅 Schema vecka 49 är ett begrepp eller verktyg som förekommer i repo schema-vecka-49. Det används för att demonstrera eller öva på ett specifikt programmeringskoncept. Se filen README.md för detaljerad implementation.",
+			"difficulty": "medium",
+			"tags": [
+				"📅 Schema vecka 49",
+				"HTML & CSS - CSS fördjupning, vecka 2 av 4",
+				"🎯 Mål för veckan",
+				"📚 Material",
+				"E‑Learning"
+			]
+		},
+		{
+			"repoName": "schema-vecka-50",
+			"topic": "General",
+			"question": "Vad är 📅 Schema vecka 50 och hur används det i schema-vecka-50?",
+			"answer": "📅 Schema vecka 50 är ett begrepp eller verktyg som förekommer i repo schema-vecka-50. Det används för att demonstrera eller öva på ett specifikt programmeringskoncept. Se filen README.md för detaljerad implementation.",
+			"difficulty": "medium",
+			"tags": [
+				"📅 Schema vecka 50",
+				"📅 Måndag",
+				"Mål för dagen",
+				"E‑Learning",
+				"Läsning"
+			]
+		},
+		{
+			"repoName": "schema-vecka-51",
+			"topic": "General",
+			"question": "Vad är 📅 Schema vecka 51 och hur används det i schema-vecka-51?",
+			"answer": "📅 Schema vecka 51 är ett begrepp eller verktyg som förekommer i repo schema-vecka-51. Det används för att demonstrera eller öva på ett specifikt programmeringskoncept. Se filen README.md för detaljerad implementation.",
+			"difficulty": "medium",
+			"tags": [
+				"📅 Schema vecka 51",
+				"📅 Måndag",
+				"Mål för dagen",
+				"Förslag:",
+				"📅 Tisdag"
+			]
+		},
+		{
+			"repoName": "planned-planthood-2025",
+			"topic": "General",
+			"question": "Vad är Inlämningsuppgift Planned Planthood och hur används det i planned-planthood-2025?",
+			"answer": "Inlämningsuppgift Planned Planthood är ett begrepp eller verktyg som förekommer i repo planned-planthood-2025. Det används för att demonstrera eller öva på ett specifikt programmeringskoncept. Se filen README.md för detaljerad implementation.",
+			"difficulty": "medium",
+			"tags": [
+				"Inlämningsuppgift Planned Planthood",
+				"Inlämning",
+				"Krav",
+				"Extra",
+				"Övriga resurser"
+			]
+		},
+		{
+			"repoName": "schema-vecka-5",
+			"topic": "General",
+			"question": "Vad är 📅 Schema vecka 5 och hur används det i schema-vecka-5?",
+			"answer": "📅 Schema vecka 5 är ett begrepp eller verktyg som förekommer i repo schema-vecka-5. Det används för att demonstrera eller öva på ett specifikt programmeringskoncept. Se filen README.md för detaljerad implementation.",
+			"difficulty": "medium",
+			"tags": [
+				"📅 Schema vecka 5",
+				"📅 Måndag",
+				"Mål för dagen",
+				"E-learning",
+				"Läsning"
+			]
+		}
+	]
+}
