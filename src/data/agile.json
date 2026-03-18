@@ -1,0 +1,143 @@
+{
+	"id": "deck-agile",
+	"name": "Agile & Scrum",
+	"description": "Flashcards om agila metoder, Scrum och samarbete baserat på Lexicons utbildningsmaterial.",
+	"category": "behavioral",
+	"cards": [
+		{
+			"id": "agile-007",
+			"question": "Vad är Git-Flow?",
+			"answer": "Git-Flow är ett grenstrategimönster som definierar specifika grenar för feature, release, hotfix och master/main.",
+			"category": "system-design",
+			"difficulty": "medium",
+			"tags": ["git", "workflow", "branching"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "agile-008",
+			"question": "Vad är en working agreement?",
+			"answer": "En working agreement är ett sett av regler och normer som teamet gemensamt skapar för hur de ska arbeta tillsammans.",
+			"category": "behavioral",
+			"difficulty": "easy",
+			"tags": ["agile", "teamwork", "collaboration"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "agile-009",
+			"question": "Vad är GitHub Projects?",
+			"answer": "GitHub Projects är ett verktyg för att organisera och spåra arbete med boards, issues och milestones.",
+			"category": "system-design",
+			"difficulty": "easy",
+			"tags": ["github", "projects", "planning"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "agile-010",
+			"question": "Vad är agila värderingar?",
+			"answer": "Agila värderingar inkluderar individer framför processer, samarbete över kontrakt, fungerande mjukvara över dokumentation och responsivitet över följsamhet.",
+			"category": "behavioral",
+			"difficulty": "easy",
+			"tags": ["agile", "values", "principles"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "agile-011",
+			"question": "Vad är en issue i GitHub?",
+			"answer": "En issue är ett ärende eller uppgift i GitHub som kan användas för att spåra arbete, buggar eller förbättringar.",
+			"category": "system-design",
+			"difficulty": "easy",
+			"tags": ["github", "issues", "tracking"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "agile-012",
+			"question": "Vad är Scrum?",
+			"answer": "Scrum är ett ramverk för att utveckla, leverera och underhålla komplexa produkter med fokus på flexibel utveckling och samarbete.",
+			"category": "behavioral",
+			"difficulty": "easy",
+			"tags": ["scrum", "agile", "framework"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "agile-013",
+			"question": "Vad är en sprint i Scrum?",
+			"answer": "En sprint är en tidsboxad period (ofta 1-4 veckor) där ett team levererar ett potentiellt levererbart produktinkrement.",
+			"category": "behavioral",
+			"difficulty": "easy",
+			"tags": ["scrum", "sprint", "iteration"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "agile-014",
+			"question": "Vad är daily standup?",
+			"answer": "Daily standup är ett kort dagligt möte (15 min) där teamet delar vad de gjorde, ska göra och om det finns hinder.",
+			"category": "behavioral",
+			"difficulty": "easy",
+			"tags": ["scrum", "meeting", "communication"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "agile-015",
+			"question": "Vad är en product backlog?",
+			"answer": "En product backlog är en prioriterad lista av allt som behövs för att förbättra produkten, inklusive features, bugs och tech debt.",
+			"category": "behavioral",
+			"difficulty": "medium",
+			"tags": ["scrum", "backlog", "prioritization"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "agile-016",
+			"question": "Vad är sprint retrospective?",
+			"answer": "Sprint retrospective är ett möte i slutet av varje sprint där teamet reflekterar över vad som gick bra, vad som kunde förbättras och vad de ska göra annorlunda.",
+			"category": "behavioral",
+			"difficulty": "medium",
+			"tags": ["scrum", "retrospective", "improvement"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "agile-017",
+			"question": "Vad är Definition of Done (DoD)?",
+			"answer": "Definition of Done är ett gemensamt avtal om vad som krävs för att ett arbete ska anses vara färdigt, inklusive tester och dokumentation.",
+			"category": "behavioral",
+			"difficulty": "medium",
+			"tags": ["scrum", "quality", "standards"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "agile-018",
+			"question": "Vad är en user story?",
+			"answer": "En user story är en kort beskrivning av en funktion ur slutanvändarens perspektiv, ofta formulerad som 'Som [roll] vill jag [funktion] för att [nytta]'.",
+			"category": "behavioral",
+			"difficulty": "easy",
+			"tags": ["agile", "requirements", "planning"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		}
+	],
+	"cardCount": 13,
+	"createdAt": "2026-03-18T13:42:51.290Z",
+	"updatedAt": "2026-03-18T13:42:51.290Z"
+}
