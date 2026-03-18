@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { getDeckById } from "@/lib/decks";
+import { getDeckById } from "@/lib/deck-loader";
 import { DeckStudyPage } from "./deck-study-page";
 
 interface DeckPageProps {

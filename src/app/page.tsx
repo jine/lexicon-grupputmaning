@@ -1,9 +1,30 @@
 import Link from "next/link";
-import { getAllDecks } from "@/lib/decks";
+import { getAllDecks } from "@/lib/deck-loader";
+import type { Difficulty, FlashcardDeck } from "@/types/flashcard";
+
+// Helper function to determine deck difficulty from cards
+function getDeckDifficultyLabel(
+	cards: FlashcardDeck["cards"],
+): "Beginner" | "Intermediate" | "Advanced" {
+	if (cards.length === 0) return "Beginner";
+
+	const difficultyCounts = cards.reduce(
+		(acc, card) => {
+			acc[card.difficulty] = (acc[card.difficulty] || 0) + 1;
+			return acc;
+		},
+		{} as Record<Difficulty, number>,
+	);
+
+	// Determine overall difficulty based on majority
+	if (difficultyCounts.hard > cards.length / 2) return "Advanced";
+	if (difficultyCounts.medium > cards.length / 2) return "Intermediate";
+	return "Beginner";
+}
 
 interface DeckSummary {
 	id: string;
-	title: string;
+	name: string;
 	description: string;
 	cardCount: number;
 	difficulty: "Beginner" | "Intermediate" | "Advanced";
@@ -23,7 +44,7 @@ function DeckCard({ deck }: { deck: DeckSummary }) {
 			className="block bg-[#1a1a1a] rounded border border-[#2a2a2a] p-4 hover:border-[#3a3a3a] hover:bg-[#1f1f1f] transition-colors cursor-pointer"
 		>
 			<div className="flex items-start justify-between mb-3">
-				<h3 className="font-semibold text-[#f5f5f5]">{deck.title}</h3>
+				<h3 className="font-semibold text-[#f5f5f5]">{deck.name}</h3>
 				<span className={`text-xs ${difficultyColor}`}>{deck.difficulty}</span>
 			</div>
 			<p className="text-sm text-[#888] mb-4">{deck.description}</p>
@@ -38,6 +59,16 @@ function DeckCard({ deck }: { deck: DeckSummary }) {
 export default function Home() {
 	const decks = getAllDecks();
 
+	// Transform FlashcardDeck to DeckSummary for display
+	const deckSummaries: DeckSummary[] = decks.map((deck) => ({
+		id: deck.id,
+		name: deck.name,
+		description: deck.description,
+		cardCount: deck.cardCount,
+		difficulty: getDeckDifficultyLabel(deck.cards),
+		category: deck.category,
+	}));
+
 	return (
 		<div className="max-w-5xl">
 			<div className="mb-8">
@@ -48,7 +79,7 @@ export default function Home() {
 			</div>
 
 			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-				{decks.map((deck) => (
+				{deckSummaries.map((deck) => (
 					<DeckCard key={deck.id} deck={deck} />
 				))}
 			</div>

@@ -4,10 +4,28 @@ import { ArrowLeft, ArrowRight, BookOpen, Layers } from "lucide-react";
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { Flashcard } from "@/components/ui/flashcard";
-import type { Deck } from "@/lib/decks";
+import type { Difficulty, FlashcardDeck } from "@/types/flashcard";
 
 interface DeckStudyPageProps {
-	deck: Deck;
+	deck: FlashcardDeck;
+}
+
+// Map card difficulty to deck difficulty display
+function getDeckDifficultyLabel(cards: FlashcardDeck["cards"]): string {
+	if (cards.length === 0) return "Beginner";
+
+	const difficultyCounts = cards.reduce(
+		(acc, card) => {
+			acc[card.difficulty] = (acc[card.difficulty] || 0) + 1;
+			return acc;
+		},
+		{} as Record<Difficulty, number>,
+	);
+
+	// Determine overall difficulty based on majority
+	if (difficultyCounts.hard > cards.length / 2) return "Advanced";
+	if (difficultyCounts.medium > cards.length / 2) return "Intermediate";
+	return "Beginner";
 }
 
 export function DeckStudyPage({ deck }: DeckStudyPageProps) {
@@ -15,11 +33,13 @@ export function DeckStudyPage({ deck }: DeckStudyPageProps) {
 	const containerRef = useRef<HTMLDivElement>(null);
 	const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
 
+	const deckDifficulty = getDeckDifficultyLabel(deck.cards);
+
 	const difficultyColor = {
 		Beginner: "text-green-400",
 		Intermediate: "text-yellow-400",
 		Advanced: "text-red-400",
-	}[deck.difficulty];
+	}[deckDifficulty];
 
 	const scrollToCard = useCallback(
 		(index: number) => {
@@ -79,7 +99,7 @@ export function DeckStudyPage({ deck }: DeckStudyPageProps) {
 					<div className="flex items-center gap-4">
 						<div>
 							<h1 className="text-xl font-semibold text-zinc-50">
-								{deck.title}
+								{deck.name}
 							</h1>
 							<div className="flex items-center gap-4 mt-1 text-sm text-zinc-500">
 								<div className="flex items-center gap-1">
@@ -96,7 +116,7 @@ export function DeckStudyPage({ deck }: DeckStudyPageProps) {
 						</div>
 					</div>
 					<span className={`text-sm font-medium ${difficultyColor}`}>
-						{deck.difficulty}
+						{deckDifficulty}
 					</span>
 				</div>
 
