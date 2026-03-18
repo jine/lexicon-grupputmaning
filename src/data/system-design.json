@@ -1,5 +1,5 @@
 {
-	"id": "deck-system-design",
+	"id": "system-design",
 	"name": "System Design",
 	"description": "Scalability, caching, load balancing, and distributed systems",
 	"category": "Architecture",
