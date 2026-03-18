@@ -84,7 +84,7 @@ export function DeckStudyPage({ deck }: DeckStudyPageProps) {
 	return (
 		<div className="h-screen flex flex-col bg-[#0f0f0f]">
 			{/* Fixed Header */}
-			<div className="flex-none px-4 sm:px-6 pt-4 sm:pt-6 pb-3 sm:pb-4 border-b border-zinc-800 bg-[#0f0f0f]">
+			<div className="flex-none px-4 sm:px-6 pt-3 sm:pt-4 md:pt-6 pb-2 sm:pb-3 md:pb-4 border-b border-zinc-800 bg-[#0f0f0f]">
 				{/* Back Navigation */}
 				<Link
 					href="/"
@@ -142,18 +142,18 @@ export function DeckStudyPage({ deck }: DeckStudyPageProps) {
 				className="flex-1 overflow-y-auto snap-y snap-mandatory scroll-smooth"
 				style={{ scrollPaddingTop: "0px" }}
 			>
-				<div className="max-w-3xl mx-auto px-4 sm:px-6 pb-20 sm:pb-24">
+				<div className="max-w-3xl mx-auto px-4 sm:px-6 pb-16 sm:pb-20 md:pb-24">
 					{deck.cards.map((card, index) => (
 						<div
 							key={card.id}
 							ref={(el) => {
 								cardRefs.current[index] = el;
 							}}
-							className="snap-start min-h-[calc(100vh-180px)] sm:min-h-[calc(100vh-200px)] flex flex-col justify-center py-4 sm:py-8"
+							className="snap-start min-h-[calc(100vh-160px)] sm:min-h-[calc(100vh-180px)] md:min-h-[calc(100vh-200px)] flex flex-col justify-center py-3 sm:py-4 md:py-6"
 						>
 							{/* Card Number */}
-							<div className="text-center mb-4 sm:mb-6">
-								<span className="inline-flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 bg-zinc-800 border border-zinc-700 rounded-full text-xs sm:text-sm font-medium text-zinc-400">
+							<div className="text-center mb-2 sm:mb-3 md:mb-4">
+								<span className="inline-flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 bg-zinc-800 border border-zinc-700 rounded-full text-xs font-medium text-zinc-400">
 									{index + 1}
 								</span>
 							</div>
@@ -165,12 +165,12 @@ export function DeckStudyPage({ deck }: DeckStudyPageProps) {
 									answer={card.answer}
 									category={card.category}
 									difficulty={card.difficulty}
-									className="h-[50vh] sm:h-[60vh] max-w-2xl w-full"
+									className="h-[35vh] sm:h-[40vh] md:h-[45vh] lg:h-[50vh] max-h-[400px] max-w-2xl w-full"
 								/>
 							</div>
 
 							{/* Card Navigation Hint */}
-							<div className="text-center mt-4 sm:mt-6 text-xs sm:text-sm text-zinc-600">
+							<div className="text-center mt-3 sm:mt-4 md:mt-5 text-xs text-zinc-600">
 								{index < deck.cards.length - 1 ? (
 									<span>Scroll down or press Space/↓ for next card</span>
 								) : (
