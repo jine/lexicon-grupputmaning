@@ -76,6 +76,34 @@ export function DeckStudyPage({ deck }: DeckStudyPageProps) {
 		return () => window.removeEventListener("keydown", handleKeyDown);
 	}, [goToNextCard, goToPreviousCard]);
 
+	useEffect(() => {
+		const observers: IntersectionObserver[] = [];
+
+		cardRefs.current.forEach((cardEl, index) => {
+			if (!cardEl) return;
+
+			const observer = new IntersectionObserver(
+				(entries) => {
+					entries.forEach((entry) => {
+						if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+							setCurrentCardIndex(index);
+						}
+					});
+				},
+				{ threshold: 0.5 },
+			);
+
+			observer.observe(cardEl);
+			observers.push(observer);
+		});
+
+		return () => {
+			for (const observer of observers) {
+				observer.disconnect();
+			}
+		};
+	}, []);
+
 	if (isFinished) {
 		return (
 			<div className="h-[calc(100vh-120px)] flex flex-col items-center justify-center text-center space-y-8 animate-in fade-in zoom-in duration-500">
