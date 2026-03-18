@@ -281,7 +281,7 @@
 		},
 		{
 			"id": "wcag-026",
-			"question": "Vad är WCAG 4.1.3 Status Messages?",
+			"question": "Vad är WCAG 4.1.3 Status Message?",
 			"answer": "Statusmeddelanden (t.ex. 'Form submitted') som inte har fokus måste kunna presenteras för användare via assistiva teknologier.",
 			"category": "accessibility",
 			"difficulty": "hard",
@@ -289,9 +289,119 @@
 			"status": "new",
 			"createdAt": "2026-03-18T13:42:51.290Z",
 			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "wcag-027",
+			"question": "Vad är WCAG 2.4.4 Link Purpose?",
+			"answer": "Syftet med varje länk ska kunna bestämmas från länktexten ensam eller tillsammans med kontext, utan att behöva läsa hela sidan.",
+			"category": "accessibility",
+			"difficulty": "easy",
+			"tags": ["wcag", "links", "navigation"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "wcag-028",
+			"question": "Vad är WCAG 3.1.2 Language of Parts?",
+			"answer": "Språket i varje textstycke eller fras ska kunna bestämmas, t.ex. genom lang-attribut på element som innehåller annat språk än standard.",
+			"category": "accessibility",
+			"difficulty": "medium",
+			"tags": ["wcag", "language", "internationalization"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "wcag-029",
+			"question": "Vad är WCAG 1.4.1 Use of Color?",
+			"answer": "Färg får inte vara det enda sättet att förmedla information. Använd också text, ikoner eller mönster som komplement.",
+			"category": "accessibility",
+			"difficulty": "easy",
+			"tags": ["wcag", "color", "design"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "wcag-030",
+			"question": "Vad är WCAG 2.2.1 Timeout?",
+			"answer": "Användare ska varnas om tidsbegränsningar och ges möjlighet att förlänga, om funktionalitet beror på tidsbegränsningar.",
+			"category": "accessibility",
+			"difficulty": "medium",
+			"tags": ["wcag", "timeout", "session"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "wcag-031",
+			"question": "Vad är WCAG 2.4.5 Multiple Ways?",
+			"answer": "Det ska finnas mer än ett sätt att hitta en sida, t.ex. sökfunktion, navigationsmeny, innehållsförteckning eller site map.",
+			"category": "accessibility",
+			"difficulty": "easy",
+			"tags": ["wcag", "navigation", "discovery"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "wcag-032",
+			"question": "Vad är WCAG 2.4.11 Focus Not Obscured?",
+			"answer": "När ett element är i fokus får det inte vara helt dolt av andra element på sidan.",
+			"category": "accessibility",
+			"difficulty": "medium",
+			"tags": ["wcag", "focus", "visibility"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "wcag-033",
+			"question": "Vad är WCAG 3.2.1 On Focus?",
+			"answer": "När ett UI-element får fokus ska det inte automatiskt ändra kontexten utan att användaren förstår vad som händer.",
+			"category": "accessibility",
+			"difficulty": "easy",
+			"tags": ["wcag", "focus", "behavior"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "wcag-034",
+			"question": "Vad är WCAG 3.2.2 On Input?",
+			"answer": "Att ändra inställningar eller inmatningsfält ska inte automatiskt ändra kontexten utan att användaren förstår det.",
+			"category": "accessibility",
+			"difficulty": "easy",
+			"tags": ["wcag", "input", "behavior"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "wcag-035",
+			"question": "Vad är WCAG 3.3.1 Error Identification?",
+			"answer": "Inmatningsfel ska identifieras och beskrivas textuellt till användaren.",
+			"category": "accessibility",
+			"difficulty": "easy",
+			"tags": ["wcag", "error", "forms"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "wcag-036",
+			"question": "Vad är WCAG 3.3.4 Error Prevention?",
+			"answer": "För transaktioner med juridiska eller finansiella konsekvenser ska data vara reversible, kontrollerbara eller bekräftas innan submission.",
+			"category": "accessibility",
+			"difficulty": "medium",
+			"tags": ["wcag", "error-prevention", "forms"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
 		}
 	],
-	"cardCount": 26,
+	"cardCount": 37,
 	"createdAt": "2026-03-18T13:42:51.290Z",
 	"updatedAt": "2026-03-18T13:42:51.290Z"
 }

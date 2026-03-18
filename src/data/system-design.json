@@ -1,78 +1,113 @@
 {
-  "id": "system-design",
-  "name": "System Design",
-  "description": "Scalability, caching, load balancing, and distributed systems",
-  "category": "Architecture",
-  "cards": [
-    {
-      "id": "sd-001",
-      "question": "How would you design a URL shortener like bit.ly?",
-      "answer": "Key components: API servers for request handling, database for URL mapping (NoSQL for scale), cache for popular URLs (Redis), base62 encoding for short URLs. Design considerations: 301 vs 302 redirects, analytics tracking, custom aliases, collision handling. Scale: Use consistent hashing for DB sharding, CDN for global distribution.",
-      "difficulty": "medium",
-      "tags": ["system-design", "url-shortener", "scalability"]
-    },
-    {
-      "id": "sd-002",
-      "question": "What is horizontal vs vertical scaling?",
-      "answer": "Vertical scaling: adding more power (CPU, RAM) to existing servers. Simple but has limits and single point of failure. Horizontal scaling: adding more servers to distribute load. More complex (need load balancing, data consistency) but better for high availability and can scale infinitely. Modern systems prefer horizontal scaling.",
-      "difficulty": "easy",
-      "tags": ["scalability", "infrastructure", "architecture"]
-    },
-    {
-      "id": "sd-003",
-      "question": "Explain load balancing and common algorithms.",
-      "answer": "Load balancers distribute traffic across multiple servers to prevent overload. Algorithms: Round Robin (sequential distribution), Least Connections (to server with fewest active connections), IP Hash (same client to same server), Weighted (some servers get more traffic). Types: Layer 4 (transport level) and Layer 7 (application level).",
-      "difficulty": "medium",
-      "tags": ["load-balancing", "infrastructure", "performance"]
-    },
-    {
-      "id": "sd-004",
-      "question": "What is a CDN and how does it improve performance?",
-      "answer": "CDN (Content Delivery Network) is a geographically distributed network of servers that caches and delivers content from edge locations close to users. Benefits: reduced latency, lower origin server load, improved availability, DDoS protection. Best for static assets but can also cache dynamic content.",
-      "difficulty": "easy",
-      "tags": ["cdn", "performance", "caching"]
-    },
-    {
-      "id": "sd-005",
-      "question": "How would you design a rate limiter for an API?",
-      "answer": "Algorithms: Token Bucket (tokens added at fixed rate, requests consume tokens), Leaky Bucket (requests processed at fixed rate), Fixed Window (counters reset at intervals), Sliding Window Log (timestamps in window). Implementation: Use Redis for distributed rate limiting. Consider different limits per user tier. Return 429 status when exceeded.",
-      "difficulty": "medium",
-      "tags": ["rate-limiting", "api", "system-design"]
-    },
-    {
-      "id": "sd-006",
-      "question": "What is database sharding and when should you use it?",
-      "answer": "Sharding splits data across multiple database instances. Types: Horizontal (rows distributed), Vertical (columns distributed), Hash-based (consistent hashing on key), Range-based (ID ranges). Use when single DB can't handle read/write load. Challenges: joins across shards, rebalancing, hotspot issues. Use sharding key carefully.",
-      "difficulty": "hard",
-      "tags": ["database", "sharding", "scalability"]
-    },
-    {
-      "id": "sd-007",
-      "question": "Explain eventual consistency vs strong consistency.",
-      "answer": "Strong consistency: all reads see the most recent write immediately. Required for financial transactions but slower. Eventual consistency: reads may see stale data temporarily, but all nodes converge eventually. Better availability and performance. Use strong consistency when accuracy is critical, eventual for social media, analytics where stale data is acceptable.",
-      "difficulty": "medium",
-      "tags": ["consistency", "distributed-systems", "databases"]
-    },
-    {
-      "id": "sd-008",
-      "question": "What is a message queue and when would you use one?",
-      "answer": "Message queues enable async communication between services via messages. Producers send messages to queue, consumers process them. Benefits: decoupling, load leveling, reliability (messages persist if consumer down). Use cases: order processing, email sending, video encoding. Popular options: RabbitMQ, Kafka, SQS, Redis.",
-      "difficulty": "medium",
-      "tags": ["message-queue", "async", "microservices"]
-    },
-    {
-      "id": "sd-009",
-      "question": "How would you handle millions of WebSocket connections?",
-      "answer": "Architecture: Load balancer with sticky sessions, stateless app servers, separate connection handling from business logic, Redis pub/sub for broadcasting to all nodes. Scale: horizontally scale WebSocket servers, use connection pooling, implement heartbeat/ping-pong. Consider: connection limits per server, graceful degradation, fallback to long-polling.",
-      "difficulty": "hard",
-      "tags": ["websockets", "scalability", "real-time"]
-    },
-    {
-      "id": "sd-010",
-      "question": "What is circuit breaker pattern and why is it useful?",
-      "answer": "Circuit breaker prevents cascading failures in distributed systems. States: Closed (requests pass through), Open (requests fail fast), Half-Open (testing if service recovered). After threshold failures, breaker opens. Benefits: fail fast, prevent resource exhaustion, graceful degradation. Implement with libraries like Resilience4j, Polly, or Hystrix.",
-      "difficulty": "medium",
-      "tags": ["circuit-breaker", "microservices", "resilience"]
-    }
-  ]
+	"id": "system-design",
+	"name": "System Design",
+	"description": "Scalability, caching, load balancing, and distributed systems",
+	"category": "Architecture",
+	"cards": [
+		{
+			"id": "sd-001",
+			"question": "How would you design a URL shortener like bit.ly?",
+			"answer": "Key components: API servers for request handling, database for URL mapping (NoSQL for scale), cache for popular URLs (Redis), base62 encoding for short URLs. Design considerations: 301 vs 302 redirects, analytics tracking, custom aliases, collision handling. Scale: Use consistent hashing for DB sharding, CDN for global distribution.",
+			"difficulty": "medium",
+			"tags": ["system-design", "url-shortener", "scalability"]
+		},
+		{
+			"id": "sd-002",
+			"question": "What is horizontal vs vertical scaling?",
+			"answer": "Vertical scaling: adding more power (CPU, RAM) to existing servers. Simple but has limits and single point of failure. Horizontal scaling: adding more servers to distribute load. More complex (need load balancing, data consistency) but better for high availability and can scale infinitely. Modern systems prefer horizontal scaling.",
+			"difficulty": "easy",
+			"tags": ["scalability", "infrastructure", "architecture"]
+		},
+		{
+			"id": "sd-003",
+			"question": "Explain load balancing and common algorithms.",
+			"answer": "Load balancers distribute traffic across multiple servers to prevent overload. Algorithms: Round Robin (sequential distribution), Least Connections (to server with fewest active connections), IP Hash (same client to same server), Weighted (some servers get more traffic). Types: Layer 4 (transport level) and Layer 7 (application level).",
+			"difficulty": "medium",
+			"tags": ["load-balancing", "infrastructure", "performance"]
+		},
+		{
+			"id": "sd-004",
+			"question": "What is a CDN and how does it improve performance?",
+			"answer": "CDN (Content Delivery Network) is a geographically distributed network of servers that caches and delivers content from edge locations close to users. Benefits: reduced latency, lower origin server load, improved availability, DDoS protection. Best for static assets but can also cache dynamic content.",
+			"difficulty": "easy",
+			"tags": ["cdn", "performance", "caching"]
+		},
+		{
+			"id": "sd-005",
+			"question": "How would you design a rate limiter for an API?",
+			"answer": "Algorithms: Token Bucket (tokens added at fixed rate, requests consume tokens), Leaky Bucket (requests processed at fixed rate), Fixed Window (counters reset at intervals), Sliding Window Log (timestamps in window). Implementation: Use Redis for distributed rate limiting. Consider different limits per user tier. Return 429 status when exceeded.",
+			"difficulty": "medium",
+			"tags": ["rate-limiting", "api", "system-design"]
+		},
+		{
+			"id": "sd-006",
+			"question": "What is database sharding and when should you use it?",
+			"answer": "Sharding splits data across multiple database instances. Types: Horizontal (rows distributed), Vertical (columns distributed), Hash-based (consistent hashing on key), Range-based (ID ranges). Use when single DB can't handle read/write load. Challenges: joins across shards, rebalancing, hotspot issues. Use sharding key carefully.",
+			"difficulty": "hard",
+			"tags": ["database", "sharding", "scalability"]
+		},
+		{
+			"id": "sd-007",
+			"question": "Explain eventual consistency vs strong consistency.",
+			"answer": "Strong consistency: all reads see the most recent write immediately. Required for financial transactions but slower. Eventual consistency: reads may see stale data temporarily, but all nodes converge eventually. Better availability and performance. Use strong consistency when accuracy is critical, eventual for social media, analytics where stale data is acceptable.",
+			"difficulty": "medium",
+			"tags": ["consistency", "distributed-systems", "databases"]
+		},
+		{
+			"id": "sd-008",
+			"question": "What is a message queue and when would you use one?",
+			"answer": "Message queues enable async communication between services via messages. Producers send messages to queue, consumers process them. Benefits: decoupling, load leveling, reliability (messages persist if consumer down). Use cases: order processing, email sending, video encoding. Popular options: RabbitMQ, Kafka, SQS, Redis.",
+			"difficulty": "medium",
+			"tags": ["message-queue", "async", "microservices"]
+		},
+		{
+			"id": "sd-009",
+			"question": "How would you handle millions of WebSocket connections?",
+			"answer": "Architecture: Load balancer with sticky sessions, stateless app servers, separate connection handling from business logic, Redis pub/sub for broadcasting to all nodes. Scale: horizontally scale WebSocket servers, use connection pooling, implement heartbeat/ping-pong. Consider: connection limits per server, graceful degradation, fallback to long-polling.",
+			"difficulty": "hard",
+			"tags": ["websockets", "scalability", "real-time"]
+		},
+		{
+			"id": "sd-010",
+			"question": "What is circuit breaker pattern and why is it useful?",
+			"answer": "Circuit breaker prevents cascading failures in distributed systems. States: Closed (requests pass through), Open (requests fail fast), Half-Open (testing if service recovered). After threshold failures, breaker opens. Benefits: fail fast, prevent resource exhaustion, graceful degradation. Implement with libraries like Resilience4j, Polly, or Hystrix.",
+			"difficulty": "medium",
+			"tags": ["circuit-breaker", "microservices", "resilience"]
+		},
+		{
+			"id": "sd-011",
+			"question": "What is the difference between synchronous and asynchronous communication?",
+			"answer": "Synchronous: parties communicate in real-time (HTTP REST, gRPC), immediate response expected, simpler but can cause blocking. Asynchronous: parties communicate via message queues, no immediate response needed, better for decoupling and handling high load (Kafka, RabbitMQ, SQS).",
+			"difficulty": "medium",
+			"tags": ["communication", "async", "architecture"]
+		},
+		{
+			"id": "sd-012",
+			"question": "What is database replication and what are its types?",
+			"answer": "Replication copies data across multiple servers for redundancy and performance. Types: Master-Slave (read scaling, failover), Master-Master (write scaling, complex conflict resolution), Multi-Leader (geographic distribution). Also synchronous vs asynchronous (consistency vs performance tradeoff).",
+			"difficulty": "medium",
+			"tags": ["database", "replication", "high-availability"]
+		},
+		{
+			"id": "sd-013",
+			"question": "What is API gateway and why is it important?",
+			"answer": "API gateway is a single entry point for client requests, handling routing, authentication, rate limiting, logging, and protocol translation. Benefits: centralized security, reduced client complexity, request aggregation, monitoring. Examples: Kong, AWS API Gateway, Nginx.",
+			"difficulty": "medium",
+			"tags": ["api-gateway", "microservices", "security"]
+		},
+		{
+			"id": "sd-014",
+			"question": "What is service mesh and when should you use one?",
+			"answer": "Service mesh adds infrastructure for service-to-service communication (load balancing, encryption, observability) without changing application code. Popular options: Istio, Linkerd, Consul Connect. Benefits: decentralized traffic management, security, monitoring. Drawbacks: complexity, overhead.",
+			"difficulty": "hard",
+			"tags": ["service-mesh", "microservices", "infrastructure"]
+		},
+		{
+			"id": "sd-015",
+			"question": "What is the difference between monolith and microservices architecture?",
+			"answer": "Monolith: single deployable unit, simpler initially, tight coupling, harder to scale. Microservices: independently deployable services, technology flexibility, better scalability, more complex operations, distributed system challenges. Choose based on team size, requirements, and scaling needs.",
+			"difficulty": "easy",
+			"tags": ["architecture", "monolith", "microservices"]
+		}
+	]
 }

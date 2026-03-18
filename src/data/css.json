@@ -1,7 +1,7 @@
 {
 	"id": "deck-css",
 	"name": "CSS & Layout",
-	"description": "Flashcards om CSS, layout och styling baserat på schema-vecka",
+	"description": "Flashcards om CSS, layout och styling baserat på Lexicons github repos.",
 	"category": "css",
 	"cards": [
 		{
@@ -289,9 +289,75 @@
 			"status": "new",
 			"createdAt": "2026-03-18T13:42:51.290Z",
 			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "css-027",
+			"question": "Vad är CSS cascade?",
+			"answer": "Cascade är processen där CSS-regler kombineras och konflikter löses baserat på specificity, importance och källordning.",
+			"category": "css",
+			"difficulty": "medium",
+			"tags": ["css", "cascade", "priority"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "css-028",
+			"question": "Vad är content-visibility i CSS?",
+			"answer": "content-visibility: auto hoppar över rendering av innehåll utanför skärmen för att förbättra prestanda på långa sidor.",
+			"category": "css",
+			"difficulty": "hard",
+			"tags": ["css", "performance", "rendering"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "css-029",
+			"question": "Vad är scroll snap i CSS?",
+			"answer": "Scroll snap kontrollerar scroll-positionen så att elementen 'snäpper' till specifika positioner när användaren scrollar.",
+			"category": "css",
+			"difficulty": "medium",
+			"tags": ["css", "scroll", "snap"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "css-030",
+			"question": "Vad är scroll-driven animations i CSS?",
+			"answer": "Scroll-driven animations kopplar animationer till scrollpositionen, så att animationen spelas upp baserat på hur mycket användaren scrollat.",
+			"category": "css",
+			"difficulty": "hard",
+			"tags": ["css", "animations", "scroll"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "css-031",
+			"question": "Vad är :has() pseudo-klassen?",
+			"answer": ":has() är en relativ pseudo-klass som väljer element baserat på om de innehåller ett visst descendant-element, t.ex. div:has(.warning).",
+			"category": "css",
+			"difficulty": "hard",
+			"tags": ["css", "pseudo-class", "selectors"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "css-032",
+			"question": "Vad är subgrid i CSS Grid?",
+			"answer": "Subgrid låter child-elements i ett grid-nested att ärva spåringsdefinitionen från parent-grid för att skapa mer sammanhängande layouter.",
+			"category": "css",
+			"difficulty": "hard",
+			"tags": ["css", "grid", "subgrid"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
 		}
 	],
-	"cardCount": 26,
+	"cardCount": 32,
 	"createdAt": "2026-03-18T13:42:51.290Z",
 	"updatedAt": "2026-03-18T13:42:51.290Z"
 }

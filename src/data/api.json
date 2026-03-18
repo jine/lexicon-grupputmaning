@@ -1,86 +1,143 @@
 {
-  "id": "deck-api",
-  "name": "API-utveckling",
-  "description": "Flashcards om API:er, REST och backend-utveckling baserat på schema-vecka",
-  "category": "backend",
-  "cards": [
-    {
-      "id": "api-017",
-      "question": "Vad är REST API?",
-      "answer": "REST (Representational State Transfer) är ett arkitekturmönster för API:er som använder HTTP-metoder för att manipulera resurser.",
-      "category": "backend",
-      "difficulty": "medium",
-      "tags": [
-        "api",
-        "rest",
-        "backend"
-      ],
-      "status": "new",
-      "createdAt": "2026-03-18T13:42:51.290Z",
-      "updatedAt": "2026-03-18T13:42:51.290Z"
-    },
-    {
-      "id": "api-018",
-      "question": "Vad är GraphQL?",
-      "answer": "GraphQL är ett API-framställningsspråk som låter klienter specifikt begära den data de behöver, vilket minimerar over-fetching.",
-      "category": "backend",
-      "difficulty": "hard",
-      "tags": [
-        "api",
-        "graphql",
-        "backend"
-      ],
-      "status": "new",
-      "createdAt": "2026-03-18T13:42:51.290Z",
-      "updatedAt": "2026-03-18T13:42:51.290Z"
-    },
-    {
-      "id": "api-019",
-      "question": "Vad är fetch i JavaScript?",
-      "answer": "fetch är ett API för att göra HTTP-förfrågningar från JavaScript. Det returnerar en Promise som löses med ett Response-objekt.",
-      "category": "backend",
-      "difficulty": "easy",
-      "tags": [
-        "javascript",
-        "fetch",
-        "api"
-      ],
-      "status": "new",
-      "createdAt": "2026-03-18T13:42:51.290Z",
-      "updatedAt": "2026-03-18T13:42:51.290Z"
-    },
-    {
-      "id": "api-020",
-      "question": "Vad är en async funktion?",
-      "answer": "En async funktion är en funktion som alltid returnerar en Promise och låter dig använda await för att vänta på asynkrona operationer.",
-      "category": "backend",
-      "difficulty": "medium",
-      "tags": [
-        "javascript",
-        "async",
-        "promises"
-      ],
-      "status": "new",
-      "createdAt": "2026-03-18T13:42:51.290Z",
-      "updatedAt": "2026-03-18T13:42:51.290Z"
-    },
-    {
-      "id": "api-021",
-      "question": "Vad är felhantering med try/catch?",
-      "answer": "try/catch är ett sätt att hantera fel i JavaScript-kod, där kod i try-blocket körs och catch-blocket körs om ett fel uppstår.",
-      "category": "backend",
-      "difficulty": "easy",
-      "tags": [
-        "javascript",
-        "error-handling",
-        "try-catch"
-      ],
-      "status": "new",
-      "createdAt": "2026-03-18T13:42:51.290Z",
-      "updatedAt": "2026-03-18T13:42:51.290Z"
-    }
-  ],
-  "cardCount": 5,
-  "createdAt": "2026-03-18T13:42:51.290Z",
-  "updatedAt": "2026-03-18T13:42:51.290Z"
+	"id": "deck-api",
+	"name": "API-utveckling",
+	"description": "Flashcards om API:er, REST och backend-utveckling baserat på Lexicons github repos.",
+	"category": "backend",
+	"cards": [
+		{
+			"id": "api-017",
+			"question": "Vad är REST API?",
+			"answer": "REST (Representational State Transfer) är ett arkitekturmönster för API:er som använder HTTP-metoder för att manipulera resurser.",
+			"category": "backend",
+			"difficulty": "medium",
+			"tags": ["api", "rest", "backend"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "api-018",
+			"question": "Vad är GraphQL?",
+			"answer": "GraphQL är ett API-framställningsspråk som låter klienter specifikt begära den data de behöver, vilket minimerar over-fetching.",
+			"category": "backend",
+			"difficulty": "hard",
+			"tags": ["api", "graphql", "backend"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "api-019",
+			"question": "Vad är fetch i JavaScript?",
+			"answer": "fetch är ett API för att göra HTTP-förfrågningar från JavaScript. Det returnerar en Promise som löses med ett Response-objekt.",
+			"category": "backend",
+			"difficulty": "easy",
+			"tags": ["javascript", "fetch", "api"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "api-020",
+			"question": "Vad är en async funktion?",
+			"answer": "En async funktion är en funktion som alltid returnerar en Promise och låter dig använda await för att vänta på asynkrona operationer.",
+			"category": "backend",
+			"difficulty": "medium",
+			"tags": ["javascript", "async", "promises"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "api-021",
+			"question": "Vad är felhantering med try/catch?",
+			"answer": "try/catch är ett sätt att hantera fel i JavaScript-kod, där kod i try-blocket körs och catch-blocket körs om ett fel uppstår.",
+			"category": "backend",
+			"difficulty": "easy",
+			"tags": ["javascript", "error-handling", "try-catch"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "api-022",
+			"question": "Vad är CRUD-operationer?",
+			"answer": "CRUD står för Create, Read, Update, Delete - de fyra grundläggande databasoperationerna som motsvarar HTTP-metoderna POST, GET, PUT/PATCH och DELETE.",
+			"category": "backend",
+			"difficulty": "easy",
+			"tags": ["api", "crud", "database"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "api-023",
+			"question": "Vad är en HTTP-statuskod?",
+			"answer": "HTTP-statuskoder är numeriska svar från en server som indikerar resultatet av en förfrågan, t.ex. 200 (OK), 404 (Not Found), 500 (Server Error).",
+			"category": "backend",
+			"difficulty": "easy",
+			"tags": ["http", "api", "status-codes"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "api-024",
+			"question": "Vad är JSON?",
+			"answer": "JSON (JavaScript Object Notation) är ett läsbart dataformat för att lagra och transportera data, vanligt använt i API:er.",
+			"category": "backend",
+			"difficulty": "easy",
+			"tags": ["json", "api", "data-format"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "api-025",
+			"question": "Vad är en API-endpoint?",
+			"answer": "En endpoint är en specifik URL där en API-förfrågling kan göras, t.ex. GET /api/users för att hämta användare.",
+			"category": "backend",
+			"difficulty": "easy",
+			"tags": ["api", "endpoint", "url"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "api-026",
+			"question": "Vad är headers i en HTTP-förfrågan?",
+			"answer": "Headers är metadata som skickas med HTTP-förfrågningar som innehåller information om content-type, authentication, caching, etc.",
+			"category": "backend",
+			"difficulty": "medium",
+			"tags": ["http", "headers", "api"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "api-027",
+			"question": "Vad är autentisering (authentication)?",
+			"answer": "Autentisering är processen att verifiera en användares identitet, ofta genom lösenord, tokens eller biometriska data.",
+			"category": "backend",
+			"difficulty": "medium",
+			"tags": ["security", "authentication", "api"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "api-028",
+			"question": "Vad är en Promise i JavaScript?",
+			"answer": "En Promise är ett objekt som representerar ett framtida värde från en asynkron operation, med states: pending, fulfilled eller rejected.",
+			"category": "backend",
+			"difficulty": "medium",
+			"tags": ["javascript", "promise", "async"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		}
+	],
+	"cardCount": 13,
+	"createdAt": "2026-03-18T13:42:51.290Z",
+	"updatedAt": "2026-03-18T13:42:51.290Z"
 }

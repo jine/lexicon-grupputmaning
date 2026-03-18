@@ -1,78 +1,113 @@
 {
-  "id": "backend",
-  "name": "Backend Architecture",
-  "description": "APIs, databases, microservices, and server optimization",
-  "category": "Technical",
-  "cards": [
-    {
-      "id": "be-001",
-      "question": "What is the difference between REST and GraphQL?",
-      "answer": "REST uses multiple endpoints with fixed data structures (over/under-fetching possible), uses HTTP methods (GET, POST, PUT, DELETE), and is stateless. GraphQL uses a single endpoint, clients request exactly what they need, supports real-time subscriptions, and has strong typing. GraphQL is more flexible but adds complexity.",
-      "difficulty": "medium",
-      "tags": ["api", "rest", "graphql"]
-    },
-    {
-      "id": "be-002",
-      "question": "Explain database indexing and when to use it.",
-      "answer": "Indexing creates a data structure (usually B-tree) that allows faster data retrieval. It's like a book index - instead of scanning all pages, you jump to the relevant section. Use indexes on columns frequently used in WHERE, JOIN, and ORDER BY clauses. Don't over-index as it slows down writes and uses storage. Primary keys are automatically indexed.",
-      "difficulty": "medium",
-      "tags": ["database", "indexing", "performance"]
-    },
-    {
-      "id": "be-003",
-      "question": "What are the ACID properties in databases?",
-      "answer": "ACID ensures reliable database transactions: Atomicity (all operations succeed or all fail), Consistency (database remains in valid state), Isolation (concurrent transactions don't interfere), Durability (committed data survives system failures). These properties are crucial for financial systems and data integrity.",
-      "difficulty": "medium",
-      "tags": ["database", "transactions", "acid"]
-    },
-    {
-      "id": "be-004",
-      "question": "What is the difference between SQL and NoSQL databases?",
-      "answer": "SQL (Relational): structured schema, ACID compliance, vertical scaling, good for complex queries and relationships (PostgreSQL, MySQL). NoSQL: flexible schema, eventual consistency, horizontal scaling, good for unstructured data and high volume (MongoDB, Redis, Cassandra). Choose based on data structure, consistency needs, and scaling requirements.",
-      "difficulty": "easy",
-      "tags": ["database", "sql", "nosql"]
-    },
-    {
-      "id": "be-005",
-      "question": "What is JWT (JSON Web Token) and how does it work?",
-      "answer": "JWT is a compact, URL-safe token format for securely transmitting information. Structure: header (algorithm), payload (claims), signature (verification). Used for authentication - server issues token after login, client sends token with requests, server verifies signature. Stateless but tokens can't be revoked before expiration.",
-      "difficulty": "medium",
-      "tags": ["authentication", "jwt", "security"]
-    },
-    {
-      "id": "be-006",
-      "question": "Explain the CAP theorem.",
-      "answer": "CAP theorem states distributed systems can guarantee at most two of: Consistency (all nodes see same data), Availability (every request gets a response), Partition tolerance (system works despite network failures). In practice, you must choose CP (consistent but may be unavailable) or AP (available but may be inconsistent) when partitions occur.",
-      "difficulty": "hard",
-      "tags": ["distributed-systems", "cap-theorem", "databases"]
-    },
-    {
-      "id": "be-007",
-      "question": "What is API rate limiting and why is it important?",
-      "answer": "Rate limiting restricts the number of API requests a client can make in a time period. Prevents abuse, ensures fair usage, protects server resources, and maintains service availability. Implementations include token bucket, leaky bucket, fixed window, or sliding window algorithms. Return 429 status code when limit exceeded.",
-      "difficulty": "medium",
-      "tags": ["api", "rate-limiting", "security"]
-    },
-    {
-      "id": "be-008",
-      "question": "What is database normalization and what are the normal forms?",
-      "answer": "Normalization organizes data to reduce redundancy and improve integrity. 1NF: atomic values, no repeating groups. 2NF: 1NF + no partial dependencies. 3NF: 2NF + no transitive dependencies. BCNF: 3NF + every determinant is a candidate key. Higher normal forms reduce redundancy but may require more joins.",
-      "difficulty": "hard",
-      "tags": ["database", "normalization", "design"]
-    },
-    {
-      "id": "be-009",
-      "question": "What is caching and what are common caching strategies?",
-      "answer": "Caching stores frequently accessed data in fast storage (RAM) to reduce database load. Strategies: Cache-Aside (app checks cache first), Read-Through (cache fetches from DB), Write-Through (writes to cache and DB), Write-Behind (writes to cache, async to DB). Consider cache invalidation, TTL, and cache warming.",
-      "difficulty": "medium",
-      "tags": ["caching", "performance", "redis"]
-    },
-    {
-      "id": "be-010",
-      "question": "What is the difference between authentication and authorization?",
-      "answer": "Authentication verifies WHO you are (proving identity via passwords, biometrics, tokens). Authorization determines WHAT you can do (permissions to access resources). Authentication happens first, then authorization. Examples: Logging in is authentication. Checking if user can delete a post is authorization.",
-      "difficulty": "easy",
-      "tags": ["security", "authentication", "authorization"]
-    }
-  ]
+	"id": "backend",
+	"name": "Backend Architecture",
+	"description": "APIs, databases, microservices, and server optimization",
+	"category": "Technical",
+	"cards": [
+		{
+			"id": "be-001",
+			"question": "What is the difference between REST and GraphQL?",
+			"answer": "REST uses multiple endpoints with fixed data structures (over/under-fetching possible), uses HTTP methods (GET, POST, PUT, DELETE), and is stateless. GraphQL uses a single endpoint, clients request exactly what they need, supports real-time subscriptions, and has strong typing. GraphQL is more flexible but adds complexity.",
+			"difficulty": "medium",
+			"tags": ["api", "rest", "graphql"]
+		},
+		{
+			"id": "be-002",
+			"question": "Explain database indexing and when to use it.",
+			"answer": "Indexing creates a data structure (usually B-tree) that allows faster data retrieval. It's like a book index - instead of scanning all pages, you jump to the relevant section. Use indexes on columns frequently used in WHERE, JOIN, and ORDER BY clauses. Don't over-index as it slows down writes and uses storage. Primary keys are automatically indexed.",
+			"difficulty": "medium",
+			"tags": ["database", "indexing", "performance"]
+		},
+		{
+			"id": "be-003",
+			"question": "What are the ACID properties in databases?",
+			"answer": "ACID ensures reliable database transactions: Atomicity (all operations succeed or all fail), Consistency (database remains in valid state), Isolation (concurrent transactions don't interfere), Durability (committed data survives system failures). These properties are crucial for financial systems and data integrity.",
+			"difficulty": "medium",
+			"tags": ["database", "transactions", "acid"]
+		},
+		{
+			"id": "be-004",
+			"question": "What is the difference between SQL and NoSQL databases?",
+			"answer": "SQL (Relational): structured schema, ACID compliance, vertical scaling, good for complex queries and relationships (PostgreSQL, MySQL). NoSQL: flexible schema, eventual consistency, horizontal scaling, good for unstructured data and high volume (MongoDB, Redis, Cassandra). Choose based on data structure, consistency needs, and scaling requirements.",
+			"difficulty": "easy",
+			"tags": ["database", "sql", "nosql"]
+		},
+		{
+			"id": "be-005",
+			"question": "What is JWT (JSON Web Token) and how does it work?",
+			"answer": "JWT is a compact, URL-safe token format for securely transmitting information. Structure: header (algorithm), payload (claims), signature (verification). Used for authentication - server issues token after login, client sends token with requests, server verifies signature. Stateless but tokens can't be revoked before expiration.",
+			"difficulty": "medium",
+			"tags": ["authentication", "jwt", "security"]
+		},
+		{
+			"id": "be-006",
+			"question": "Explain the CAP theorem.",
+			"answer": "CAP theorem states distributed systems can guarantee at most two of: Consistency (all nodes see same data), Availability (every request gets a response), Partition tolerance (system works despite network failures). In practice, you must choose CP (consistent but may be unavailable) or AP (available but may be inconsistent) when partitions occur.",
+			"difficulty": "hard",
+			"tags": ["distributed-systems", "cap-theorem", "databases"]
+		},
+		{
+			"id": "be-007",
+			"question": "What is API rate limiting and why is it important?",
+			"answer": "Rate limiting restricts the number of API requests a client can make in a time period. Prevents abuse, ensures fair usage, protects server resources, and maintains service availability. Implementations include token bucket, leaky bucket, fixed window, or sliding window algorithms. Return 429 status code when limit exceeded.",
+			"difficulty": "medium",
+			"tags": ["api", "rate-limiting", "security"]
+		},
+		{
+			"id": "be-008",
+			"question": "What is database normalization and what are the normal forms?",
+			"answer": "Normalization organizes data to reduce redundancy and improve integrity. 1NF: atomic values, no repeating groups. 2NF: 1NF + no partial dependencies. 3NF: 2NF + no transitive dependencies. BCNF: 3NF + every determinant is a candidate key. Higher normal forms reduce redundancy but may require more joins.",
+			"difficulty": "hard",
+			"tags": ["database", "normalization", "design"]
+		},
+		{
+			"id": "be-009",
+			"question": "What is caching and what are common caching strategies?",
+			"answer": "Caching stores frequently accessed data in fast storage (RAM) to reduce database load. Strategies: Cache-Aside (app checks cache first), Read-Through (cache fetches from DB), Write-Through (writes to cache and DB), Write-Behind (writes to cache, async to DB). Consider cache invalidation, TTL, and cache warming.",
+			"difficulty": "medium",
+			"tags": ["caching", "performance", "redis"]
+		},
+		{
+			"id": "be-010",
+			"question": "What is the difference between authentication and authorization?",
+			"answer": "Authentication verifies WHO you are (proving identity via passwords, biometrics, tokens). Authorization determines WHAT you can do (permissions to access resources). Authentication happens first, then authorization. Examples: Logging in is authentication. Checking if user can delete a post is authorization.",
+			"difficulty": "easy",
+			"tags": ["security", "authentication", "authorization"]
+		},
+		{
+			"id": "be-011",
+			"question": "What is OAuth 2.0 and how does it work?",
+			"answer": "OAuth 2.0 is an authorization framework that enables third-party applications to access user resources without exposing credentials. It uses access tokens, supports scopes, and flows like Authorization Code, Client Credentials, and Refresh Token flows.",
+			"difficulty": "medium",
+			"tags": ["oauth", "security", "authorization"]
+		},
+		{
+			"id": "be-012",
+			"question": "What is a microservice architecture?",
+			"answer": "Microservices is an architectural style where an application is built as a collection of small, independent services. Each service is self-contained, owns its data, communicates via APIs, and can be deployed independently. Benefits: scalability, flexibility, technology diversity.",
+			"difficulty": "medium",
+			"tags": ["microservices", "architecture", "distributed-systems"]
+		},
+		{
+			"id": "be-013",
+			"question": "What is server-side rendering (SSR)?",
+			"answer": "SSR renders pages on the server and sends fully rendered HTML to the client. Benefits: faster First Contentful Paint, better SEO, works without JavaScript. Drawbacks: higher server load, slower Time to Interactive. Used in Next.js, Nuxt, and traditional frameworks.",
+			"difficulty": "medium",
+			"tags": ["ssr", "rendering", "performance"]
+		},
+		{
+			"id": "be-014",
+			"question": "What is database connection pooling?",
+			"answer": "Connection pooling maintains a set of database connections that can be reused, avoiding the overhead of creating new connections for each request. It improves performance, limits concurrent connections, and prevents connection exhaustion. Configure pool size based on server capacity.",
+			"difficulty": "medium",
+			"tags": ["database", "performance", "connections"]
+		},
+		{
+			"id": "be-015",
+			"question": "What is an ORM and what are its pros and cons?",
+			"answer": "ORM (Object-Relational Mapping) maps database tables to code objects. Pros: faster development, abstraction, security (SQL injection prevention). Cons: performance overhead, less control over queries, potential for N+1 query problems. Examples: Sequelize, TypeORM, Prisma, Entity Framework.",
+			"difficulty": "medium",
+			"tags": ["orm", "database", "abstraction"]
+		}
+	]
 }

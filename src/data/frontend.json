@@ -1,78 +1,120 @@
 {
-  "id": "frontend",
-  "name": "Frontend Mastery",
-  "description": "React, Vue, CSS, DOM manipulation, and modern browser APIs",
-  "category": "Technical",
-  "cards": [
-    {
-      "id": "fe-001",
-      "question": "What is the Virtual DOM in React and how does it work?",
-      "answer": "The Virtual DOM is a JavaScript representation of the actual DOM. React creates a virtual copy of the DOM, and when state changes occur, it creates a new virtual DOM tree, compares it with the previous one (diffing), and only updates the changed elements in the real DOM. This process is called reconciliation and makes updates more efficient.",
-      "difficulty": "medium",
-      "tags": ["react", "dom", "performance"]
-    },
-    {
-      "id": "fe-002",
-      "question": "Explain CSS specificity and how it's calculated.",
-      "answer": "CSS specificity determines which styles are applied when multiple rules target the same element. It's calculated as a four-part number (0,0,0,0): inline styles (1000), IDs (100), classes/attributes/pseudo-classes (10), and elements/pseudo-elements (1). The selector with the highest specificity wins.",
-      "difficulty": "medium",
-      "tags": ["css", "specificity", "styling"]
-    },
-    {
-      "id": "fe-003",
-      "question": "What are JavaScript closures and provide a practical example?",
-      "answer": "A closure is a function that has access to variables in its outer (enclosing) scope even after the outer function has returned. Example: function createCounter() { let count = 0; return function() { return ++count; }; } const counter = createCounter(); counter(); // 1 counter(); // 2",
-      "difficulty": "medium",
-      "tags": ["javascript", "scope", "functions"]
-    },
-    {
-      "id": "fe-004",
-      "question": "Explain the CSS Box Model.",
-      "answer": "The CSS Box Model describes the rectangular boxes generated for elements. It consists of: content (the actual content), padding (space around content), border (around padding), and margin (space outside the border). Total element width = width + left padding + right padding + left border + right border.",
-      "difficulty": "easy",
-      "tags": ["css", "box-model", "layout"]
-    },
-    {
-      "id": "fe-005",
-      "question": "What is the difference between var, let, and const in JavaScript?",
-      "answer": "var: function-scoped, can be redeclared and updated, hoisted. let: block-scoped, can be updated but not redeclared, not hoisted. const: block-scoped, cannot be updated or redeclared, must be initialized at declaration. Use const by default, let when reassignment needed, avoid var.",
-      "difficulty": "easy",
-      "tags": ["javascript", "es6", "variables"]
-    },
-    {
-      "id": "fe-006",
-      "question": "What is event delegation in JavaScript?",
-      "answer": "Event delegation is a technique where you attach a single event listener to a parent element instead of multiple listeners to child elements. The event bubbles up from the target to the parent, where it's handled. This improves performance and handles dynamically added elements. Use event.target to identify which child triggered the event.",
-      "difficulty": "medium",
-      "tags": ["javascript", "events", "dom"]
-    },
-    {
-      "id": "fe-007",
-      "question": "Explain React's useEffect hook and its dependencies array.",
-      "answer": "useEffect runs side effects in functional components. It takes a function and an optional dependencies array. With empty array []: runs once on mount. With dependencies [a, b]: runs when dependencies change. No array: runs on every render. Return a cleanup function to clean up effects (e.g., remove event listeners) before re-running or unmounting.",
-      "difficulty": "medium",
-      "tags": ["react", "hooks", "lifecycle"]
-    },
-    {
-      "id": "fe-008",
-      "question": "What are CSS Flexbox and Grid, and when should you use each?",
-      "answer": "Flexbox is one-dimensional (row or column) for laying out items in a single direction. Best for navigation bars, card layouts, centering. Grid is two-dimensional (rows and columns) for complex layouts. Best for overall page structure, dashboards, magazine layouts. They can be combined: Grid for macro layout, Flexbox for components.",
-      "difficulty": "medium",
-      "tags": ["css", "flexbox", "grid", "layout"]
-    },
-    {
-      "id": "fe-009",
-      "question": "What is the JavaScript Event Loop?",
-      "answer": "The Event Loop is the mechanism that allows JavaScript to perform non-blocking operations despite being single-threaded. It continuously checks the call stack and task queue. When the call stack is empty, it pushes callbacks from the queue to the stack. Microtasks (Promises) have priority over macrotasks (setTimeout, DOM events).",
-      "difficulty": "hard",
-      "tags": ["javascript", "async", "event-loop"]
-    },
-    {
-      "id": "fe-010",
-      "question": "What are React keys and why are they important?",
-      "answer": "Keys are special props used when rendering lists to help React identify which items changed, were added, or removed. They should be unique and stable (use IDs, not array indices when possible). Without proper keys, React may re-render unnecessarily or cause state bugs. Keys help with reconciliation efficiency.",
-      "difficulty": "easy",
-      "tags": ["react", "lists", "performance"]
-    }
-  ]
+	"id": "frontend",
+	"name": "Frontend Mastery",
+	"description": "React, Vue, CSS, DOM manipulation, and modern browser APIs",
+	"category": "Technical",
+	"cards": [
+		{
+			"id": "fe-001",
+			"question": "What is the Virtual DOM in React and how does it work?",
+			"answer": "The Virtual DOM is a JavaScript representation of the actual DOM. React creates a virtual copy of the DOM, and when state changes occur, it creates a new virtual DOM tree, compares it with the previous one (diffing), and only updates the changed elements in the real DOM. This process is called reconciliation and makes updates more efficient.",
+			"difficulty": "medium",
+			"tags": ["react", "dom", "performance"]
+		},
+		{
+			"id": "fe-002",
+			"question": "Explain CSS specificity and how it's calculated.",
+			"answer": "CSS specificity determines which styles are applied when multiple rules target the same element. It's calculated as a four-part number (0,0,0,0): inline styles (1000), IDs (100), classes/attributes/pseudo-classes (10), and elements/pseudo-elements (1). The selector with the highest specificity wins.",
+			"difficulty": "medium",
+			"tags": ["css", "specificity", "styling"]
+		},
+		{
+			"id": "fe-003",
+			"question": "What are JavaScript closures and provide a practical example?",
+			"answer": "A closure is a function that has access to variables in its outer (enclosing) scope even after the outer function has returned. Example: function createCounter() { let count = 0; return function() { return ++count; }; } const counter = createCounter(); counter(); // 1 counter(); // 2",
+			"difficulty": "medium",
+			"tags": ["javascript", "scope", "functions"]
+		},
+		{
+			"id": "fe-004",
+			"question": "Explain the CSS Box Model.",
+			"answer": "The CSS Box Model describes the rectangular boxes generated for elements. It consists of: content (the actual content), padding (space around content), border (around padding), and margin (space outside the border). Total element width = width + left padding + right padding + left border + right border.",
+			"difficulty": "easy",
+			"tags": ["css", "box-model", "layout"]
+		},
+		{
+			"id": "fe-005",
+			"question": "What is the difference between var, let, and const in JavaScript?",
+			"answer": "var: function-scoped, can be redeclared and updated, hoisted. let: block-scoped, can be updated but not redeclared, not hoisted. const: block-scoped, cannot be updated or redeclared, must be initialized at declaration. Use const by default, let when reassignment needed, avoid var.",
+			"difficulty": "easy",
+			"tags": ["javascript", "es6", "variables"]
+		},
+		{
+			"id": "fe-006",
+			"question": "What is event delegation in JavaScript?",
+			"answer": "Event delegation is a technique where you attach a single event listener to a parent element instead of multiple listeners to child elements. The event bubbles up from the target to the parent, where it's handled. This improves performance and handles dynamically added elements. Use event.target to identify which child triggered the event.",
+			"difficulty": "medium",
+			"tags": ["javascript", "events", "dom"]
+		},
+		{
+			"id": "fe-007",
+			"question": "Explain React's useEffect hook and its dependencies array.",
+			"answer": "useEffect runs side effects in functional components. It takes a function and an optional dependencies array. With empty array []: runs once on mount. With dependencies [a, b]: runs when dependencies change. No array: runs on every render. Return a cleanup function to clean up effects (e.g., remove event listeners) before re-running or unmounting.",
+			"difficulty": "medium",
+			"tags": ["react", "hooks", "lifecycle"]
+		},
+		{
+			"id": "fe-008",
+			"question": "What are CSS Flexbox and Grid, and when should you use each?",
+			"answer": "Flexbox is one-dimensional (row or column) for laying out items in a single direction. Best for navigation bars, card layouts, centering. Grid is two-dimensional (rows and columns) for complex layouts. Best for overall page structure, dashboards, magazine layouts. They can be combined: Grid for macro layout, Flexbox for components.",
+			"difficulty": "medium",
+			"tags": ["css", "flexbox", "grid", "layout"]
+		},
+		{
+			"id": "fe-009",
+			"question": "What is the JavaScript Event Loop?",
+			"answer": "The Event Loop is the mechanism that allows JavaScript to perform non-blocking operations despite being single-threaded. It continuously checks the call stack and task queue. When the call stack is empty, it pushes callbacks from the queue to the stack. Microtasks (Promises) have priority over macrotasks (setTimeout, DOM events).",
+			"difficulty": "hard",
+			"tags": ["javascript", "async", "event-loop"]
+		},
+		{
+			"id": "fe-010",
+			"question": "What are React keys and why are they important?",
+			"answer": "Keys are special props used when rendering lists to help React identify which items changed, were added, or removed. They should be unique and stable (use IDs, not array indices when possible). Without proper keys, React may re-render unnecessarily or cause state bugs. Keys help with reconciliation efficiency.",
+			"difficulty": "easy",
+			"tags": ["react", "lists", "performance"]
+		},
+		{
+			"id": "fe-011",
+			"question": "What is the difference between state and props in React?",
+			"answer": "Props are read-only data passed from parent to child components. State is internal, mutable data managed within a component. Props enable component reusability and data flow. State enables dynamic, interactive components. Update state with setState (class) or useState hook (functional).",
+			"difficulty": "easy",
+			"tags": ["react", "state", "props"]
+		},
+		{
+			"id": "fe-012",
+			"question": "What is useMemo and when should you use it?",
+			"answer": "useMemo memoizes a computed value, only recalculating when dependencies change. Use for expensive calculations to avoid unnecessary re-computation. Helps prevent unnecessary re-renders when passing memoized values to child components. Don't overuse - memoization has overhead.",
+			"difficulty": "medium",
+			"tags": ["react", "hooks", "performance"]
+		},
+		{
+			"id": "fe-013",
+			"question": "What is useCallback and how does it differ from useMemo?",
+			"answer": "useCallback memoizes a function, returning the same reference unless dependencies change. useMemo memoizes any value. Use useCallback to prevent unnecessary re-renders when passing callbacks to optimized child components. Use useMemo for expensive computations.",
+			"difficulty": "medium",
+			"tags": ["react", "hooks", "performance"]
+		},
+		{
+			"id": "fe-014",
+			"question": "What is the purpose of React.memo?",
+			"answer": "React.memo is a higher-order component that prevents re-renders if props haven't changed. It performs a shallow comparison of props. Use for components that render often with same props to optimize performance. Can accept a custom comparison function as second argument.",
+			"difficulty": "medium",
+			"tags": ["react", "memo", "performance"]
+		},
+		{
+			"id": "fe-015",
+			"question": "What is the DOM and how does React interact with it?",
+			"answer": "DOM (Document Object Model) is a tree representation of HTML. React creates a Virtual DOM, a JavaScript copy of the real DOM. When state changes, React creates a new Virtual DOM, compares with previous (diffing), and updates only changed nodes in real DOM. This is more efficient than direct DOM manipulation.",
+			"difficulty": "medium",
+			"tags": ["react", "dom", "virtual-dom"]
+		},
+		{
+			"id": "fe-016",
+			"question": "What are React lifecycle methods?",
+			"answer": "Class components have: componentDidMount (runs after render), componentDidUpdate (runs after updates), componentWillUnmount (runs before unmount). useEffect hook combines these for functional components with dependency arrays to control when effects run. Important for subscriptions, fetching data, and cleanup.",
+			"difficulty": "medium",
+			"tags": ["react", "lifecycle", "hooks"]
+		}
+	]
 }
