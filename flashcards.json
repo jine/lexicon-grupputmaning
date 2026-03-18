@@ -1,0 +1,32 @@
+[
+	{
+		"question": "Vad är de två huvudsakliga kraven för Next.js-projektet enligt README.md?",
+		"answer": "Projektet ska vara byggt i Next.js och planeras/godkännas innan genomförande.",
+		"difficulty": "easy",
+		"tags": ["next.js", "planering", "projekt"]
+	},
+	{
+		"question": "Vilket arbetsmetodiskt sätt rekommenderas i projektet?",
+		"answer": "Ett ‘Scrum’-liknande arbetssätt med hantering av sprintar via GitHub Projects eller liknande.",
+		"difficulty": "medium",
+		"tags": ["scrum", "agile", "github-projects"]
+	},
+	{
+		"question": "Vad rekommenderas för att öva på versionshantering enligt texten?",
+		"answer": "Att arbeta i feature branches och använda Pull Requests (PR).",
+		"difficulty": "easy",
+		"tags": ["git", "branching", "pr"]
+	},
+	{
+		"question": "Vilka bibliotek nämns som alternativ för att använda i projektet?",
+		"answer": "shadcn, Tailwind, react-hot-toast, Prisma.",
+		"difficulty": "medium",
+		"tags": ["bibliotek", "tailwind", "shadcn", "prisma"]
+	},
+	{
+		"question": "Vad måste inkluderas i planeringsstadiet innan kodarbete börjar?",
+		"answer": "Wireframe/designskiss, val av API/db/endpoints, och en sorterad ‘Product Backlog’.",
+		"difficulty": "medium",
+		"tags": ["planering", "wireframe", "backlog"]
+	}
+]
