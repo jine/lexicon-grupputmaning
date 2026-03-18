@@ -10,6 +10,8 @@
 
 Agents **MUST** enforce these rules at the start of **every single task/session**:
 
+**CRITICAL:** Always create a **NEW** branch for each feature/fix task. **NEVER** reuse old branches. If an old branch exists, create a new one with the updated description. This ensures zero collisions and clean history. Never stay on an old branch from a previous session – always switch to a new branch for the current task.
+
 ### 1.1 Always check current branch first
 
 ```bash
