@@ -9,7 +9,9 @@
 		"lint": "biome lint",
 		"format": "biome format",
 		"check": "biome check",
-		"prepare": "husky"
+		"prepare": "husky",
+		"extract-content": "tsx scripts/step1-extract-content.ts",
+		"analyze-flashcards": "tsx scripts/step2-analyze-content.ts"
 	},
 	"dependencies": {
 		"clsx": "^2.1.1",
