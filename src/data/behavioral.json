@@ -1,0 +1,113 @@
+{
+	"id": "behavioral",
+	"name": "Behavioral Questions",
+	"description": "STAR method, conflict resolution, and leadership scenarios",
+	"category": "Soft Skills",
+	"cards": [
+		{
+			"id": "bh-001",
+			"question": "Tell me about a time you had a conflict with a team member. How did you resolve it?",
+			"answer": "STAR Framework: Situation - Brief context of the project and conflict. Task - Your responsibility in resolving it. Action - Specific steps you took (active listening, finding common ground, compromise). Result - Positive outcome and what you learned. Focus on professional resolution, not blame. Emphasize communication and empathy.",
+			"difficulty": "medium",
+			"tags": ["conflict-resolution", "communication", "teamwork"]
+		},
+		{
+			"id": "bh-002",
+			"question": "Describe a time you missed a deadline. What happened and what did you learn?",
+			"answer": "Be honest but strategic. Explain: Situation - Why the deadline was missed (unrealistic estimates, scope creep, technical debt). Action - How you communicated early, got help, or adjusted scope. Result - What you delivered and lessons learned (better estimation, earlier communication, padding timelines). Show growth and accountability.",
+			"difficulty": "medium",
+			"tags": ["accountability", "time-management", "learning"]
+		},
+		{
+			"id": "bh-003",
+			"question": "Tell me about a time you had to learn something quickly to complete a project.",
+			"answer": "Structure: The challenge (new technology/framework with tight deadline). Your approach (documentation, tutorials, mentor consultation, prototyping). The learning process (focused on MVP understanding first). The outcome (successfully delivered, became go-to expert). Emphasize adaptability and resourcefulness.",
+			"difficulty": "easy",
+			"tags": ["learning", "adaptability", "problem-solving"]
+		},
+		{
+			"id": "bh-004",
+			"question": "Describe a situation where you had to make a decision without complete information.",
+			"answer": "Use STAR: Situation - High-pressure scenario with ambiguity. Task - Decision that needed to be made. Action - How you gathered available data, identified risks, consulted stakeholders, made educated assumptions. Result - Outcome and how you validated decision later. Show calculated risk-taking and comfort with uncertainty.",
+			"difficulty": "medium",
+			"tags": ["decision-making", "ambiguity", "leadership"]
+		},
+		{
+			"id": "bh-005",
+			"question": "Tell me about a time you had to convince someone to adopt your idea or approach.",
+			"answer": "Key elements: Understanding the other person's perspective and concerns. Presenting data/evidence supporting your approach. Finding win-win solutions. Building consensus gradually. The outcome (whether adopted or not) and relationship preservation. Emphasize persuasion through logic and empathy, not force.",
+			"difficulty": "medium",
+			"tags": ["influence", "communication", "negotiation"]
+		},
+		{
+			"id": "bh-006",
+			"question": "Describe a time you received critical feedback. How did you handle it?",
+			"answer": "Show emotional intelligence: Initial reaction (staying calm, not defensive). Active listening and asking clarifying questions. Reflecting on validity of feedback. Creating action plan for improvement. Following up with feedback giver. Result - specific improvements made. Demonstrate openness to growth and professionalism.",
+			"difficulty": "easy",
+			"tags": ["feedback", "growth-mindset", "self-awareness"]
+		},
+		{
+			"id": "bh-007",
+			"question": "Tell me about a time you mentored someone or helped them grow.",
+			"answer": "Structure: The person and their goals/challenges. Your mentoring approach (regular check-ins, resources, shadowing, constructive feedback). Specific examples of guidance provided. Their growth over time. Your learnings from the experience. Show leadership, investment in others' success, and patience.",
+			"difficulty": "medium",
+			"tags": ["mentoring", "leadership", "team-development"]
+		},
+		{
+			"id": "bh-008",
+			"question": "Describe a situation where you had to work with a difficult stakeholder or client.",
+			"answer": "Focus on: Understanding their motivations and constraints. Setting clear expectations early. Regular communication and transparency. Managing scope and saying no diplomatically. Finding compromise. The outcome (project success and relationship preservation). Emphasize professionalism and relationship management.",
+			"difficulty": "hard",
+			"tags": ["stakeholder-management", "communication", "professionalism"]
+		},
+		{
+			"id": "bh-009",
+			"question": "Tell me about a time you failed. What did you learn from it?",
+			"answer": "Choose a real but not catastrophic failure. Structure: The situation and your approach. What went wrong (take ownership). Immediate response (mitigation, communication). Deep analysis of root causes. Changes implemented to prevent recurrence. How you applied these lessons later. Show humility, accountability, and growth.",
+			"difficulty": "medium",
+			"tags": ["failure", "resilience", "growth-mindset"]
+		},
+		{
+			"id": "bh-010",
+			"question": "Describe a time you had to prioritize multiple competing tasks or projects.",
+			"answer": "Explain your framework: Assessing urgency vs importance. Understanding business impact and deadlines. Communicating with stakeholders about trade-offs. Delegating where possible. Using tools/systems for organization. How you managed stress. The outcome (successful delivery of high-priority items). Show strategic thinking and time management.",
+			"difficulty": "easy",
+			"tags": ["prioritization", "time-management", "organization"]
+		},
+		{
+			"id": "bh-011",
+			"question": "Tell me about a time you had to deliver bad news to a stakeholder.",
+			"answer": "Focus on: Preparing facts and potential solutions. Choosing the right time and setting. Being honest but empathetic. Explaining the 'why' behind the decision. Offering alternatives or next steps. Following up to maintain trust. Show emotional intelligence and professionalism.",
+			"difficulty": "medium",
+			"tags": ["communication", "stakeholder-management", "transparency"]
+		},
+		{
+			"id": "bh-012",
+			"question": "Describe a situation where you had to work with limited resources.",
+			"answer": "Showcase resourcefulness: What constraints existed (time, budget, people). How you prioritized and focused on high-impact items. Creative solutions to maximize output. What you sacrificed vs what you protected. The outcome and what you learned about efficiency.",
+			"difficulty": "medium",
+			"tags": ["resource-management", "problem-solving", "creativity"]
+		},
+		{
+			"id": "bh-013",
+			"question": "Tell me about a time you went above and beyond for a project or team.",
+			"answer": "Focus on intrinsic motivation, not just external recognition. Examples: staying late to help a struggling teammate, learning new skills to fill a gap, taking initiative on undocumented processes. The impact on the team/project and what drove you to do it.",
+			"difficulty": "easy",
+			"tags": ["initiative", "dedication", "teamwork"]
+		},
+		{
+			"id": "bh-014",
+			"question": "Describe a time you had to adapt to a major change in technology or process.",
+			"answer": "Structure: The change and why it was challenging. Your approach to learning and adapting (training, self-study, peer learning). How you helped others adapt. The outcome and how you embraced the change. Show growth mindset and adaptability.",
+			"difficulty": "medium",
+			"tags": ["adaptability", "learning", "change-management"]
+		},
+		{
+			"id": "bh-015",
+			"question": "Tell me about a time you identified and solved a problem before it became a major issue.",
+			"answer": "Showcase proactive thinking: What warning signs you noticed. How you investigated and confirmed the issue. Steps you took to prevent escalation. Collaboration with others if needed. The impact of solving it early. Show analytical skills and ownership.",
+			"difficulty": "medium",
+			"tags": ["problem-solving", "proactivity", "analytical"]
+		}
+	]
+}
