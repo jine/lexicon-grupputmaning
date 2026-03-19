@@ -1,0 +1,132 @@
+{
+	"id": "deck-git",
+	"name": "Git & GitHub",
+	"description": "Flashcards om versionshantering och samarbete baserat på Lexicons github repos.",
+	"category": "system-design",
+	"cards": [
+		{
+			"id": "git-007",
+			"question": "Vad är Git-Flow?",
+			"answer": "Git-Flow är ett grenstrategimönster som definierar specifika grenar för feature, release, hotfix och master/main.",
+			"category": "system-design",
+			"difficulty": "medium",
+			"tags": ["git", "workflow", "branching"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "git-009",
+			"question": "Vad är GitHub Projects?",
+			"answer": "GitHub Projects är ett verktyg för att organisera och spåra arbete med boards, issues och milestones.",
+			"category": "system-design",
+			"difficulty": "easy",
+			"tags": ["github", "projects", "planning"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "git-011",
+			"question": "Vad är en issue i GitHub?",
+			"answer": "En issue är ett ärende eller uppgift i GitHub som kan användas för att spåra arbete, buggar eller förbättringar.",
+			"category": "system-design",
+			"difficulty": "easy",
+			"tags": ["github", "issues", "tracking"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "git-001",
+			"question": "Vad är Git?",
+			"answer": "Git är ett distribuerat versionshanteringssystem som spårar ändringar i kod och möjliggör samarbete mellan utvecklare.",
+			"category": "system-design",
+			"difficulty": "easy",
+			"tags": ["git", "version-control", "basics"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "git-002",
+			"question": "Vad är en commit i Git?",
+			"answer": "En commit är en snapshot av alla filer i projektet vid en viss tidpunkt, med ett meddelande som beskriver ändringarna.",
+			"category": "system-design",
+			"difficulty": "easy",
+			"tags": ["git", "commit", "history"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "git-003",
+			"question": "Vad är en branch i Git?",
+			"answer": "En branch är en separat version av kodbasen som låter dig arbeta på funktioner utan att påverka huvudkoden.",
+			"category": "system-design",
+			"difficulty": "easy",
+			"tags": ["git", "branch", "workflow"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "git-004",
+			"question": "Vad är merge i Git?",
+			"answer": "Merge är att kombinera ändringar från en branch till en annan, ofta från feature-branch till main.",
+			"category": "system-design",
+			"difficulty": "medium",
+			"tags": ["git", "merge", "branches"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "git-005",
+			"question": "Vad är pull request (PR)?",
+			"answer": "En pull request är en begäran att merga ändringar från en branch till en annan, och möjliggör kodgranskning.",
+			"category": "system-design",
+			"difficulty": "easy",
+			"tags": ["git", "pull-request", "github"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "git-006",
+			"question": "Vad är git clone?",
+			"answer": "git clone skapar en kopia av ett befintligt Git-repository på din lokala maskin.",
+			"category": "system-design",
+			"difficulty": "easy",
+			"tags": ["git", "clone", "repository"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "git-007",
+			"question": "Vad är git push?",
+			"answer": "git push laddar upp lokala commits till ett remote repository som GitHub.",
+			"category": "system-design",
+			"difficulty": "easy",
+			"tags": ["git", "push", "remote"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "git-008",
+			"question": "Vad är git pull?",
+			"answer": "git pull hämtar och mergar ändringar från ett remote repository till din lokala branch.",
+			"category": "system-design",
+			"difficulty": "easy",
+			"tags": ["git", "pull", "remote"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		}
+	],
+	"cardCount": 11,
+	"createdAt": "2026-03-18T13:42:51.290Z",
+	"updatedAt": "2026-03-18T13:42:51.290Z"
+}
