@@ -2,6 +2,14 @@
 
 An interactive, gamified flashcard application designed to help developers master technical interview questions through active recall and repetitive learning.
 
+## Summary and Reflection
+
+This application is a collaborative school project developed as part of Lexicon’s Frontend Development program. Our primary objective was to explore and implement agentic development as a team, focusing on workflows that enable developers to work primarily by orchestrating AI agents. This approach allowed us to streamline the development process without disrupting individual workflows, creating a more efficient and cohesive team dynamic.
+
+Through agentic development, we the developers were able to offload the task of writing code entirely to our chosen AI tools and this subsequently shifted our focus towards defining goals and tasks through Github Project issues and more mindful review of code on Pull Requests. 
+
+We have observed that through agentic coding, planning of and designing the architecture of a project is crucial to getting the end product as close to our vision as possible. The writing of code as a process is basically entirely delegated to the AI and this demands more emphasis on the developers' code reading skills, understanding of program architecture, meticulous planning and the breaking down of tasks to as small parts as possible.
+
 ## 🚀 Overview
 
 Interview Flashcard Master transforms the tedious process of interview preparation into an engaging game. Challenge yourself across various categories, track your progress, and level up your technical skills.
