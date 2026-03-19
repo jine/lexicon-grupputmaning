@@ -7,7 +7,7 @@
 		{
 			"id": "css-001",
 			"question": "Vad är CSS?",
-			"answer": "CSS (Cascading Style Sheets) är ett språk för att styla och designa HTML-dokument. Det kontrollerar layout, färger, typsnitt och utseende.",
+			"answer": "CSS (Cascading Style Sheets) är ett språk för att styla och designa HTML-dokument. Det kontrollerar layout, färger, typsnitt och det generella utseendet.",
 			"category": "css",
 			"difficulty": "easy",
 			"tags": ["css", "styling", "basics"],
@@ -18,7 +18,7 @@
 		{
 			"id": "css-002",
 			"question": "Vad är box model i CSS?",
-			"answer": "Box model beskriver hur varje element renderas som en rektangel med innehåll, padding, border och margin. Content ligger i mitten, följt av padding, border och margin utåt.",
+			"answer": "Box model beskriver hur varje element renderas som en rektangel med innehåll (content), padding, border och margin. Innehåll ligger i mitten, följt av padding, border och ytterst margin.",
 			"category": "frontend",
 			"difficulty": "easy",
 			"tags": ["css", "box-model", "layout"],
@@ -29,7 +29,7 @@
 		{
 			"id": "css-003",
 			"question": "Vad är viewport?",
-			"answer": "Viewport är den synliga delen av en webbsida i webbläsaren. Den definierar storleken på fönstret där innehåll visas och är viktig för responsiv design.",
+			"answer": "Viewport är den synliga delen av en webbsida i webbläsaren. Den definierar storleken på fönstret där innehåll visas och är avgörande för responsiv design.",
 			"category": "frontend",
 			"difficulty": "easy",
 			"tags": ["css", "viewport", "responsive"],
@@ -40,7 +40,7 @@
 		{
 			"id": "css-004",
 			"question": "Vad är CSS Grid?",
-			"answer": "CSS Grid är ett tvådimensionellt layout-system som låter dig skapa komplexa layouter med rader och kolumner. Det ger exakt kontroll över placement och alignment.",
+			"answer": "CSS Grid är ett tvådimensionellt layout-system som låter dig skapa komplexa layouter med både rader och kolumner. Det ger exakt kontroll över placering och justering av element.",
 			"category": "css",
 			"difficulty": "medium",
 			"tags": ["css", "grid", "layout"],
@@ -51,7 +51,7 @@
 		{
 			"id": "css-005",
 			"question": "Vad är Flexbox?",
-			"answer": "Flexbox är ett ett-dimensionellt layout-system för att arrangera element i en container. Det är perfekt för att centrera, justera och fördela utrymme mellan element.",
+			"answer": "Flexbox är ett endimensionellt layout-system för att arrangera element i en container. Det är idealiskt för att centrera, justera och fördela utrymme mellan element i en rad eller kolumn.",
 			"category": "css",
 			"difficulty": "medium",
 			"tags": ["css", "flexbox", "layout"],
@@ -62,7 +62,7 @@
 		{
 			"id": "css-006",
 			"question": "Vad är media queries?",
-			"answer": "Media queries låter dig applicera CSS-regler baserat på enhetsegenskaper som skärmstorlek, upplösning eller orientation. Grundstenen för responsiv design.",
+			"answer": "Media queries låter dig applicera CSS-regler baserat på enhetsegenskaper som skärmstorlek, upplösning eller orientering. Det är grundstenen för responsiv design.",
 			"category": "css",
 			"difficulty": "medium",
 			"tags": ["css", "responsive", "media-queries"],
@@ -73,7 +73,7 @@
 		{
 			"id": "css-007",
 			"question": "Vad är specificity i CSS?",
-			"answer": "Specificity bestämmer vilken CSS-regel som vinner vid konflikter. Den beräknas som en 4-delad vektor: inline styles, ID, klasser/attribut, elementer.",
+			"answer": "Specificity (specificitet) bestämmer vilken CSS-regel som vinner vid konflikter. Den beräknas som en fyrdelad vektor: inline-stilar, ID:n, klasser/attribut/pseudo-klasser, och element/pseudo-element.",
 			"category": "css",
 			"difficulty": "hard",
 			"tags": ["css", "specificity", "priority"],
@@ -84,7 +84,7 @@
 		{
 			"id": "css-008",
 			"question": "Vad är position property i CSS?",
-			"answer": "Position bestämmer hur ett element placeras i layouten. Värden inkluderar static (standard), relative, fixed, absolute och sticky.",
+			"answer": "Egenskapen position bestämmer hur ett element placeras i layouten. Värden inkluderar static (standard), relative, fixed, absolute och sticky.",
 			"category": "css",
 			"difficulty": "medium",
 			"tags": ["css", "position", "layout"],
@@ -95,7 +95,7 @@
 		{
 			"id": "css-009",
 			"question": "Vad är z-index?",
-			"answer": "z-index bestämmer lagerordningen för positionerade element. Högre värden ligger ovanför lägre värden. Fungerar bara på positionerade element.",
+			"answer": "z-index bestämmer lagerordningen (staplingsordningen) för positionerade element. Högre värden ligger ovanför lägre värden. Det fungerar endast på element som har en annan position än static.",
 			"category": "frontend",
 			"difficulty": "easy",
 			"tags": ["css", "z-index", "layering"],
@@ -106,7 +106,7 @@
 		{
 			"id": "css-010",
 			"question": "Vad är CSS-variabler (custom properties)?",
-			"answer": "CSS-variabler låter dig definiera återanvändbara värden med --namn syntax. De kan återanvändas med var() funktionen och är dynamiskt uppdaterbara.",
+			"answer": "CSS-variabler låter dig definiera återanvändbara värden med syntaxen --namn. De kan sedan användas med funktionen var() och kan uppdateras dynamiskt.",
 			"category": "css",
 			"difficulty": "medium",
 			"tags": ["css", "variables", "custom-properties"],
@@ -117,7 +117,7 @@
 		{
 			"id": "css-011",
 			"question": "Vad är pseudo-klasser i CSS?",
-			"answer": "Pseudo-klasser applicerar stilar baserat på tillstånd, t.ex. :hover, :focus, :nth-child(). De börjar med ett kolon och beskriver ett logiskt tillstånd.",
+			"answer": "Pseudo-klasser används för att definiera ett speciellt tillstånd för ett element, till exempel :hover, :focus eller :nth-child(). De börjar med ett kolon (:).",
 			"category": "css",
 			"difficulty": "medium",
 			"tags": ["css", "pseudo-classes", "selectors"],
@@ -128,7 +128,7 @@
 		{
 			"id": "css-012",
 			"question": "Vad är pseudo-element i CSS?",
-			"answer": "Pseudo-element låter dig styla specifika delar av ett element, t.ex. ::before och ::after för att lägga till innehåll, eller ::first-line för text.",
+			"answer": "Pseudo-element låter dig styla specifika delar av ett element, till exempel ::before och ::after för att lägga till innehåll, eller ::first-line för att styla den första raden i ett stycke.",
 			"category": "css",
 			"difficulty": "medium",
 			"tags": ["css", "pseudo-elements", "selectors"],
@@ -139,7 +139,7 @@
 		{
 			"id": "css-013",
 			"question": "Vad är BEM-namngivning?",
-			"answer": "BEM (Block, Element, Modifier) är en metodologi för att namnge CSS-klasser. T.ex. .card__title--active för tydlig, återanvändbar kod.",
+			"answer": "BEM (Block, Element, Modifier) är en metodik för att namnge CSS-klasser på ett tydligt och konsekvent sätt, t.ex. .card__title--active, vilket främjar återanvändbarhet.",
 			"category": "css",
 			"difficulty": "medium",
 			"tags": ["css", "bem", "naming"],
@@ -150,7 +150,7 @@
 		{
 			"id": "css-014",
 			"question": "Vad är transitions i CSS?",
-			"answer": "Transitions låter dig animera övergångar mellan tillstånd, t.ex. vid hover. Du kan animera egenskaper som färg, storlek eller position medan dur och easing.",
+			"answer": "Transitions (övergångar) låter dig ändra egenskapsvärden mjukt över en viss tidsperiod, till exempel när man hovrar över en knapp. Du kan styra varaktighet och acceleration (easing).",
 			"category": "frontend",
 			"difficulty": "easy",
 			"tags": ["css", "transitions", "animation"],
@@ -161,7 +161,7 @@
 		{
 			"id": "css-015",
 			"question": "Vad är animations i CSS?",
-			"answer": "CSS-animations låter dig skapa komplexa animationer med keyframes. Du definierar start- och slutpositioner och CSS räknar ut övergången.",
+			"answer": "CSS-animationer låter dig skapa komplexa rörelsemönster med hjälp av @keyframes, där du definierar tillstånd vid olika tidpunkter i animationens cykel.",
 			"category": "css",
 			"difficulty": "medium",
 			"tags": ["css", "animations", "keyframes"],
@@ -172,7 +172,7 @@
 		{
 			"id": "css-016",
 			"question": "Vad är transform i CSS?",
-			"answer": "Transform låter dig modifiera element genom att skalera, rotera, translera eller vrida dem utan att påverka layouten eller andra element.",
+			"answer": "Egenskapen transform låter dig ändra ett elements form och position genom att rotera, skala, förflytta (translate) eller vrida (skew) det, utan att påverka dokumentflödet.",
 			"category": "frontend",
 			"difficulty": "easy",
 			"tags": ["css", "transform", "animation"],
@@ -183,7 +183,7 @@
 		{
 			"id": "css-017",
 			"question": "Vad är clamp() funktionen?",
-			"answer": "clamp() låter dig begränsa ett värde mellan min och max. T.ex. font-size: clamp(1rem, 2vw, 2rem) ger responsiv typografi utan media queries.",
+			"answer": "clamp() är en funktion som begränsar ett värde mellan ett definierat minimum och maximum. Det är mycket användbart för responsiv typografi, t.ex. font-size: clamp(1rem, 2vw, 2rem).",
 			"category": "css",
 			"difficulty": "hard",
 			"tags": ["css", "clamp", "responsive"],
@@ -194,7 +194,7 @@
 		{
 			"id": "css-018",
 			"question": "Vad är CSS-in-JS?",
-			"answer": "CSS-in-JS är ett tillvägagångssätt där CSS skrivs i JavaScript, ofta med hjälp av bibliotek som Styled Components eller Emotion. Det ger scope och dynamiska stilar.",
+			"answer": "CSS-in-JS är ett arbetssätt där man skriver CSS direkt i sina JavaScript-filer, ofta med bibliotek som Styled Components. Det ger automatiskt scopade stilar och enkel tillgång till props.",
 			"category": "css",
 			"difficulty": "hard",
 			"tags": ["css", "css-in-js", "react"],
@@ -205,7 +205,7 @@
 		{
 			"id": "css-019",
 			"question": "Vad är Tailwind CSS?",
-			"answer": "Tailwind CSS är ett utility-first ramverk som låter dig bygga anpassade design med fördefinierade klasser. Det minimerar custom CSS.",
+			"answer": "Tailwind CSS är ett utility-first ramverk som tillhandahåller färdiga CSS-klasser för att bygga design snabbt direkt i HTML, vilket minskar behovet av anpassad CSS.",
 			"category": "frontend",
 			"difficulty": "easy",
 			"tags": ["css", "tailwind", "utility"],
@@ -215,8 +215,8 @@
 		},
 		{
 			"id": "css-020",
-			"question": "Vad är CSS reset och normalisering?",
-			"answer": "Reset nollställer alla stilar för konsistens mellan webbläsare. Normalisering (t.ex. Normalize.css) behåller användbara standardstilar och korrigerar buggar.",
+			"question": "Vad är CSS Reset och Normalisering?",
+			"answer": "En CSS Reset nollställer alla standardstilar för att ge ett tomt blad. Normalisering (t.ex. Normalize.css) korrigerar buggar och gör standardstilar konsekventa mellan olika webbläsare.",
 			"category": "frontend",
 			"difficulty": "easy",
 			"tags": ["css", "reset", "normalization"],
@@ -227,7 +227,7 @@
 		{
 			"id": "css-021",
 			"question": "Vad är @media (prefers-color-scheme)?",
-			"answer": "Media query för mörkt/ljust läge. Låter dig automatiskt applicera dark mode baserat på användarens operativsysteminställningar.",
+			"answer": "Det är en media query som låter dig upptäcka om användaren har valt ett mörkt eller ljust tema i sitt operativsystem, vilket gör det enkelt att implementera Dark Mode.",
 			"category": "css",
 			"difficulty": "medium",
 			"tags": ["css", "dark-mode", "media-queries"],
@@ -237,8 +237,8 @@
 		},
 		{
 			"id": "css-022",
-			"question": "Vad är CSS-animations performance?",
-			"answer": "För bäst performance: animera transform och opacity (GPU-accelererade), undvik top/left/width/height som trigger layout reflows.",
+			"question": "Vad påverkar CSS-animationers prestanda?",
+			"answer": "För bästa prestanda bör man fokusera på att animera egenskaperna transform och opacity, då dessa kan hanteras av GPU:n och inte kräver omräkning av layouten (reflow).",
 			"category": "css",
 			"difficulty": "hard",
 			"tags": ["css", "performance", "animations"],
@@ -248,8 +248,8 @@
 		},
 		{
 			"id": "css-023",
-			"question": "Vad är CSS container queries?",
-			"answer": "Container queries låter dig applicera stilar baserat på storleken på en föräldercontainer, inte bara viewport. Mer flexibelt än media queries.",
+			"question": "Vad är CSS Container Queries?",
+			"answer": "Container Queries låter dig ändra ett elements utseende baserat på storleken på dess föräldrakontainer, till skillnad från Media Queries som utgår från hela fönstrets storlek.",
 			"category": "css",
 			"difficulty": "medium",
 			"tags": ["css", "container-queries", "responsive"],
@@ -260,7 +260,7 @@
 		{
 			"id": "css-024",
 			"question": "Vad är @layer i CSS?",
-			"answer": "@layer organiserar CSS-regler i lager (base, components, utilities, etc.) för att kontrollera specificity och återanvändbarhet.",
+			"answer": "@layer används för att organisera CSS i kaskad-lager, vilket ger utvecklare bättre kontroll över specificitet och prioriteringsordning för olika delar av koden.",
 			"category": "css",
 			"difficulty": "medium",
 			"tags": ["css", "layers", "organization"],
@@ -271,7 +271,7 @@
 		{
 			"id": "css-025",
 			"question": "Vad är CSS Nesting?",
-			"answer": "CSS Nesting låter dig skriva inbäddade selektorer inom förälderselektorer, likt SCSS/Sass, utan preprocessorer.",
+			"answer": "CSS Nesting låter dig skriva inbäddade selektorer direkt i varandra, likt hur man gör i Sass/SCSS, vilket gör koden mer kompakt och lättläst.",
 			"category": "css",
 			"difficulty": "medium",
 			"tags": ["css", "nesting", "syntax"],
@@ -282,7 +282,7 @@
 		{
 			"id": "css-026",
 			"question": "Vad är aspect-ratio i CSS?",
-			"answer": "aspect-ratio definierar förhållande mellan bredd och höjd på ett element. Användbart för bilder och video för att bevara proportioner.",
+			"answer": "Egenskapen aspect-ratio definierar ett föredraget förhållande mellan bredd och höjd för ett element, vilket är användbart för att behålla proportioner för bilder och videor.",
 			"category": "frontend",
 			"difficulty": "easy",
 			"tags": ["css", "aspect-ratio", "layout"],
@@ -292,8 +292,8 @@
 		},
 		{
 			"id": "css-027",
-			"question": "Vad är CSS cascade?",
-			"answer": "Cascade är processen där CSS-regler kombineras och konflikter löses baserat på specificity, importance och källordning.",
+			"question": "Vad menas med CSS Cascade?",
+			"answer": "The Cascade (kaskaden) är algoritmen som avgör vilka CSS-regler som ska gälla för ett element när flera regler krockar, baserat på ursprung, specificitet och ordning.",
 			"category": "css",
 			"difficulty": "medium",
 			"tags": ["css", "cascade", "priority"],
@@ -303,8 +303,8 @@
 		},
 		{
 			"id": "css-028",
-			"question": "Vad är content-visibility i CSS?",
-			"answer": "content-visibility: auto hoppar över rendering av innehåll utanför skärmen för att förbättra prestanda på långa sidor.",
+			"question": "Vad gör content-visibility: auto?",
+			"answer": "Det är en egenskap som kan förbättra renderingens prestanda genom att låta webbläsaren hoppa över att rendera element som för tillfället befinner sig utanför viewporten.",
 			"category": "css",
 			"difficulty": "hard",
 			"tags": ["css", "performance", "rendering"],
@@ -314,8 +314,8 @@
 		},
 		{
 			"id": "css-029",
-			"question": "Vad är scroll snap i CSS?",
-			"answer": "Scroll snap kontrollerar scroll-positionen så att elementen 'snäpper' till specifika positioner när användaren scrollar.",
+			"question": "Vad är Scroll Snap?",
+			"answer": "CSS Scroll Snap gör det möjligt att låsa scroll-positionen vid specifika punkter, vilket skapar en app-liknande upplevelse vid bläddring genom t.ex. karuseller eller gallerier.",
 			"category": "css",
 			"difficulty": "medium",
 			"tags": ["css", "scroll", "snap"],
@@ -325,8 +325,8 @@
 		},
 		{
 			"id": "css-030",
-			"question": "Vad är scroll-driven animations i CSS?",
-			"answer": "Scroll-driven animations kopplar animationer till scrollpositionen, så att animationen spelas upp baserat på hur mycket användaren scrollat.",
+			"question": "Vad är scroll-driven animations?",
+			"answer": "Det är ett nytt sätt i CSS att koppla en animations tidslinje till scroll-positionen i en container istället för till en klocka, vilket möjliggör parallax-effekter och framstegsmätare.",
 			"category": "css",
 			"difficulty": "hard",
 			"tags": ["css", "animations", "scroll"],
@@ -336,8 +336,8 @@
 		},
 		{
 			"id": "css-031",
-			"question": "Vad är :has() pseudo-klassen?",
-			"answer": ":has() är en relativ pseudo-klass som väljer element baserat på om de innehåller ett visst descendant-element, t.ex. div:has(.warning).",
+			"question": "Vad gör pseudo-klassen :has()?",
+			"answer": ":has() är en kraftfull selektor som väljer ett föräldraelement baserat på om det innehåller vissa barn eller följs av vissa element. Den kallas ofta för 'parent selector'.",
 			"category": "css",
 			"difficulty": "hard",
 			"tags": ["css", "pseudo-class", "selectors"],
@@ -347,17 +347,215 @@
 		},
 		{
 			"id": "css-032",
-			"question": "Vad är subgrid i CSS Grid?",
-			"answer": "Subgrid låter child-elements i ett grid-nested att ärva spåringsdefinitionen från parent-grid för att skapa mer sammanhängande layouter.",
+			"question": "Vad är Subgrid?",
+			"answer": "Subgrid är ett värde för grid-template-columns/rows som låter ett barn-element i ett grid använda samma rader och kolumner som sin förälder, vilket förenklar justering av innehåll i nästlade layouter.",
 			"category": "css",
 			"difficulty": "hard",
 			"tags": ["css", "grid", "subgrid"],
 			"status": "new",
 			"createdAt": "2026-03-18T13:42:51.290Z",
 			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "css-033",
+			"question": "Vad är skillnaden mellan em och rem?",
+			"answer": "rem utgår alltid från rot-elementets (html) font-storlek, medan em är relativ till sitt närmsta föräldraelements font-storlek. rem är oftast säkrare för att undvika oväntad skalning i djupa träd.",
+			"category": "frontend",
+			"difficulty": "easy",
+			"tags": ["css", "units", "typography"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "css-034",
+			"question": "Vad gör 'display: contents'?",
+			"answer": "'display: contents' gör så att själva containern 'försvinner' ur layout-beräkningarna men behåller sina barn, vilket är användbart för att fixa grid-strukturer utan att ändra HTML-hierarkin.",
+			"category": "css",
+			"difficulty": "hard",
+			"tags": ["css", "layout", "display"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "css-035",
+			"question": "Vad är skillnaden mellan visibility: hidden och display: none?",
+			"answer": "display: none tar bort elementet helt från layouten så det inte tar upp någon plats. visibility: hidden gömmer elementet men det tar fortfarande upp plats i flödet.",
+			"category": "frontend",
+			"difficulty": "easy",
+			"tags": ["css", "display", "visibility"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "css-036",
+			"question": "Vad är CSS object-fit?",
+			"answer": "object-fit bestämmer hur en bild eller video ska skalas för att passa in i sin container, t.ex. 'cover' (fyller hela ytan och beskär vid behov) eller 'contain' (visar hela bilden utan beskärning).",
+			"category": "frontend",
+			"difficulty": "easy",
+			"tags": ["css", "images", "layout"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "css-037",
+			"question": "Vad är margin collapse?",
+			"answer": "Margin collapse är ett beteende i CSS där de vertikala marginalerna för närliggande element (eller förälder och barn) ibland slås ihop till en enda marginal istället för att adderas.",
+			"category": "css",
+			"difficulty": "hard",
+			"tags": ["css", "margin", "layout"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "css-038",
+			"question": "Vad är 'will-change' i CSS?",
+			"answer": "'will-change' är en ledtråd till webbläsaren om vilka egenskaper som kommer att ändras på ett element, så att den kan optimera renderingen i förväg. Ska användas sparsamt.",
+			"category": "css",
+			"difficulty": "hard",
+			"tags": ["css", "performance", "rendering"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "css-039",
+			"question": "Vad är skillnaden mellan flex-basis, flex-grow och flex-shrink?",
+			"answer": "flex-basis sätter initial storlek. flex-grow bestämmer hur mycket elementet ska växa för att fylla utrymme. flex-shrink bestämmer hur mycket det ska krympa vid platsbrist.",
+			"category": "css",
+			"difficulty": "medium",
+			"tags": ["css", "flexbox", "layout"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "css-040",
+			"question": "Vad är en BFC (Block Formatting Context)?",
+			"answer": "En BFC är en del av den visuella renderingen av en webbsida. Det är det område där block-boxar läggs ut. Att skapa en ny BFC (t.ex. via overflow: hidden) kan lösa problem med flytande element och margin collapse.",
+			"category": "css",
+			"difficulty": "hard",
+			"tags": ["css", "layout", "bfc"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "css-041",
+			"question": "Vad är skillnaden mellan CSS Grid 'grid-template-areas' och 'grid-template-columns'?",
+			"answer": "grid-template-areas låter dig definiera layouten visuellt med namngivna områden, medan grid-template-columns definierar storleken på varje kolumn explicit.",
+			"category": "css",
+			"difficulty": "medium",
+			"tags": ["css", "grid", "layout"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "css-042",
+			"question": "Vad är 'line-height' och hur påverkar det tillgänglighet?",
+			"answer": "line-height sätter avståndet mellan textrader. En bra line-height (minst 1.5 för brödtext) förbättrar läsbarheten för personer med syn- eller kognitiva nedsättningar.",
+			"category": "frontend",
+			"difficulty": "easy",
+			"tags": ["css", "typography", "accessibility"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "css-043",
+			"question": "Vad är CSS-egenskapen 'filter'?",
+			"answer": "Filter låter dig applicera grafiska effekter som oskärpa (blur), ljusstyrka, kontrast eller gråskala på ett element.",
+			"category": "frontend",
+			"difficulty": "medium",
+			"tags": ["css", "graphics", "effects"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "css-044",
+			"question": "Vad är 'pointer-events: none'?",
+			"answer": "Det gör så att ett element inte längre reagerar på muspekarklick eller hovring, och händelserna passerar istället igenom till underliggande element.",
+			"category": "frontend",
+			"difficulty": "medium",
+			"tags": ["css", "interaction", "ux"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "css-045",
+			"question": "Vad är skillnaden mellan 'grid-gap' och 'gap'?",
+			"answer": "'gap' är den moderna, generiska egenskapen som fungerar i både Grid och Flexbox, medan 'grid-gap' är den äldre specifika varianten för Grid.",
+			"category": "css",
+			"difficulty": "easy",
+			"tags": ["css", "layout", "flexbox"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "css-046",
+			"question": "Vad är CSS 'isolation: isolate'?",
+			"answer": "Isolation skapar en ny 'stacking context' utan att kräva egenskaper som z-index eller position, vilket förhindrar att element blandas ihop visuellt med bakgrunder via mix-blend-mode.",
+			"category": "css",
+			"difficulty": "hard",
+			"tags": ["css", "layering", "stacking-context"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "css-047",
+			"question": "Vad är 'mask-image' i CSS?",
+			"answer": "Det låter dig använda en bild eller en gradient som en mask för att dölja delar av ett element, liknande hur lager-masker fungerar i Photoshop.",
+			"category": "css",
+			"difficulty": "hard",
+			"tags": ["css", "graphics", "masking"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "css-048",
+			"question": "Vad är 'min-content' och 'max-content'?",
+			"answer": "Värden för storlek som baseras på innehållet. min-content är den minsta möjliga bredden utan spill (ofta bredden på längsta ordet), max-content är bredden om allt innehåll ligger på en rad.",
+			"category": "css",
+			"difficulty": "medium",
+			"tags": ["css", "layout", "sizing"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "css-049",
+			"question": "Vad är skillnaden mellan ':nth-child' och ':nth-of-type'?",
+			"answer": ":nth-child väljer det n-te barnet oavsett typ, medan :nth-of-type väljer det n-te barnet av just den specifika HTML-taggen.",
+			"category": "css",
+			"difficulty": "medium",
+			"tags": ["css", "selectors", "basics"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "css-050",
+			"question": "Vad är 'forced-colors' media feature?",
+			"answer": "Det detekterar om användaren har aktiverat ett läge med begränsade färger (t.ex. Windows High Contrast Mode) så att du kan anpassa din design för bättre läsbarhet.",
+			"category": "css",
+			"difficulty": "hard",
+			"tags": ["css", "accessibility", "contrast"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
 		}
 	],
-	"cardCount": 32,
+	"cardCount": 50,
 	"createdAt": "2026-03-18T13:42:51.290Z",
 	"updatedAt": "2026-03-18T13:42:51.290Z"
 }

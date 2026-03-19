@@ -108,6 +108,128 @@
 			"answer": "Monolith: single deployable unit, simpler initially, tight coupling, harder to scale. Microservices: independently deployable services, technology flexibility, better scalability, more complex operations, distributed system challenges. Choose based on team size, requirements, and scaling needs.",
 			"difficulty": "easy",
 			"tags": ["architecture", "monolith", "microservices"]
+		},
+		{
+			"id": "sd-016",
+			"question": "What is Consistent Hashing and why is it used?",
+			"answer": "Consistent hashing is a technique used in distributed systems (like DHTs or load balancers) to minimize remapping of keys when nodes are added or removed. It maps both keys and nodes to a circular 'ring'. This ensures that adding/removing a node only affects a small fraction of keys.",
+			"difficulty": "hard",
+			"tags": ["distributed-systems", "hashing", "scalability"]
+		},
+		{
+			"id": "sd-017",
+			"question": "What is the difference between Latency and Throughput?",
+			"answer": "Latency is the time it takes for a single request to travel from client to server and back (round-trip time). Throughput is the number of requests or data a system can handle in a given time period (e.g., requests per second). High throughput doesn't always mean low latency.",
+			"difficulty": "easy",
+			"tags": ["performance", "metrics", "latency"]
+		},
+		{
+			"id": "sd-018",
+			"question": "Explain the concept of Cache Invalidation and its challenges.",
+			"answer": "Cache invalidation is the process of updating or removing stale data from the cache when the source data changes. Challenges: hard to get right ('one of the two hard things in CS'). Strategies: TTL (time to live), write-through, write-behind, and active invalidation (purge/refresh).",
+			"difficulty": "medium",
+			"tags": ["caching", "performance", "architecture"]
+		},
+		{
+			"id": "sd-019",
+			"question": "What is 'Availability' in the context of high availability systems?",
+			"answer": "Availability is the percentage of time a system is operational and accessible. Often measured in 'nines' (e.g., 99.9% or 'three nines'). High availability is achieved through redundancy, failover mechanisms, and monitoring to eliminate single points of failure.",
+			"difficulty": "easy",
+			"tags": ["high-availability", "reliability", "infrastructure"]
+		},
+		{
+			"id": "sd-020",
+			"question": "What is a 'SLA' (Service Level Agreement)?",
+			"answer": "An SLA is a formal contract between a service provider and a client that defines the expected level of service, including metrics like uptime, latency, and support response times. It often includes penalties for failing to meet these standards.",
+			"difficulty": "easy",
+			"tags": ["reliability", "business", "operations"]
+		},
+		{
+			"id": "sd-021",
+			"question": "Explain the concept of 'Sharding Key'.",
+			"answer": "A sharding key is a column used to determine which shard (database partition) a specific row of data belongs to. Choosing a good sharding key is critical for balancing data and load across shards and avoiding 'hotspots' (overloaded shards).",
+			"difficulty": "hard",
+			"tags": ["database", "sharding", "scalability"]
+		},
+		{
+			"id": "sd-022",
+			"question": "What is 'Distributed Tracing'?",
+			"answer": "Distributed tracing is a method used to monitor and profile applications, especially those built on microservices. It tracks requests as they travel through various services, providing a visual 'trace' of the request's journey, helping to identify bottlenecks and failures.",
+			"difficulty": "medium",
+			"tags": ["observability", "microservices", "monitoring"]
+		},
+		{
+			"id": "sd-023",
+			"question": "What is 'Autoscaling'?",
+			"answer": "Autoscaling is a cloud computing feature that automatically adjusts the number of active server instances based on current traffic and resource utilization (CPU, memory). This ensures high availability during spikes and saves costs during low traffic.",
+			"difficulty": "easy",
+			"tags": ["cloud", "scalability", "automation"]
+		},
+		{
+			"id": "sd-024",
+			"question": "What is the difference between Optimistic and Pessimistic Locking?",
+			"answer": "Pessimistic: locks data before modifying, preventing others from accessing it (safe but can be slow/deadlock). Optimistic: checks for changes before committing; if data changed, transaction fails (better for high concurrency with low conflict).",
+			"difficulty": "hard",
+			"tags": ["concurrency", "database", "locking"]
+		},
+		{
+			"id": "sd-025",
+			"question": "What is a 'Sidecar' pattern in microservices?",
+			"answer": "The sidecar pattern involves deploying a separate container alongside the main application container to handle cross-cutting concerns like logging, monitoring, security, or network proxying (e.g., in a service mesh).",
+			"difficulty": "medium",
+			"tags": ["microservices", "patterns", "infrastructure"]
+		},
+		{
+			"id": "sd-026",
+			"question": "What is 'CQRS' (Command Query Responsibility Segregation)?",
+			"answer": "CQRS is a pattern that separates the models for reading data (queries) from the models for updating data (commands). This allows each model to be optimized independently for better performance, scalability, and security.",
+			"difficulty": "hard",
+			"tags": ["architecture", "patterns", "scalability"]
+		},
+		{
+			"id": "sd-027",
+			"question": "Explain 'Blue-Green Deployment'.",
+			"answer": "Blue-Green deployment is a release management strategy that reduces risk by maintaining two identical production environments (Blue and Green). Traffic is switched to the new version (Green) only after it has been fully tested, allowing for instant rollback.",
+			"difficulty": "medium",
+			"tags": ["deployment", "reliability", "devops"]
+		},
+		{
+			"id": "sd-028",
+			"question": "What is 'Canary Release'?",
+			"answer": "A Canary release is a technique where a new version of software is rolled out to a small subset of users before making it available to everyone. This allows for testing in production with minimal impact if something goes wrong.",
+			"difficulty": "medium",
+			"tags": ["deployment", "devops", "testing"]
+		},
+		{
+			"id": "sd-029",
+			"question": "What is 'Chaos Engineering'?",
+			"answer": "Chaos engineering is the practice of intentionally introducing failures into a system (e.g., killing instances, increasing latency) to test its resilience and identify weaknesses before they cause real-world outages.",
+			"difficulty": "medium",
+			"tags": ["reliability", "testing", "operations"]
+		},
+		{
+			"id": "sd-030",
+			"question": "Explain 'Stateless' vs 'Stateful' services.",
+			"answer": "Stateless services do not store any client data between requests; each request contains all necessary info. Stateful services maintain state (e.g., session data, db connections) across multiple requests, making them harder to scale and recover from failure.",
+			"difficulty": "medium",
+			"tags": ["architecture", "scalability", "services"]
+		},
+		{
+			"id": "sd-031",
+			"question": "What is 'Idempotency' in distributed systems?",
+			"answer": "An operation is idempotent if it can be performed multiple times without changing the result beyond the initial application. This is crucial for reliability in distributed systems where requests might be retried due to network issues.",
+			"difficulty": "medium",
+			"tags": ["distributed-systems", "reliability", "api"]
+		},
+		{
+			"id": "sd-032",
+			"question": "What is 'Backpressure'?",
+			"answer": "Backpressure is a mechanism where a system or service signals to its producers to slow down because it cannot keep up with the rate of incoming data, preventing memory overflow and system crashes.",
+			"difficulty": "hard",
+			"tags": ["performance", "streaming", "reliability"]
 		}
-	]
+	],
+	"cardCount": 32,
+	"createdAt": "2026-03-18T13:42:51.290Z",
+	"updatedAt": "2026-03-18T13:42:51.290Z"
 }

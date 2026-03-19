@@ -5,9 +5,9 @@
 	"category": "backend",
 	"cards": [
 		{
-			"id": "typescript-027",
+			"id": "typescript-001",
 			"question": "Vad är TypeScript?",
-			"answer": "TypeScript är ett programmeringsspråk som bygger på JavaScript och lägger till statisk typning för bättre kodkvalitet.",
+			"answer": "TypeScript är ett programmeringsspråk som bygger på JavaScript och lägger till statisk typning för att förbättra kodkvalitet och skalbarhet.",
 			"category": "backend",
 			"difficulty": "easy",
 			"tags": ["typescript", "javascript", "programming"],
@@ -16,9 +16,9 @@
 			"updatedAt": "2026-03-18T13:42:51.290Z"
 		},
 		{
-			"id": "typescript-028",
+			"id": "typescript-002",
 			"question": "Vad är ett interface i TypeScript?",
-			"answer": "Ett interface definierar strukturen av ett objekt, vilket låter dig beskriva vilka properties och metoder ett objekt ska ha.",
+			"answer": "Ett interface definierar strukturen av ett objekt, vilket låter dig beskriva vilka egenskaper (properties) och metoder ett objekt ska ha.",
 			"category": "backend",
 			"difficulty": "medium",
 			"tags": ["typescript", "interfaces", "types"],
@@ -27,9 +27,9 @@
 			"updatedAt": "2026-03-18T13:42:51.290Z"
 		},
 		{
-			"id": "typescript-029",
-			"question": "Vad är en generic i TypeScript?",
-			"answer": "En generic låter dig skapa återanvändbara komponenter och funktioner som kan fungera med olika typer.",
+			"id": "typescript-003",
+			"question": "Vad är en Generic i TypeScript?",
+			"answer": "En Generic låter dig skapa återanvändbara komponenter och funktioner som kan fungera med olika typer samtidigt som typsäkerheten behålls.",
 			"category": "backend",
 			"difficulty": "hard",
 			"tags": ["typescript", "generics", "types"],
@@ -38,9 +38,9 @@
 			"updatedAt": "2026-03-18T13:42:51.290Z"
 		},
 		{
-			"id": "typescript-030",
+			"id": "typescript-004",
 			"question": "Vad är destructuring?",
-			"answer": "Destructuring är ett sätt att extrahera värden från objekt eller arrayer till separata variabler.",
+			"answer": "Destructuring är ett syntax för att packa upp värden från objekt eller arrayer till separata variabler på ett kompakt sätt.",
 			"category": "backend",
 			"difficulty": "easy",
 			"tags": ["javascript", "destructuring", "syntax"],
@@ -49,9 +49,9 @@
 			"updatedAt": "2026-03-18T13:42:51.290Z"
 		},
 		{
-			"id": "typescript-031",
+			"id": "typescript-005",
 			"question": "Vad är en modul i TypeScript?",
-			"answer": "En modul är ett sätt att organisera kod i separata filer som kan importeras och exporteras mellan varandra.",
+			"answer": "En modul är ett sätt att organisera kod i separata filer där varje fil har sitt eget scope och kan exportera delar (funktioner, typer) för import i andra filer.",
 			"category": "backend",
 			"difficulty": "medium",
 			"tags": ["typescript", "modules", "imports"],
@@ -60,9 +60,9 @@
 			"updatedAt": "2026-03-18T13:42:51.290Z"
 		},
 		{
-			"id": "typescript-032",
-			"question": "Vad är DOM manipulation?",
-			"answer": "DOM manipulation är processen att ändra HTML-dokumentets struktur, stil och innehåll med JavaScript.",
+			"id": "typescript-006",
+			"question": "Vad är DOM-manipulation?",
+			"answer": "DOM-manipulation är processen att dynamiskt ändra ett HTML-dokument (struktur, innehåll, stil) med hjälp av JavaScript.",
 			"category": "frontend",
 			"difficulty": "medium",
 			"tags": ["javascript", "dom", "manipulation"],
@@ -71,9 +71,9 @@
 			"updatedAt": "2026-03-18T13:42:51.290Z"
 		},
 		{
-			"id": "typescript-033",
+			"id": "typescript-007",
 			"question": "Vad är event delegation?",
-			"answer": "Event delegation är en teknik där man sätter en event listener på en förälder för att hantera händelser på barn-element effektivt.",
+			"answer": "Event delegation är en teknik där man sätter en händelsehanterare (event listener) på ett föräldraelement för att hantera händelser på underliggande element genom bubbling.",
 			"category": "frontend",
 			"difficulty": "medium",
 			"tags": ["javascript", "events", "delegation"],
@@ -82,9 +82,9 @@
 			"updatedAt": "2026-03-18T13:42:51.290Z"
 		},
 		{
-			"id": "typescript-034",
-			"question": "Vad är local storage?",
-			"answer": "Local storage är ett web API som låter dig spara data i webbläsaren som kvarstår efter att sidan stängs.",
+			"id": "typescript-008",
+			"question": "Vad är Local Storage?",
+			"answer": "Local Storage är ett webb-API som låter dig spara data i webbläsaren som kvarstår även efter att sidan eller webbläsaren stängs.",
 			"category": "frontend",
 			"difficulty": "easy",
 			"tags": ["javascript", "storage", "browser"],
@@ -93,9 +93,9 @@
 			"updatedAt": "2026-03-18T13:42:51.290Z"
 		},
 		{
-			"id": "typescript-035",
+			"id": "typescript-009",
 			"question": "Vad är en arrow function?",
-			"answer": "En arrow function är en kortare syntax för att definiera funktioner i JavaScript, ofta med implicit return.",
+			"answer": "En arrow function är en kortare syntax för att definiera funktioner i JavaScript, och till skillnad från vanliga funktioner har de inte sin egen 'this'-kontext.",
 			"category": "backend",
 			"difficulty": "easy",
 			"tags": ["javascript", "functions", "syntax"],
@@ -104,9 +104,9 @@
 			"updatedAt": "2026-03-18T13:42:51.290Z"
 		},
 		{
-			"id": "typescript-036",
-			"question": "Vad är en callback function?",
-			"answer": "En callback function är en funktion som skickas som argument till en annan funktion och körs när ett specifikt event inträffar.",
+			"id": "typescript-010",
+			"question": "Vad är en callback-funktion?",
+			"answer": "En callback-funktion är en funktion som skickas som ett argument till en annan funktion och som körs (anropas) när ett visst villkor är uppfyllt eller en uppgift är klar.",
 			"category": "backend",
 			"difficulty": "medium",
 			"tags": ["javascript", "callbacks", "functions"],
@@ -115,9 +115,9 @@
 			"updatedAt": "2026-03-18T13:42:51.290Z"
 		},
 		{
-			"id": "typescript-037",
+			"id": "typescript-011",
 			"question": "Vad är en datatyp i TypeScript?",
-			"answer": "En datatyp definierar vilket slags värde en variabel kan hålla, t.ex. string, number, boolean, object.",
+			"answer": "En datatyp definierar vilken sorts värde en variabel kan innehålla, t.ex. string, number, boolean eller mer komplexa objekt och arrayer.",
 			"category": "backend",
 			"difficulty": "easy",
 			"tags": ["typescript", "datatyper", "variabler"],
@@ -126,9 +126,9 @@
 			"updatedAt": "2026-03-18T13:42:51.290Z"
 		},
 		{
-			"id": "typescript-038",
+			"id": "typescript-012",
 			"question": "Vad är en array i TypeScript?",
-			"answer": "En array är en samling av värden av samma typ, som kan nås med ett index.",
+			"answer": "En array är en samling av flera värden av en viss typ, lagrade i en ordnad lista som kan nås med ett index (startar på 0).",
 			"category": "backend",
 			"difficulty": "easy",
 			"tags": ["typescript", "arrays", "collections"],
@@ -137,9 +137,9 @@
 			"updatedAt": "2026-03-18T13:42:51.290Z"
 		},
 		{
-			"id": "typescript-039",
+			"id": "typescript-013",
 			"question": "Vad är en loop i TypeScript?",
-			"answer": "En loop är en kontrollstruktur som upprepar kod tills ett villkor är uppfyllt, t.ex. for, while, for...of.",
+			"answer": "En loop är en kontrollstruktur som upprepar en bit kod så länge ett visst villkor är uppfyllt, t.ex. for, while eller for...of.",
 			"category": "backend",
 			"difficulty": "easy",
 			"tags": ["typescript", "loops", "control-structures"],
@@ -148,9 +148,9 @@
 			"updatedAt": "2026-03-18T13:42:51.290Z"
 		},
 		{
-			"id": "typescript-040",
+			"id": "typescript-014",
 			"question": "Vad är en villkorssats?",
-			"answer": "En villkorssats är en kontrollstruktur som utför kod baserat på om ett villkor är sant eller falskt, t.ex. if/else.",
+			"answer": "En villkorssats (conditional statement) är en kontrollstruktur som kör olika kod beroende på om ett testat villkor är sant eller falskt, t.ex. if/else.",
 			"category": "backend",
 			"difficulty": "easy",
 			"tags": ["typescript", "conditionals", "control-structures"],
@@ -159,9 +159,9 @@
 			"updatedAt": "2026-03-18T13:42:51.290Z"
 		},
 		{
-			"id": "typescript-041",
+			"id": "typescript-015",
 			"question": "Vad är en funktion i TypeScript?",
-			"answer": "En funktion är en återanvändbar kodblock som kan ta parametrar och returnera ett värde.",
+			"answer": "En funktion är ett återanvändbart kodblock som utför en specifik uppgift, kan ta parametrar som indata och returnera ett resultat.",
 			"category": "backend",
 			"difficulty": "easy",
 			"tags": ["typescript", "functions", "programming"],
@@ -170,9 +170,9 @@
 			"updatedAt": "2026-03-18T13:42:51.290Z"
 		},
 		{
-			"id": "typescript-042",
-			"question": "Vad är type inference i TypeScript?",
-			"answer": "Type inference är TypeScripts förmåga att automatiskt härleda typen av en variabel baserat på dess värde utan explicit typdeklaration.",
+			"id": "typescript-016",
+			"question": "Vad är Type Inference i TypeScript?",
+			"answer": "Type Inference innebär att TypeScript automatiskt kan räkna ut (härleda) vilken typ en variabel har baserat på det värde den tilldelas första gången.",
 			"category": "backend",
 			"difficulty": "medium",
 			"tags": ["typescript", "types", "inference"],
@@ -181,9 +181,9 @@
 			"updatedAt": "2026-03-18T13:42:51.290Z"
 		},
 		{
-			"id": "typescript-043",
-			"question": "Vad är union types i TypeScript?",
-			"answer": "Union types tillåter en variabel att ha flera olika typer, t.ex. string | number, vilket betyder att värdet kan vara av någon av de angivna typerna.",
+			"id": "typescript-017",
+			"question": "Vad är Union Types i TypeScript?",
+			"answer": "Union Types tillåter en variabel att kunna innehålla värden av flera olika typer, vilket deklareras med ett vertikalt streck (|), t.ex. string | number.",
 			"category": "backend",
 			"difficulty": "medium",
 			"tags": ["typescript", "types", "union"],
@@ -192,9 +192,9 @@
 			"updatedAt": "2026-03-18T13:42:51.290Z"
 		},
 		{
-			"id": "typescript-044",
-			"question": "Vad är type alias i TypeScript?",
-			"answer": "Ett type alias skapar ett nytt namn för en typ, t.ex. type ID = string | number, vilket gör koden mer läsbar och återanvändbar.",
+			"id": "typescript-018",
+			"question": "Vad är ett Type Alias i TypeScript?",
+			"answer": "Ett Type Alias används för att skapa ett eget namn på en typ (t.ex. 'type ID = string'), vilket gör koden lättare att läsa och återanvända.",
 			"category": "backend",
 			"difficulty": "medium",
 			"tags": ["typescript", "types", "alias"],
@@ -203,9 +203,9 @@
 			"updatedAt": "2026-03-18T13:42:51.290Z"
 		},
 		{
-			"id": "typescript-045",
-			"question": "Vad är enum i TypeScript?",
-			"answer": "Enum är en typ som tillåter att definiera en samling av namngivna konstanter, vilket gör det enklare att referera till relaterade värden.",
+			"id": "typescript-019",
+			"question": "Vad är en Enum i TypeScript?",
+			"answer": "Enum är ett sätt att skapa en namngiven samling av relaterade konstanter, t.ex. Color.Red eller Status.Pending, istället för att använda råa strängar eller siffror.",
 			"category": "backend",
 			"difficulty": "medium",
 			"tags": ["typescript", "enum", "constants"],
@@ -214,9 +214,9 @@
 			"updatedAt": "2026-03-18T13:42:51.290Z"
 		},
 		{
-			"id": "typescript-046",
-			"question": "Vad är optional properties i TypeScript?",
-			"answer": "Optional properties är egenskaper i ett interface som inte behöver anges, markerade med ? t.ex. name?: string.",
+			"id": "typescript-020",
+			"question": "Vad är Optional Properties i TypeScript?",
+			"answer": "Optional properties är egenskaper i ett interface som inte är obligatoriska att fylla i, markerade med ett frågetecken (?) vid deklarationen.",
 			"category": "backend",
 			"difficulty": "easy",
 			"tags": ["typescript", "interfaces", "optional"],
@@ -225,9 +225,9 @@
 			"updatedAt": "2026-03-18T13:42:51.290Z"
 		},
 		{
-			"id": "typescript-047",
-			"question": "Vad är class i TypeScript?",
-			"answer": "En class är en blueprint för att skapa objekt med egenskaper och metoder, med stöd för arv, modifiers och konstruktorer.",
+			"id": "typescript-021",
+			"question": "Vad är en klass (class) i TypeScript?",
+			"answer": "En klass är en mall för att skapa objekt med liknande egenskaper och beteenden (metoder), vilket är centralt inom objektorienterad programmering.",
 			"category": "backend",
 			"difficulty": "medium",
 			"tags": ["typescript", "class", "oop"],
@@ -236,18 +236,161 @@
 			"updatedAt": "2026-03-18T13:42:51.290Z"
 		},
 		{
-			"id": "typescript-048",
-			"question": "Vad är access modifiers i TypeScript?",
-			"answer": "Access modifiers kontrollerar åtkomst till klassmedlemmar: public (standard), private (endast inom klassen), protected (inheriting klasser).",
+			"id": "typescript-022",
+			"question": "Vad är Access Modifiers i TypeScript?",
+			"answer": "Access modifiers (public, private, protected) används för att kontrollera vem som har tillgång till en klass medlemmar (egenskaper och metoder).",
 			"category": "backend",
 			"difficulty": "medium",
 			"tags": ["typescript", "class", "modifiers"],
 			"status": "new",
 			"createdAt": "2026-03-18T13:42:51.290Z",
 			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "typescript-023",
+			"question": "Vad är en 'Tuple' i TypeScript?",
+			"answer": "En Tuple är en array med ett fast antal element där varje position i arrayen har en specifik datatyp, t.ex. [string, number].",
+			"category": "backend",
+			"difficulty": "medium",
+			"tags": ["typescript", "arrays", "tuple"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "typescript-024",
+			"question": "Vad är 'any' typen i TypeScript?",
+			"answer": "'any' är en speciell typ som stänger av all typgranskning för en variabel, vilket gör att den kan innehålla vad som helst. Bör undvikas så mycket som möjligt.",
+			"category": "backend",
+			"difficulty": "easy",
+			"tags": ["typescript", "types", "security"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "typescript-025",
+			"question": "Vad är 'unknown' typen i TypeScript?",
+			"answer": "'unknown' är en säkrare version av 'any'. Du kan tilldela vad som helst till 'unknown', men du får inte utföra operationer på det utan att först kontrollera (smalna av) typen.",
+			"category": "backend",
+			"difficulty": "hard",
+			"tags": ["typescript", "types", "security"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "typescript-026",
+			"question": "Vad är 'Type Assertion' i TypeScript?",
+			"answer": "Type Assertion är ett sätt att berätta för TypeScript-kompilatorn att du vet mer om en variabels typ än vad den gör (använder 'as' syntax), t.ex. 'someValue as string'.",
+			"category": "backend",
+			"difficulty": "medium",
+			"tags": ["typescript", "types", "assertion"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "typescript-027",
+			"question": "Vad är 'Literal Types'?",
+			"answer": "Literal types låter dig ange exakt vilka värden en variabel får ha, snarare än bara en kategori av värden, t.ex. 'type Direction = \"left\" | \"right\"'.",
+			"category": "backend",
+			"difficulty": "medium",
+			"tags": ["typescript", "types", "literal"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "typescript-028",
+			"question": "Vad är en 'Intersection Type'?",
+			"answer": "En Intersection Type (&) kombinerar flera typer till en, vilket kräver att ett objekt har alla egenskaper från alla de ingående typerna.",
+			"category": "backend",
+			"difficulty": "hard",
+			"tags": ["typescript", "types", "intersection"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "typescript-029",
+			"question": "Vad är 'Optional Chaining' i JavaScript/TypeScript?",
+			"answer": "Optional Chaining (?.) gör det möjligt att läsa egenskaper djupt i en objekt-hierarki utan att behöva validera varje nivå mot null eller undefined.",
+			"category": "backend",
+			"difficulty": "easy",
+			"tags": ["javascript", "syntax", "null-safety"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "typescript-030",
+			"question": "Vad är 'Nullish Coalescing'?",
+			"answer": "Nullish Coalescing (??) är en operator som returnerar sitt högra argument när det vänstra är antingen null eller undefined, till skillnad från || som kollar på alla falsy värden.",
+			"category": "backend",
+			"difficulty": "easy",
+			"tags": ["javascript", "syntax", "null-safety"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "typescript-031",
+			"question": "Vad är 'Readonly' i TypeScript?",
+			"answer": "Readonly är en modifierare som gör att en egenskap i ett objekt eller element i en array inte kan ändras efter att den har initierats.",
+			"category": "backend",
+			"difficulty": "medium",
+			"tags": ["typescript", "security", "immutability"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "typescript-032",
+			"question": "Vad är en 'Abstract Class'?",
+			"answer": "En abstrakt klass är en klass som inte kan instansieras direkt utan endast fungerar som en bas för andra klasser. Den kan innehålla abstrakta metoder som måste implementeras av underklasser.",
+			"category": "backend",
+			"difficulty": "hard",
+			"tags": ["typescript", "class", "oop"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "typescript-033",
+			"question": "Vad är 'Type Guards'?",
+			"answer": "Type Guards är tekniker (som typeof, instanceof eller anpassade funktioner) för att smalna av typen på en variabel inom ett specifikt kodblock.",
+			"category": "backend",
+			"difficulty": "hard",
+			"tags": ["typescript", "types", "narrowing"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "typescript-034",
+			"question": "Vad gör 'readonly' nyckelordet i en klass-konstruktor?",
+			"answer": "Det är ett kompakt sätt att både deklarera och initiera en publik eller privat medlem i klassen direkt via konstruktorns argument.",
+			"category": "backend",
+			"difficulty": "medium",
+			"tags": ["typescript", "class", "syntax"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "typescript-035",
+			"question": "Vad är 'Utility Types' i TypeScript?",
+			"answer": "Utility types (t.ex. Partial, Pick, Omit, Readonly) är inbyggda typer som hjälper dig att transformera och skapa nya typer baserat på existerande gränssnitt.",
+			"category": "backend",
+			"difficulty": "hard",
+			"tags": ["typescript", "types", "utility"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
 		}
 	],
-	"cardCount": 23,
+	"cardCount": 35,
 	"createdAt": "2026-03-18T13:42:51.290Z",
 	"updatedAt": "2026-03-18T13:42:51.290Z"
 }

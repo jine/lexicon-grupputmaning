@@ -5,9 +5,9 @@
 	"category": "behavioral",
 	"cards": [
 		{
-			"id": "agile-007",
-			"question": "Vad är Git-Flow?",
-			"answer": "Git-Flow är ett grenstrategimönster som definierar specifika grenar för feature, release, hotfix och master/main.",
+			"id": "agile-001",
+			"question": "Vad är Git-flow?",
+			"answer": "Git-flow är ett grenstrategimönster som definierar specifika grenar för feature, release, hotfix och master/main.",
 			"category": "system-design",
 			"difficulty": "medium",
 			"tags": ["git", "workflow", "branching"],
@@ -16,9 +16,9 @@
 			"updatedAt": "2026-03-18T13:42:51.290Z"
 		},
 		{
-			"id": "agile-008",
-			"question": "Vad är en working agreement?",
-			"answer": "En working agreement är ett sett av regler och normer som teamet gemensamt skapar för hur de ska arbeta tillsammans.",
+			"id": "agile-002",
+			"question": "Vad är en Working Agreement?",
+			"answer": "En Working Agreement är en uppsättning regler och normer som teamet gemensamt skapar för hur de ska arbeta tillsammans.",
 			"category": "behavioral",
 			"difficulty": "easy",
 			"tags": ["agile", "teamwork", "collaboration"],
@@ -27,7 +27,7 @@
 			"updatedAt": "2026-03-18T13:42:51.290Z"
 		},
 		{
-			"id": "agile-009",
+			"id": "agile-003",
 			"question": "Vad är GitHub Projects?",
 			"answer": "GitHub Projects är ett verktyg för att organisera och spåra arbete med boards, issues och milestones.",
 			"category": "system-design",
@@ -38,9 +38,9 @@
 			"updatedAt": "2026-03-18T13:42:51.290Z"
 		},
 		{
-			"id": "agile-010",
+			"id": "agile-004",
 			"question": "Vad är agila värderingar?",
-			"answer": "Agila värderingar inkluderar individer framför processer, samarbete över kontrakt, fungerande mjukvara över dokumentation och responsivitet över följsamhet.",
+			"answer": "Agila värderingar inkluderar individer och interaktioner framför processer och verktyg, fungerande programvara framför omfattande dokumentation, kundsamarbete framför kontraktsförhandling och att anpassa sig till förändring framför att följa en plan.",
 			"category": "behavioral",
 			"difficulty": "easy",
 			"tags": ["agile", "values", "principles"],
@@ -49,7 +49,7 @@
 			"updatedAt": "2026-03-18T13:42:51.290Z"
 		},
 		{
-			"id": "agile-011",
+			"id": "agile-005",
 			"question": "Vad är en issue i GitHub?",
 			"answer": "En issue är ett ärende eller uppgift i GitHub som kan användas för att spåra arbete, buggar eller förbättringar.",
 			"category": "system-design",
@@ -60,7 +60,7 @@
 			"updatedAt": "2026-03-18T13:42:51.290Z"
 		},
 		{
-			"id": "agile-012",
+			"id": "agile-006",
 			"question": "Vad är Scrum?",
 			"answer": "Scrum är ett ramverk för att utveckla, leverera och underhålla komplexa produkter med fokus på flexibel utveckling och samarbete.",
 			"category": "behavioral",
@@ -71,7 +71,7 @@
 			"updatedAt": "2026-03-18T13:42:51.290Z"
 		},
 		{
-			"id": "agile-013",
+			"id": "agile-007",
 			"question": "Vad är en sprint i Scrum?",
 			"answer": "En sprint är en tidsboxad period (ofta 1-4 veckor) där ett team levererar ett potentiellt levererbart produktinkrement.",
 			"category": "behavioral",
@@ -82,9 +82,9 @@
 			"updatedAt": "2026-03-18T13:42:51.290Z"
 		},
 		{
-			"id": "agile-014",
-			"question": "Vad är daily standup?",
-			"answer": "Daily standup är ett kort dagligt möte (15 min) där teamet delar vad de gjorde, ska göra och om det finns hinder.",
+			"id": "agile-008",
+			"question": "Vad är Daily Standup?",
+			"answer": "Daily Standup är ett kort dagligt möte (15 min) där teamet delar vad de gjorde, ska göra och om det finns hinder.",
 			"category": "behavioral",
 			"difficulty": "easy",
 			"tags": ["scrum", "meeting", "communication"],
@@ -93,9 +93,9 @@
 			"updatedAt": "2026-03-18T13:42:51.290Z"
 		},
 		{
-			"id": "agile-015",
-			"question": "Vad är en product backlog?",
-			"answer": "En product backlog är en prioriterad lista av allt som behövs för att förbättra produkten, inklusive features, bugs och tech debt.",
+			"id": "agile-009",
+			"question": "Vad är en Product Backlog?",
+			"answer": "En Product Backlog är en prioriterad lista av allt som behövs för att förbättra produkten, inklusive features, bugs och tech debt.",
 			"category": "behavioral",
 			"difficulty": "medium",
 			"tags": ["scrum", "backlog", "prioritization"],
@@ -104,9 +104,9 @@
 			"updatedAt": "2026-03-18T13:42:51.290Z"
 		},
 		{
-			"id": "agile-016",
-			"question": "Vad är sprint retrospective?",
-			"answer": "Sprint retrospective är ett möte i slutet av varje sprint där teamet reflekterar över vad som gick bra, vad som kunde förbättras och vad de ska göra annorlunda.",
+			"id": "agile-010",
+			"question": "Vad är Sprint Retrospective?",
+			"answer": "Sprint Retrospective är ett möte i slutet av varje sprint där teamet reflekterar över vad som gick bra, vad som kunde förbättras och vad de ska göra annorlunda.",
 			"category": "behavioral",
 			"difficulty": "medium",
 			"tags": ["scrum", "retrospective", "improvement"],
@@ -115,7 +115,7 @@
 			"updatedAt": "2026-03-18T13:42:51.290Z"
 		},
 		{
-			"id": "agile-017",
+			"id": "agile-011",
 			"question": "Vad är Definition of Done (DoD)?",
 			"answer": "Definition of Done är ett gemensamt avtal om vad som krävs för att ett arbete ska anses vara färdigt, inklusive tester och dokumentation.",
 			"category": "behavioral",
@@ -126,18 +126,238 @@
 			"updatedAt": "2026-03-18T13:42:51.290Z"
 		},
 		{
-			"id": "agile-018",
-			"question": "Vad är en user story?",
-			"answer": "En user story är en kort beskrivning av en funktion ur slutanvändarens perspektiv, ofta formulerad som 'Som [roll] vill jag [funktion] för att [nytta]'.",
+			"id": "agile-012",
+			"question": "Vad är en User Story?",
+			"answer": "En User Story är en kort beskrivning av en funktion ur slutanvändarens perspektiv, ofta formulerad som 'Som [roll] vill jag [funktion] för att [nytta]'.",
 			"category": "behavioral",
 			"difficulty": "easy",
 			"tags": ["agile", "requirements", "planning"],
 			"status": "new",
 			"createdAt": "2026-03-18T13:42:51.290Z",
 			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "agile-013",
+			"question": "Vad är Kanban?",
+			"answer": "Kanban är ett visuellt system för att hantera arbete när det rör sig genom en process. Det fokuserar på att visualisera flödet och begränsa arbete i pågående (WIP).",
+			"category": "behavioral",
+			"difficulty": "easy",
+			"tags": ["kanban", "agile", "workflow"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "agile-014",
+			"question": "Vad är Lean?",
+			"answer": "Lean är en filosofi som fokuserar på att maximera kundvärde samtidigt som man minimerar slöseri (waste).",
+			"category": "behavioral",
+			"difficulty": "medium",
+			"tags": ["lean", "agile", "efficiency"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "agile-015",
+			"question": "Vad är Velocity?",
+			"answer": "Velocity är ett mått på den mängd arbete ett team kan hantera under en sprint, ofta mätt i story points.",
+			"category": "behavioral",
+			"difficulty": "medium",
+			"tags": ["scrum", "metrics", "velocity"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "agile-016",
+			"question": "Vad är ett Burndown chart?",
+			"answer": "Ett Burndown chart är ett diagram som visar hur mycket arbete som återstår i en sprint i förhållande till tid.",
+			"category": "behavioral",
+			"difficulty": "easy",
+			"tags": ["scrum", "visual-aid", "tracking"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "agile-017",
+			"question": "Vilken roll har en Product Owner?",
+			"answer": "En Product Owner ansvarar för att maximera produktens värde och hantera produktbackloggen så att den är tydlig och prioriterad.",
+			"category": "behavioral",
+			"difficulty": "medium",
+			"tags": ["scrum", "roles", "product-owner"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "agile-018",
+			"question": "Vilken roll har en Scrum Master?",
+			"answer": "En Scrum Master ansvarar för att främja och stödja Scrum genom att hjälpa alla att förstå teorin, praktiken, reglerna och värderingarna.",
+			"category": "behavioral",
+			"difficulty": "medium",
+			"tags": ["scrum", "roles", "scrum-master"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "agile-019",
+			"question": "Vad är Backlog Refinement?",
+			"answer": "Backlog Refinement är den pågående processen att lägga till detaljer, estimat och ordning på items i produktbackloggen.",
+			"category": "behavioral",
+			"difficulty": "medium",
+			"tags": ["scrum", "backlog", "planning"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "agile-020",
+			"question": "Vad är Story Points?",
+			"answer": "Story Points är en enhet för att uppskatta den relativa ansträngningen som krävs för att implementera en User Story, ofta baserat på komplexitet och osäkerhet.",
+			"category": "behavioral",
+			"difficulty": "medium",
+			"tags": ["agile", "estimation", "story-points"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "agile-021",
+			"question": "Vad är Planning Poker?",
+			"answer": "Planning Poker är en konsensusbaserad teknik för att estimera arbetsinsats, där teammedlemmar använder kort (ofta Fibonacci) för att rösta anonymt.",
+			"category": "behavioral",
+			"difficulty": "easy",
+			"tags": ["agile", "estimation", "scrum"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "agile-022",
+			"question": "Vad är ett Impediment?",
+			"answer": "Ett Impediment är något som hindrar teamet från att utföra sitt arbete effektivt eller att nå sitt sprintmål.",
+			"category": "behavioral",
+			"difficulty": "medium",
+			"tags": ["scrum", "problem-solving", "impediment"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "agile-023",
+			"question": "Vad menas med Timeboxing?",
+			"answer": "Timeboxing innebär att man tilldelar en fast, maximal tidsperiod till en specifik aktivitet, t.ex. att en Daily Standup får ta max 15 minuter.",
+			"category": "behavioral",
+			"difficulty": "easy",
+			"tags": ["agile", "time-management", "scrum"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "agile-024",
+			"question": "Vad är MoSCoW-metoden?",
+			"answer": "MoSCoW är en prioriteringsteknik som står för Must have, Should have, Could have och Won't have.",
+			"category": "behavioral",
+			"difficulty": "medium",
+			"tags": ["agile", "prioritization", "planning"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "agile-025",
+			"question": "Vad är en MVP (Minimum Viable Product)?",
+			"answer": "En MVP är en version av en ny produkt som tillåter ett team att samla maximal mängd validerad inlärning om kunder med minsta möjliga ansträngning.",
+			"category": "behavioral",
+			"difficulty": "medium",
+			"tags": ["agile", "product-development", "mvp"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "agile-026",
+			"question": "Vad är en WIP-gräns (Work In Progress)?",
+			"answer": "En WIP-gräns är en begränsning för hur många uppgifter som får vara i ett visst tillstånd samtidigt i ett Kanban-flöde, för att undvika flaskhalsar.",
+			"category": "behavioral",
+			"difficulty": "hard",
+			"tags": ["kanban", "efficiency", "workflow"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "agile-027",
+			"question": "Vad är Kaizen?",
+			"answer": "Kaizen är ett japanskt begrepp för 'kontinuerlig förbättring' genom små, stegvisa förändringar.",
+			"category": "behavioral",
+			"difficulty": "easy",
+			"tags": ["lean", "improvement", "philosophy"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "agile-028",
+			"question": "Vad är Definition of Ready (DoR)?",
+			"answer": "Definition of Ready är en checklista som definierar när en User Story är tillräckligt genomarbetad och har tillräcklig information för att kunna tas in i en sprint.",
+			"category": "behavioral",
+			"difficulty": "medium",
+			"tags": ["agile", "planning", "quality"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "agile-029",
+			"question": "Vad är Pair Programming?",
+			"answer": "Pair Programming är en teknik där två programmerare arbetar tillsammans vid en dator; en skriver koden (driver) medan den andra granskar varje rad (navigator).",
+			"category": "behavioral",
+			"difficulty": "medium",
+			"tags": ["agile", "development", "collaboration"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "agile-030",
+			"question": "Vad är Test-Driven Development (TDD)?",
+			"answer": "TDD är en utvecklingsprocess där man skriver ett felande automatiskt test innan man skriver den faktiska koden, för att sedan refaktorera.",
+			"category": "behavioral",
+			"difficulty": "medium",
+			"tags": ["agile", "testing", "development"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "agile-031",
+			"question": "Vad är Continuous Integration (CI)?",
+			"answer": "CI är en praxis där utvecklare regelbundet mergar sina kodändringar i ett centralt repository, varpå automatiska byggen och tester körs för att snabbt hitta fel.",
+			"category": "behavioral",
+			"difficulty": "medium",
+			"tags": ["agile", "devops", "ci"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
+		},
+		{
+			"id": "agile-032",
+			"question": "Vad är Continuous Deployment (CD)?",
+			"answer": "CD är en praxis där varje kodändring som passerar alla steg i den automatiserade testpipelinen automatiskt släpps till produktion.",
+			"category": "behavioral",
+			"difficulty": "hard",
+			"tags": ["agile", "devops", "cd"],
+			"status": "new",
+			"createdAt": "2026-03-18T13:42:51.290Z",
+			"updatedAt": "2026-03-18T13:42:51.290Z"
 		}
 	],
-	"cardCount": 13,
+	"cardCount": 32,
 	"createdAt": "2026-03-18T13:42:51.290Z",
 	"updatedAt": "2026-03-18T13:42:51.290Z"
 }
