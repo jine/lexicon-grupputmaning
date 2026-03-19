@@ -73,7 +73,7 @@
 		{
 			"id": "css-007",
 			"question": "Vad är specificity i CSS?",
-			"answer": "Specificity bestämmer vilken CSS-regel som vinner vid konflikter. Den beräknas som en 4-delad vektor: inline styles, ID, klasser/attribut, elementer.",
+			"answer": "Specificity bestämmer vilken CSS-regel som vinner vid konflikter. Den beräknas som en 4-delad vektor: inline styles, ID, klasser/attribut, element.",
 			"category": "css",
 			"difficulty": "hard",
 			"tags": ["css", "specificity", "priority"],
@@ -150,7 +150,7 @@
 		{
 			"id": "css-014",
 			"question": "Vad är transitions i CSS?",
-			"answer": "Transitions låter dig animera övergångar mellan tillstånd, t.ex. vid hover. Du kan animera egenskaper som färg, storlek eller position medan dur och easing.",
+			"answer": "Transitions låter dig animera övergångar mellan tillstånd, t.ex. vid hover. Du kan animera egenskaper som färg, storlek eller position med duration och easing.",
 			"category": "frontend",
 			"difficulty": "easy",
 			"tags": ["css", "transitions", "animation"],
@@ -348,7 +348,7 @@
 		{
 			"id": "css-032",
 			"question": "Vad är subgrid i CSS Grid?",
-			"answer": "Subgrid låter child-elements i ett grid-nested att ärva spåringsdefinitionen från parent-grid för att skapa mer sammanhängande layouter.",
+			"answer": "Subgrid låter nästlade grid-element ärva spårdefinitionen från sitt föräldragrid för att skapa mer sammanhängande layouter.",
 			"category": "css",
 			"difficulty": "hard",
 			"tags": ["css", "grid", "subgrid"],

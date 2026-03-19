@@ -18,7 +18,7 @@
 		{
 			"id": "agile-008",
 			"question": "Vad är en working agreement?",
-			"answer": "En working agreement är ett sett av regler och normer som teamet gemensamt skapar för hur de ska arbeta tillsammans.",
+			"answer": "En working agreement är en uppsättning regler och normer som teamet gemensamt skapar för hur de ska arbeta tillsammans.",
 			"category": "behavioral",
 			"difficulty": "easy",
 			"tags": ["agile", "teamwork", "collaboration"],
@@ -40,7 +40,7 @@
 		{
 			"id": "agile-010",
 			"question": "Vad är agila värderingar?",
-			"answer": "Agila värderingar inkluderar individer framför processer, samarbete över kontrakt, fungerande mjukvara över dokumentation och responsivitet över följsamhet.",
+			"answer": "Agila värderingar inkluderar individer och interaktioner framför processer och verktyg, fungerande mjukvara framför omfattande dokumentation, kundsamarbete framför kontraktsförhandling och att reagera på förändring framför att följa en plan.",
 			"category": "behavioral",
 			"difficulty": "easy",
 			"tags": ["agile", "values", "principles"],
@@ -117,7 +117,7 @@
 		{
 			"id": "agile-017",
 			"question": "Vad är Definition of Done (DoD)?",
-			"answer": "Definition of Done är ett gemensamt avtal om vad som krävs för att ett arbete ska anses vara färdigt, inklusive tester och dokumentation.",
+			"answer": "Definition of Done (DoD) är en gemensam checklista för vad som krävs för att ett arbete ska anses vara färdigt, t.ex. tester, kodgranskning och dokumentation.",
 			"category": "behavioral",
 			"difficulty": "medium",
 			"tags": ["scrum", "quality", "standards"],
