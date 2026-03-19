@@ -40,7 +40,7 @@
 		{
 			"id": "wcag-004",
 			"question": "Vad betyder WCAG Nivå A, AA och AAA?",
-			"answer": "Det är tre konformitetsnivåer. A är grundläggande krav, AA är den vanligaste standarden (rekommenderad), AAA är högsta nivån (strengast).",
+			"answer": "Det är tre konformitetsnivåer. A är grundläggande krav, AA är den vanligaste standarden (rekommenderad), AAA är högsta nivån (strängast).",
 			"category": "frontend",
 			"difficulty": "easy",
 			"tags": ["wcag", "levels", "conformance"],
@@ -106,7 +106,7 @@
 		{
 			"id": "wcag-010",
 			"question": "Vad är WCAG 1.3.1 Info and Relationships?",
-			"answer": "Information, struktur och relationer i innehåll måste kunna bestämas av programvara. Använd rätt HTML-element och semantic markup.",
+			"answer": "Information, struktur och relationer i innehåll måste kunna bestämmas av programvara. Använd rätt HTML-element och semantic markup.",
 			"category": "accessibility",
 			"difficulty": "medium",
 			"tags": ["wcag", "semantic", "structure"],
@@ -150,7 +150,7 @@
 		{
 			"id": "wcag-014",
 			"question": "Vad är WCAG 1.4.10 Reflow?",
-			"answer": "Innehåll måste visas utan att kräva horizontell scrolling när viewport är 320x256 pixlar. Detta gäller för responsiv design.",
+			"answer": "Innehåll måste visas utan att kräva horisontell scrolling när viewport är 320x256 pixlar. Detta gäller för responsiv design.",
 			"category": "accessibility",
 			"difficulty": "medium",
 			"tags": ["wcag", "reflow", "responsive"],
@@ -249,7 +249,7 @@
 		{
 			"id": "wcag-023",
 			"question": "Vad är WCAG 3.1.1 Language of Page?",
-			"answer": "Den default språket för varje sida måste kunna bestämmas av programvara. Använd lang-attributet på html-elementet (t.ex. lang=\"sv\").",
+			"answer": "Standardspråket för varje sida måste kunna bestämmas av programvara. Använd lang-attributet på html-elementet (t.ex. lang=\"sv\").",
 			"category": "frontend",
 			"difficulty": "easy",
 			"tags": ["wcag", "language", "html"],
@@ -260,7 +260,7 @@
 		{
 			"id": "wcag-024",
 			"question": "Vad är WCAG 2.1.2 No Keyboard Trap?",
-			"answer": "Om fokus kan placerats på ett element via tangentbord, måste det vara möjligt att förflytta fokus bort från det elementet med tangentbordet.",
+			"answer": "Om fokus kan placeras på ett element via tangentbord, måste det vara möjligt att förflytta fokus bort från det elementet med tangentbordet.",
 			"category": "accessibility",
 			"difficulty": "medium",
 			"tags": ["wcag", "keyboard", "focus"],
@@ -392,7 +392,7 @@
 		{
 			"id": "wcag-036",
 			"question": "Vad är WCAG 3.3.4 Error Prevention?",
-			"answer": "För transaktioner med juridiska eller finansiella konsekvenser ska data vara reversible, kontrollerbara eller bekräftas innan submission.",
+			"answer": "För transaktioner med juridiska eller finansiella konsekvenser ska data vara reversibla, kontrollerbara eller bekräftas innan inskickning.",
 			"category": "accessibility",
 			"difficulty": "medium",
 			"tags": ["wcag", "error-prevention", "forms"],

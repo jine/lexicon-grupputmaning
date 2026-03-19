@@ -73,7 +73,7 @@
 		{
 			"id": "nextjs-012",
 			"question": "Vad är Server Components?",
-			"answer": "Server Components körs på servern och är lämpliga för datahämtning och SEO, med minimal JavaScript-bördor på klienten.",
+			"answer": "Server Components körs på servern och är lämpliga för datahämtning och SEO, med minimal JavaScript-börda på klienten.",
 			"category": "frontend",
 			"difficulty": "medium",
 			"tags": ["nextjs", "server-components", "architecture"],
@@ -95,7 +95,7 @@
 		{
 			"id": "nextjs-014",
 			"question": "Vad är en API Route?",
-			"answer": "En API Route är ett endpoint i Next.js som låter dig skapa egna API:er genom att skapa filer i /app/api-mappen.",
+			"answer": "En API Route är en endpoint i Next.js som låter dig skapa egna API:er genom att skapa filer i /app/api-mappen.",
 			"category": "backend",
 			"difficulty": "medium",
 			"tags": ["nextjs", "api", "routes"],
@@ -139,7 +139,7 @@
 		{
 			"id": "nextjs-023",
 			"question": "Vad är App Router?",
-			"answer": "App Router är ett routing-system i Next.js baserat på mappstruktur i /app-katalogen, med stöd för layouts, pages och routes.",
+			"answer": "App Router är ett routingsystem i Next.js baserat på mappstrukturen i /app-katalogen, med stöd för layouter, sidor och rutter.",
 			"category": "frontend",
 			"difficulty": "medium",
 			"tags": ["nextjs", "routing", "app-router"],
@@ -249,7 +249,7 @@
 		{
 			"id": "nextjs-033",
 			"question": "Vad är intercepting routes i Next.js?",
-			"answer": "Intercepting routes tillåter att ladda en route inom en annan route som en modal utan att lämna den nuvarande sidan.",
+			"answer": "Intercepting routes tillåter att ladda en rutt inom en annan rutt som en modal utan att lämna den nuvarande sidan.",
 			"category": "frontend",
 			"difficulty": "hard",
 			"tags": ["nextjs", "routing", "intercepting"],

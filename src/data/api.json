@@ -1,7 +1,7 @@
 {
 	"id": "deck-api",
 	"name": "API-utveckling",
-	"description": "Flashcards om API:er, REST och backend-utveckling baserat på Lexicons github repos.",
+	"description": "Flashcards om API:er, REST och backend-utveckling baserat på Lexicons GitHub-repos.",
 	"category": "backend",
 	"cards": [
 		{
@@ -18,7 +18,7 @@
 		{
 			"id": "api-018",
 			"question": "Vad är GraphQL?",
-			"answer": "GraphQL är ett API-framställningsspråk som låter klienter specifikt begära den data de behöver, vilket minimerar over-fetching.",
+			"answer": "GraphQL är ett frågespråk för API:er som låter klienter specifikt begära den data de behöver, vilket minimerar over-fetching.",
 			"category": "backend",
 			"difficulty": "hard",
 			"tags": ["api", "graphql", "backend"],
@@ -95,7 +95,7 @@
 		{
 			"id": "api-025",
 			"question": "Vad är en API-endpoint?",
-			"answer": "En endpoint är en specifik URL där en API-förfrågling kan göras, t.ex. GET /api/users för att hämta användare.",
+			"answer": "En endpoint är en specifik URL där en API-förfrågan kan göras, t.ex. GET /api/users för att hämta användare.",
 			"category": "backend",
 			"difficulty": "easy",
 			"tags": ["api", "endpoint", "url"],

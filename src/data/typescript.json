@@ -61,8 +61,8 @@
 		},
 		{
 			"id": "typescript-032",
-			"question": "Vad är DOM manipulation?",
-			"answer": "DOM manipulation är processen att ändra HTML-dokumentets struktur, stil och innehåll med JavaScript.",
+			"question": "Vad är DOM-manipulation?",
+			"answer": "DOM-manipulation är processen att ändra HTML-dokumentets struktur, stil och innehåll med JavaScript.",
 			"category": "frontend",
 			"difficulty": "medium",
 			"tags": ["javascript", "dom", "manipulation"],
@@ -105,8 +105,8 @@
 		},
 		{
 			"id": "typescript-036",
-			"question": "Vad är en callback function?",
-			"answer": "En callback function är en funktion som skickas som argument till en annan funktion och körs när ett specifikt event inträffar.",
+			"question": "Vad är en callback-funktion?",
+			"answer": "En callback-funktion är en funktion som skickas som argument till en annan funktion och körs när en specifik händelse inträffar.",
 			"category": "backend",
 			"difficulty": "medium",
 			"tags": ["javascript", "callbacks", "functions"],
@@ -161,7 +161,7 @@
 		{
 			"id": "typescript-041",
 			"question": "Vad är en funktion i TypeScript?",
-			"answer": "En funktion är en återanvändbar kodblock som kan ta parametrar och returnera ett värde.",
+			"answer": "En funktion är ett återanvändbart kodblock som kan ta parametrar och returnera ett värde.",
 			"category": "backend",
 			"difficulty": "easy",
 			"tags": ["typescript", "functions", "programming"],
@@ -238,7 +238,7 @@
 		{
 			"id": "typescript-048",
 			"question": "Vad är access modifiers i TypeScript?",
-			"answer": "Access modifiers kontrollerar åtkomst till klassmedlemmar: public (standard), private (endast inom klassen), protected (inheriting klasser).",
+			"answer": "Access modifiers kontrollerar åtkomst till klassmedlemmar: public (standard), private (endast inom klassen), protected (ärvande klasser).",
 			"category": "backend",
 			"difficulty": "medium",
 			"tags": ["typescript", "class", "modifiers"],
